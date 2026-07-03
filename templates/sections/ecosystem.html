@@ -1,0 +1,51 @@
+    <section id="ecosystem" class="scroll-mt-20 py-20 bg-neutral-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-3xl mx-auto text-center mb-16">
+                <span class="text-xs font-semibold uppercase tracking-wider text-primary-main">{{ecosystem.eyebrow}}</span>
+                <h2 class="text-2xl sm:text-3xl font-bold text-neutral-900 tracking-tight mt-1">
+                    {{ecosystem.title}}
+                </h2>
+                <p class="mt-4 text-neutral-600 text-lg leading-relaxed">
+                    {{ecosystem.description}}
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                {{#each ecosystem.modules}}
+                <div class="bg-neutral-0 border border-neutral-200/80 rounded-xl p-8 hover:shadow-md transition-shadow relative overflow-hidden flex flex-col justify-between">
+                    <div class="absolute top-0 right-0 bg-primary-lighter text-primary-dark font-mono text-[9px] font-bold px-3 py-1 border-b border-l border-neutral-200 uppercase">
+                        {{badge}}
+                    </div>
+
+                    <div class="space-y-4">
+                        <div class="w-10 h-10 rounded bg-neutral-100 flex items-center justify-center text-primary-dark">
+                            {{#eq icon "portal"}}
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
+                            </svg>
+                            {{/eq}}
+                            {{#eq icon "mobile"}}
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"></path>
+                            </svg>
+                            {{/eq}}
+                        </div>
+                        <h3 class="text-xl font-bold text-neutral-900">{{title}}</h3>
+                        <p class="text-sm text-neutral-500 leading-relaxed">
+                            {{description}}
+                        </p>
+
+                        <ul class="space-y-2 pt-2 border-t border-neutral-100">
+                            {{#each features}}
+                            <li class="flex items-start gap-2.5 text-neutral-600 text-sm">
+                                <span class="text-primary-main font-bold text-xs mt-0.5">•</span>
+                                <div><strong>{{label}}:</strong> {{text}}</div>
+                            </li>
+                            {{/each}}
+                        </ul>
+                    </div>
+                </div>
+                {{/each}}
+            </div>
+        </div>
+    </section>

@@ -1,0 +1,18 @@
+# Build output
+dist/
+
+# Javascript
+node_modules/
+
+# Environment
+.env*
+.prod.env
+
+# IDEs and dev tools
+.vscode
+*~
+*.log
+
+# Local
+.cursor/**
+private

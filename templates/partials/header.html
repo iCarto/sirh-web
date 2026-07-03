@@ -1,0 +1,90 @@
+<header
+  class="sticky top-0 z-50 bg-neutral-0/95 backdrop-blur-md border-b border-neutral-200/80 transition-all"
+>
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex items-center justify-between h-16">
+      <a
+        href="{{brand.link}}"
+        class="flex items-center gap-3 shrink-0 rounded focus:outline-none focus:ring-2 focus:ring-primary-main focus:ring-offset-2"
+        aria-label="{{brand.name}}"
+      >
+        <img
+          src="{{brand.logo}}"
+          alt="{{brand.name}}"
+          class="h-9 w-auto"
+          width="1031"
+          height="380"
+        />
+      </a>
+
+      <nav
+        class="hidden md:flex space-x-8 text-sm font-medium text-neutral-600"
+        aria-label="Main navigation"
+      >
+        {{#each nav}}
+        <a
+          href="{{href}}"
+          class="hover:text-primary-main focus:outline-none focus:ring-2 focus:ring-primary-main focus:ring-offset-2 rounded px-1 transition-colors"
+          >{{label}}</a
+        >
+        {{/each}}
+      </nav>
+
+      <div class="flex items-center gap-3 sm:gap-4">
+        <details class="md:hidden relative">
+          <summary
+            class="list-none cursor-pointer p-2 rounded-md text-neutral-600 hover:text-primary-main hover:bg-neutral-50 focus:outline-none focus:ring-2 focus:ring-primary-main focus:ring-offset-2 transition-colors [&::-webkit-details-marker]:hidden"
+            aria-label="Open menu"
+          >
+            <svg
+              class="w-5 h-5"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+              aria-hidden="true"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M4 6h16M4 12h16M4 18h16"
+              ></path>
+            </svg>
+          </summary>
+          <nav
+            class="absolute right-0 top-full mt-2 w-56 bg-neutral-0 border border-neutral-200 rounded-lg shadow-md py-2 z-50"
+            aria-label="Mobile navigation"
+          >
+            {{#each nav}}
+            <a
+              href="{{href}}"
+              class="block px-4 py-2.5 text-sm font-medium text-neutral-600 hover:text-primary-main hover:bg-neutral-50 focus:outline-none focus:bg-primary-lighter focus:text-primary-dark transition-colors"
+              >{{label}}</a
+            >
+            {{/each}}
+          </nav>
+        </details>
+
+        <div class="flex items-center gap-1 text-xs font-medium">
+          <a
+            href="{{alternate.en}}"
+            class="px-2 py-1 rounded {{langActive.en}} hover:text-primary-main focus:outline-none focus:ring-2 focus:ring-primary-main focus:ring-offset-2 transition-colors"
+            >EN</a
+          >
+          <span class="text-neutral-300" aria-hidden="true">|</span>
+          <a
+            href="{{alternate.es}}"
+            class="px-2 py-1 rounded {{langActive.es}} hover:text-primary-main focus:outline-none focus:ring-2 focus:ring-primary-main focus:ring-offset-2 transition-colors"
+            >ES</a
+          >
+        </div>
+        <a
+          href="{{cta.headerHref}}"
+          class="inline-flex items-center justify-center px-3 sm:px-4 py-2 border border-transparent text-sm font-medium rounded-md text-primary-contrastText bg-primary-main hover:bg-primary-dark focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-main transition-all shadow-sm"
+        >
+          {{cta.header}}
+        </a>
+      </div>
+    </div>
+  </div>
+</header>

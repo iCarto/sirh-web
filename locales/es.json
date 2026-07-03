@@ -1,0 +1,391 @@
+{
+  "meta": {
+    "title": "TODO",
+    "description": "TODO",
+    "lang": "es"
+  },
+  "alternate": {
+    "en": "/en/",
+    "es": "/es/"
+  },
+  "langActive": {
+    "en": "",
+    "es": "bg-primary-lighter text-primary-dark"
+  },
+  "brand": {
+    "name": "TODO",
+    "tagline": "TODO",
+    "logo": "/images/logo_icarto.png",
+    "link": "https://www.icarto.es"
+  },
+  "nav": [
+    {
+      "label": "TODO",
+      "href": "#proven"
+    },
+    {
+      "label": "TODO",
+      "href": "#challenges"
+    },
+    {
+      "label": "TODO",
+      "href": "#capabilities"
+    },
+    {
+      "label": "TODO",
+      "href": "#sustainability"
+    },
+    {
+      "label": "TODO",
+      "href": "#ecosystem"
+    },
+    {
+      "label": "TODO",
+      "href": "#methodology"
+    }
+  ],
+  "cta": {
+    "header": "TODO",
+    "headerHref": "#contact"
+  },
+  "hero": {
+    "badge": "TODO",
+    "title": "TODO",
+    "titleHighlight": "TODO",
+    "titleSuffix": "TODO",
+    "description": "TODO",
+    "ctaPrimary": "TODO",
+    "ctaPrimaryHref": "#contact",
+    "ctaSecondary": "TODO",
+    "ctaSecondaryHref": "#capabilities",
+    "browserUrl": "sirh-portal.icarto.es",
+    "browserBadge": "TODO",
+    "screenshot": "TODO",
+    "screenshotAlt": "TODO",
+    "placeholderTitle": "TODO",
+    "placeholderHint": "TODO"
+  },
+  "proven": {
+    "eyebrow": "TODO",
+    "title": "TODO",
+    "subtitle": "TODO",
+    "banner": "TODO",
+    "contextsTitle": "TODO",
+    "mapLabel": "TODO",
+    "countryList": [
+      {
+        "name": "TODO",
+        "map": "/images/map_MZQ.png",
+        "mapAlt": "TODO"
+      },
+      {
+        "name": "TODO",
+        "map": "/images/map_ESW.png",
+        "mapAlt": "TODO",
+        "mapFill": true
+      }
+    ],
+    "figuresDeploymentLabel": "TODO",
+    "figuresDeployment": [
+      { "value": "2", "label": "TODO", "icon": "globe" },
+      { "value": "6", "label": "TODO", "icon": "building" }
+    ],
+    "figuresScaleLabel": "TODO",
+    "figures": [
+      {
+        "value": "+100",
+        "label": "TODO",
+        "icon": "TODO"
+      },
+      {
+        "value": "+4,000",
+        "label": "TODO",
+        "icon": "TODO"
+      },
+      {
+        "value": "+5,000",
+        "label": "TODO",
+        "icon": "TODO"
+      }
+    ],
+    "donorsTitle": "TODO",
+    "donors": [
+      {
+        "logo": "/images/logo_world_bank.jpg",
+        "alt": "Banco Mundial",
+        "logoClass": "max-h-16 md:max-h-[4.5rem] w-auto max-w-full object-contain"
+      },
+      {
+        "logo": "/images/logo_blue_deal.png",
+        "alt": "Blue Deal",
+        "logoClass": "max-h-12 md:max-h-14 w-auto max-w-full object-contain"
+      },
+      {
+        "logo": "/images/logo_coop_galega.png",
+        "alt": "Cooperación Galega",
+        "logoClass": "max-h-10 md:max-h-12 w-auto max-w-full object-contain"
+      }
+    ],
+    "resultsTitle": "TODO",
+    "resultsDescription": "TODO",
+    "resultsFootnote": "TODO",
+    "resultsItems": [
+      { "title": "TODO" },
+      { "title": "TODO" },
+      { "title": "TODO" },
+      { "title": "TODO" },
+      { "title": "TODO" },
+      { "title": "TODO" }
+    ]
+  },
+  "challenges": {
+    "eyebrow": "TODO",
+    "title": "TODO",
+    "description": "TODO",
+    "warningTitle": "TODO",
+    "warningText": "TODO",
+    "items": [
+      {
+        "tag": "TODO",
+        "problem": "TODO",
+        "solution": "TODO"
+      },
+      {
+        "tag": "TODO",
+        "note": "Up to 90% errors in paper systems",
+        "problem": "TODO",
+        "solution": "TODO"
+      },
+      {
+        "tag": "TODO",
+        "problem": "TODO",
+        "solution": "TODO"
+      },
+      {
+        "tag": "TODO",
+        "problem": "TODO",
+        "solution": "TODO"
+      }
+    ]
+  },
+  "capabilities": {
+    "eyebrow": "TODO",
+    "title": "TODO",
+    "subtitle": "TODO",
+    "items": [
+      {
+        "icon": "TODO",
+        "title": "TODO",
+        "description": "TODO"
+      },
+      {
+        "icon": "TODO",
+        "title": "TODO",
+        "description": "TODO"
+      },
+      {
+        "icon": "TODO",
+        "title": "TODO",
+        "badge": "TODO",
+        "description": "TODO",
+        "exports": [
+          {
+            "label": "TODO",
+            "iconClass": "text-emerald-600"
+          },
+          {
+            "label": "TODO",
+            "iconClass": "text-primary-main"
+          }
+        ]
+      },
+      {
+        "icon": "TODO",
+        "title": "TODO",
+        "description": "TODO"
+      }
+    ]
+  },
+  "sustainability": {
+    "eyebrow": "TODO",
+    "title": "TODO",
+    "description": "TODO",
+    "benefits": [
+      {
+        "title": "TODO",
+        "description": "TODO"
+      },
+      {
+        "title": "TODO",
+        "description": "TODO"
+      },
+      {
+        "title": "TODO",
+        "description": "TODO"
+      },
+      {
+        "title": "TODO",
+        "description": "TODO"
+      }
+    ],
+    "panelTitle": "TODO",
+    "panelRun": "Invoice Run #RUN-2026-06",
+    "panelBadge": "TODO",
+    "stats": [
+      {
+        "label": "TODO",
+        "value": "1,482",
+        "valueClass": "text-neutral-700"
+      },
+      {
+        "label": "TODO",
+        "value": "$184,300",
+        "valueClass": "text-emerald-600"
+      },
+      {
+        "label": "TODO",
+        "value": "14",
+        "valueClass": "text-rose-500"
+      }
+    ],
+    "progressLabel": "TODO",
+    "progressPercent": "94%",
+    "invoiceTitle": "TODO",
+    "invoiceBasin": "TODO",
+    "invoiceNumber": "INV-2026-0943",
+    "invoiceDate": "TODO",
+    "invoiceLines": [
+      {
+        "description": "TODO",
+        "amount": "$680.00"
+      },
+      {
+        "description": "TODO",
+        "amount": "$120.00"
+      }
+    ],
+    "invoiceTotalLabel": "TODO",
+    "invoiceTotal": "$800.00"
+  },
+  "ecosystem": {
+    "eyebrow": "TODO",
+    "title": "TODO",
+    "description": "TODO",
+    "modules": [
+      {
+        "badge": "TODO",
+        "icon": "TODO",
+        "title": "TODO",
+        "description": "TODO",
+        "features": [
+          {
+            "label": "TODO",
+            "text": "TODO"
+          },
+          {
+            "label": "TODO",
+            "text": "TODO"
+          },
+          {
+            "label": "TODO",
+            "text": "TODO"
+          }
+        ]
+      },
+      {
+        "badge": "TODO",
+        "icon": "TODO",
+        "title": "TODO",
+        "description": "TODO",
+        "features": [
+          {
+            "label": "TODO",
+            "text": "TODO"
+          },
+          {
+            "label": "TODO",
+            "text": "TODO"
+          },
+          {
+            "label": "TODO",
+            "text": "TODO"
+          }
+        ]
+      }
+    ]
+  },
+  "methodology": {
+    "eyebrow": "TODO",
+    "title": "TODO",
+    "description": "TODO",
+    "items": [
+      {
+        "step": "01",
+        "title": "TODO",
+        "description": "TODO"
+      },
+      {
+        "step": "02",
+        "title": "TODO",
+        "description": "TODO"
+      },
+      {
+        "step": "03",
+        "title": "TODO",
+        "description": "We dedicate 40–50% of the project effort to co-design workshops, training and capacity building."
+      },
+      {
+        "step": "04",
+        "title": "TODO",
+        "description": "TODO",
+        "last": true
+      }
+    ]
+  },
+  "results": {
+    "eyebrow": "TODO",
+    "title": "TODO",
+    "description": "TODO",
+    "footnote": "TODO",
+    "items": [
+      {
+        "value": "200–300%",
+        "description": "TODO"
+      },
+      {
+        "value": "85%",
+        "description": "TODO"
+      },
+      {
+        "value": "50%",
+        "description": "TODO"
+      },
+      {
+        "value": "40%",
+        "description": "TODO",
+        "last": true
+      }
+    ]
+  },
+  "contact": {
+    "eyebrow": "TODO",
+    "title": "TODO",
+    "description": "TODO",
+    "channelLabel": "TODO",
+    "email": "info@icarto.es",
+    "emailHint": "TODO",
+    "headquartersLabel": "TODO",
+    "addressLine1": "TODO",
+    "addressLine2": "TODO",
+    "phoneLabel": "TODO",
+    "phone": "+34 881 927 808",
+    "portalsLabel": "TODO",
+    "corporateLabel": "TODO",
+    "corporateUrl": "https://www.icarto.es",
+    "corporateText": "www.icarto.es",
+    "gisLabel": "TODO",
+    "gisUrl": "https://geovisores.icarto.es",
+    "gisText": "geovisores.icarto.es",
+    "copyright": "TODO"
+  }
+}
