@@ -8,6 +8,8 @@
 - **Skills aplicadas**
   - Revisar `.ai-dev/skills/landing-page-designer` y cargar las que apliquen a la tarea concreta.
   - Auditoría y reorganización de información: `auditar-arquitectura-informacion` (fase “pensar” antes de `gestionar-contenido-i18n` y `crear-seccion-landing`).
+  - Redacción de copy nuevo: `redactar-copy-de-conversion` (brief confirmado → borrador → `revisar-copy-de-conversion` → `gestionar-contenido-i18n`).
+  - Revisión y mejora de copy existente: `revisar-copy-de-conversion` (antes de implementar en locales con `gestionar-contenido-i18n`).
 
 - **Visión general**
   - Combinar **criterio de diseño** (jerarquía, ritmo, contraste, legibilidad) con **implementación front-end** en el sitio estático del repositorio.
