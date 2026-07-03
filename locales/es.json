@@ -6,17 +6,19 @@
   },
   "alternate": {
     "en": "/en/",
-    "es": "/es/"
+    "es": "/es/",
+    "pt": "/pt/"
   },
   "langActive": {
     "en": "",
-    "es": "bg-primary-lighter text-primary-dark"
+    "es": "bg-primary-lighter text-primary-dark",
+    "pt": ""
   },
   "brand": {
     "name": "TODO",
     "tagline": "TODO",
     "logo": "/images/logo_icarto.png",
-    "link": "https://www.icarto.es"
+    "link": "https://icarto.es/"
   },
   "nav": [
     {
@@ -30,10 +32,6 @@
     {
       "label": "TODO",
       "href": "#capabilities"
-    },
-    {
-      "label": "TODO",
-      "href": "#sustainability"
     },
     {
       "label": "TODO",
@@ -58,7 +56,7 @@
     "ctaPrimaryHref": "#contact",
     "ctaSecondary": "TODO",
     "ctaSecondaryHref": "#capabilities",
-    "browserUrl": "sirh-portal.icarto.es",
+    "browserUrl": "sirh.icarto.es",
     "browserBadge": "TODO",
     "screenshot": "TODO",
     "screenshotAlt": "TODO",
@@ -69,7 +67,6 @@
     "eyebrow": "TODO",
     "title": "TODO",
     "subtitle": "TODO",
-    "banner": "TODO",
     "contextsTitle": "TODO",
     "mapLabel": "TODO",
     "countryList": [
@@ -127,7 +124,6 @@
       }
     ],
     "resultsTitle": "TODO",
-    "resultsDescription": "TODO",
     "resultsFootnote": "TODO",
     "resultsItems": [
       { "title": "TODO" },
@@ -139,133 +135,87 @@
     ]
   },
   "challenges": {
-    "eyebrow": "TODO",
-    "title": "TODO",
-    "description": "TODO",
-    "warningTitle": "TODO",
-    "warningText": "TODO",
+    "eyebrow": "Barreras operativas",
+    "title": "Los retos de una gestión hídrica fragmentada",
+    "description": "Muchas autoridades hídricas siguen gestionando licencias y facturación en libros en papel y hojas de cálculo desconectadas. Esa fragmentación genera fricción diaria entre departamentos y dificulta el cumplimiento de la recuperación de costes exigida por ley.",
     "items": [
       {
-        "tag": "TODO",
-        "problem": "TODO",
-        "solution": "TODO"
+        "tag": "Registros fragmentados",
+        "problem": "Datos de licencias y facturación repartidos entre papel, hojas de cálculo y departamentos sin una visión compartida."
       },
       {
-        "tag": "TODO",
-        "note": "Up to 90% errors in paper systems",
-        "problem": "TODO",
-        "solution": "TODO"
+        "tag": "Procedimientos lentos",
+        "problem": "Cálculos manuales y tramitación en papel retrasan renovaciones de licencias y el trabajo diario."
       },
       {
-        "tag": "TODO",
-        "problem": "TODO",
-        "solution": "TODO"
-      },
-      {
-        "tag": "TODO",
-        "problem": "TODO",
-        "solution": "TODO"
+        "tag": "Baja recaudación",
+        "problem": "Lagunas de seguimiento y cuellos de botella en el cobro debilitan la recuperación de costes y los ingresos institucionales."
       }
     ]
   },
   "capabilities": {
-    "eyebrow": "TODO",
-    "title": "TODO",
-    "subtitle": "TODO",
+    "eyebrow": "Capacidades de la plataforma",
+    "title": "Capacidades esenciales para la gestión del agua",
+    "subtitle": "Pensado para gestores del agua y equipos técnicos.",
+    "banner": "Una base de datos centralizada, compartida entre departamentos y sin archivos duplicados ni traspasos manuales.",
+    "tabListLabel": "Capacidades de la plataforma",
+    "panelLabel": "Detalle de capacidad",
     "items": [
       {
-        "icon": "TODO",
-        "title": "TODO",
-        "description": "TODO"
+        "icon": "registry",
+        "title": "Registro estandarizado",
+        "description": "Procedimientos unificados para registrar usuarios del agua y emitir permisos, alineados con las normas y circuitos de aprobación de su autoridad.",
+        "image": "/images/SIRH_screenshot_procedure.png",
+        "imageAlt": "Pantalla de registro de usuarios y permisos en SIRH",
+        "imageFit": "cover",
+        "imageSizeHint": "Recomendado 960×540 px"
       },
       {
-        "icon": "TODO",
-        "title": "TODO",
-        "description": "TODO"
+        "icon": "gis",
+        "title": "Cartografía georreferenciada",
+        "description": "Registre y visualice ámbitos de explotación, cultivos y puntos de captación o vertido en mapas interactivos vinculados a los permisos.",
+        "image": "/images/SIRH_screenshot_map_detail.png",
+        "imageAlt": "Mapa georreferenciado de ámbitos de explotación en SIRH",
+        "imageFit": "cover",
+        "imageSizeHint": "Recomendado 960×540 px"
       },
       {
-        "icon": "TODO",
-        "title": "TODO",
-        "badge": "TODO",
-        "description": "TODO",
-        "exports": [
-          {
-            "label": "TODO",
-            "iconClass": "text-emerald-600"
-          },
-          {
-            "label": "TODO",
-            "iconClass": "text-primary-main"
-          }
-        ]
+        "icon": "estimation",
+        "title": "Estimación automatizada",
+        "description": "Aplique valores de referencia institucionales para calcular el consumo de agua automáticamente, sustituyendo estimaciones manuales en renovaciones y ciclos de facturación.",
+        "image": "/images/SIRH_screenshot_estimation.png",
+        "imageAlt": "Estimación automatizada de consumo de agua en SIRH",
+        "imageFit": "cover",
+        "imageSizeHint": "Recomendado 960×540 px"
       },
       {
-        "icon": "TODO",
-        "title": "TODO",
-        "description": "TODO"
+        "icon": "workflow",
+        "title": "Seguimiento de solicitudes y renovaciones",
+        "description": "Supervise solicitudes y renovaciones de permisos en cada paso institucional, con estado claro para el personal y los responsables.",
+        "image": "/images/SIRH_screenshot_procedures.png",
+        "imageAlt": "Flujo de solicitudes y renovaciones de permisos en SIRH",
+        "imageFit": "cover",
+        "imageSizeHint": "Recomendado 960×540 px"
+      },
+      {
+        "icon": "document",
+        "title": "Generación de documentos e informes",
+        "description": "Genere permisos oficiales, facturas e informes operativos bajo demanda. Exporte a PDF, Excel o formatos geoespaciales cuando los equipos necesiten compartir o analizar datos fuera del sistema.",
+        "image": "/images/invoice_from_SIRH_to_print.png",
+        "imageAlt": "Generación de documentos e informes en SIRH",
+        "imageFit": "contain",
+        "imageSizeHint": "Recomendado 800×600 px"
+      },
+      {
+        "icon": "billing",
+        "title": "Facturación y recuperación de costes",
+        "description": "Automatice la generación de facturas, procese lotes por cuenca o ciclo de facturación y haga seguimiento de pagos y saldos pendientes en un solo lugar.",
+        "image": "/images/SIRH_screenshot_invoices.png",
+        "imageAlt": "Módulo de facturación y recuperación de costes en SIRH",
+        "imageFit": "cover",
+        "imageSizeHint": "Recomendado 960×540 px"
       }
     ]
-  },
-  "sustainability": {
-    "eyebrow": "TODO",
-    "title": "TODO",
-    "description": "TODO",
-    "benefits": [
-      {
-        "title": "TODO",
-        "description": "TODO"
-      },
-      {
-        "title": "TODO",
-        "description": "TODO"
-      },
-      {
-        "title": "TODO",
-        "description": "TODO"
-      },
-      {
-        "title": "TODO",
-        "description": "TODO"
-      }
-    ],
-    "panelTitle": "TODO",
-    "panelRun": "Invoice Run #RUN-2026-06",
-    "panelBadge": "TODO",
-    "stats": [
-      {
-        "label": "TODO",
-        "value": "1,482",
-        "valueClass": "text-neutral-700"
-      },
-      {
-        "label": "TODO",
-        "value": "$184,300",
-        "valueClass": "text-emerald-600"
-      },
-      {
-        "label": "TODO",
-        "value": "14",
-        "valueClass": "text-rose-500"
-      }
-    ],
-    "progressLabel": "TODO",
-    "progressPercent": "94%",
-    "invoiceTitle": "TODO",
-    "invoiceBasin": "TODO",
-    "invoiceNumber": "INV-2026-0943",
-    "invoiceDate": "TODO",
-    "invoiceLines": [
-      {
-        "description": "TODO",
-        "amount": "$680.00"
-      },
-      {
-        "description": "TODO",
-        "amount": "$120.00"
-      }
-    ],
-    "invoiceTotalLabel": "TODO",
-    "invoiceTotal": "$800.00"
   },
   "ecosystem": {
     "eyebrow": "TODO",
@@ -274,9 +224,10 @@
     "modules": [
       {
         "badge": "TODO",
-        "icon": "TODO",
         "title": "TODO",
         "description": "TODO",
+        "image": "/images/mobile_mockup_transparent.png",
+        "imageAlt": "TODO",
         "features": [
           {
             "label": "TODO",
@@ -294,9 +245,10 @@
       },
       {
         "badge": "TODO",
-        "icon": "TODO",
         "title": "TODO",
         "description": "TODO",
+        "image": "/images/OV_mockup_transparent.png",
+        "imageAlt": "TODO",
         "features": [
           {
             "label": "TODO",
@@ -318,6 +270,8 @@
     "eyebrow": "TODO",
     "title": "TODO",
     "description": "TODO",
+    "image": "/images/photo_printed_permits.jpeg",
+    "imageAlt": "Taller de revisión de permisos de agua impresos junto al sistema digital",
     "items": [
       {
         "step": "01",

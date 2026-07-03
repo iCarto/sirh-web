@@ -1,27 +1,28 @@
 {
   "meta": {
     "title": "Water Resources Information System (SIRH) — iCarto",
-    "description": "Integrated digital platform for water authorities to manage permits, billing and GIS analysis. Proven in Mozambique and Eswatini.",
+    "description": "Integrated digital platform for water authorities to manage licenses, billing and GIS analysis. Proven in Mozambique and Eswatini.",
     "lang": "en"
   },
   "alternate": {
     "en": "/en/",
-    "es": "/es/"
+    "es": "/es/",
+    "pt": "/pt/"
   },
   "langActive": {
     "en": "bg-primary-lighter text-primary-dark",
-    "es": ""
+    "es": "",
+    "pt": ""
   },
   "brand": {
     "name": "iCarto",
     "logo": "/images/logo_icarto.png",
-    "link": "https://www.icarto.es"
+    "link": "https://icarto.es/en/"
   },
   "nav": [
+    { "label": "Context", "href": "#challenges" },
     { "label": "Impact", "href": "#proven" },
-    { "label": "Challenges", "href": "#challenges" },
     { "label": "Capabilities", "href": "#capabilities" },
-    { "label": "Billing", "href": "#sustainability" },
     { "label": "Ecosystem", "href": "#ecosystem" },
     { "label": "Our Difference", "href": "#methodology" }
   ],
@@ -34,23 +35,20 @@
     "title": "SIRH:",
     "titleHighlight": "A Single Source of Truth",
     "titleSuffix": "for Water Authorities",
-    "description": "The integrated platform to manage the full lifecycle of water permits, professionalise billing and effectively engage with users—all powered by native GIS analysis for efficient water administration.",
+    "description": "The integrated platform to manage the full lifecycle of water licenses, professionalise billing and effectively engage with users—all powered by native GIS analysis for efficient water administration.",
     "ctaPrimary": "Request a technical demo",
     "ctaPrimaryHref": "#contact",
     "ctaSecondary": "Explore Capabilities",
     "ctaSecondaryHref": "#capabilities",
-    "browserUrl": "sirh-portal.icarto.es",
+    "browserUrl": "sirh.icarto.es",
     "browserBadge": "Demo Environment",
-    "screenshot": "/images/SIRH_Screenshot_Map_2.png",
-    "screenshotAlt": "SIRH operation areas map with GIS layers and permit overlays",
-    "placeholderTitle": "[SIRH Capture Placeholder]",
-    "placeholderHint": "Replace this container with your high-resolution SIRH application screenshot (16:10 aspect ratio recommended)."
+    "screenshot": "/images/SIRH_screenshot_map.png",
+    "screenshotAlt": "SIRH operation areas map with GIS layers and license overlays"
   },
   "proven": {
-    "eyebrow": "National Impact",
+    "eyebrow": "Measured Results",
     "title": "Proven at National Level",
-    "subtitle": "A robust, multi-country solution backing technical decisions daily.",
-    "banner": "Over 10 years improving water user and permit management",
+    "subtitle": "10 years improving water user and licence management",
     "contextsTitle": "Implemented in Different Contexts",
     "mapLabel": "Map Interface",
     "countryList": [
@@ -62,8 +60,7 @@
       {
         "name": "Eswatini",
         "map": "/images/map_ESW.png",
-        "mapAlt": "SIRH map interface showing operation areas in Eswatini",
-        "mapFill": true
+        "mapAlt": "SIRH map interface showing operation areas in Eswatini"
       }
     ],
     "figuresDeploymentLabel": "Deployment",
@@ -76,10 +73,10 @@
       { "value": "+100", "label": "system users", "icon": "users" },
       {
         "value": "+4,000",
-        "label": "registered water users",
+        "label": "registered</br>water users",
         "icon": "person"
       },
-      { "value": "+5,000", "label": "registered permits", "icon": "check" }
+      { "value": "+5,000", "label": "registered licenses", "icon": "check" }
     ],
     "donorsTitle": "Supported by",
     "donors": [
@@ -100,173 +97,105 @@
       }
     ],
     "resultsTitle": "Documented Impact in Institutions",
-    "resultsDescription": "Documented outcomes from our international implementations.",
-    "resultsFootnote": "Based on implementation experience in Mozambique since 2018.",
+    "resultsFootnote": "Based on implementation experience in Mozambique since 2018 and Eswatini since 2024.",
     "resultsItems": [
       { "title": "More efficient daily operations" },
+      { "title": "Improved, data-driven decision-making" },
       { "title": "Reduced data inconsistencies" },
       { "title": "Better geospatial coverage" },
       { "title": "Digitalised administrative workflows" },
-      { "title": "Increased number of permits managed annually" },
+      { "title": "Increased number of licenses managed annually" },
       { "title": "Increased revenue and financial capacity" }
     ]
   },
   "challenges": {
-    "eyebrow": "Inefficient vs Modernised",
-    "title": "Overcoming the Challenges of Fragmented Management",
-    "description": "Is your institution struggling with outdated methodologies and scattered information? The transition to SIRH turns technical hurdles into automated workflows.",
-    "warningTitle": "Critical System Warning",
-    "warningText": "Paper systems introduce massive data friction and block legal cost-recovery mandates from public administrations.",
+    "eyebrow": "Operational barriers",
+    "title": "The challenges of fragmented water management",
+    "description": "Many water authorities still run licenses and billing on paper ledgers and disconnected spreadsheets. That fragmentation creates daily friction between departments—and makes it harder to enforce legally mandated cost recovery.",
     "items": [
       {
-        "tag": "Data Silos",
-        "problem": "Information scattered across paper ledgers or localized spreadsheets.",
-        "solution": "Seamless Access Across Departments"
-      },
-      {
-        "tag": "Inconsistency",
-        "note": "Up to 90% errors in paper systems",
-        "problem": "Different departments hold contradictory license and billing records.",
-        "solution": "Reduced Inconsistency Risks"
+        "tag": "Fragmented Records",
+        "problem": "Licence and billing data scattered across paper files, spreadsheets, and departments without a shared view."
       },
       {
         "tag": "Slow Procedures",
-        "problem": "Manual calculations and manual processing of license renewals.",
-        "solution": "Automated Licensing Pipelines"
+        "problem": "Manual calculations and paper-based processing delay licence renewals and everyday workflows."
       },
       {
         "tag": "Low Revenue",
-        "problem": "Inefficient fee collections due to tracking blockages.",
-        "solution": "Professional Cost-Recovery"
+        "problem": "Tracking gaps and collection bottlenecks weaken cost recovery and institutional revenue."
       }
     ]
   },
   "capabilities": {
-    "eyebrow": "Deep Engineering Core",
-    "title": "Core System Capabilities",
-    "subtitle": "Designed for the technical reality of water managers and engineers.",
+    "eyebrow": "Platform capabilities",
+    "title": "Core capabilities for water administration",
+    "subtitle": "Built for water managers and technical teams.",
+    "banner": "One centralised database—shared across departments, without duplicate files or manual handoffs.",
+    "tabListLabel": "Platform capabilities",
+    "panelLabel": "Capability detail",
     "items": [
       {
         "icon": "registry",
         "title": "Standardised Registry",
-        "description": "Unified procedures for water user and permit registration, adaptable to any regulatory context."
+        "description": "Unified procedures for registering water users and issuing licenses, aligned with your authority's rules and approval paths.",
+        "image": "/images/SIRH_screenshot_procedure.png",
+        "imageAlt": "SIRH water user and license registry screen",
+        "imageFit": "contain"
       },
       {
         "icon": "gis",
-        "title": "Native GIS Mapping",
-        "description": "Visualise operation areas, crops, and water abstraction or discharge points on dynamic maps."
+        "title": "Georeferenced Mapping",
+        "description": "Register and visualise operation areas, crops, and abstraction or discharge points on interactive maps linked to license records.",
+        "image": "/images/SIRH_screenshot_map_detail.png",
+        "imageAlt": "SIRH georeferenced operation areas map",
+        "imageFit": "contain"
       },
       {
-        "icon": "document",
-        "title": "Document Automation",
-        "badge": "Core Feature",
-        "description": "Instant generation and printing of official licences and invoices in PDF format.",
-        "exports": [
-          { "label": "Excel (.xlsx) Export", "iconClass": "text-emerald-600" },
-          {
-            "label": "Shapefile (.shp / GeoJSON) Export",
-            "iconClass": "text-primary-main"
-          }
-        ]
+        "icon": "estimation",
+        "title": "Automated Estimation",
+        "description": "Apply institutional reference values to calculate water consumption automatically—replacing manual estimates in renewals and billing runs.",
+        "image": "/images/SIRH_screenshot_estimation.png",
+        "imageAlt": "SIRH automated water consumption estimation",
+        "imageFit": "contain"
       },
       {
         "icon": "workflow",
-        "title": "Guided Workflows",
-        "description": "Comprehensive status monitoring of applications and renewals through customisable institutional steps."
+        "title": "Application & Renewal Tracking",
+        "description": "Monitor license applications and renewals through each institutional step, with clear status for staff and supervisors.",
+        "image": "/images/SIRH_screenshot_procedures.png",
+        "imageAlt": "SIRH license application and renewal workflow",
+        "imageFit": "contain"
+      },
+      {
+        "icon": "document",
+        "title": "Document & Report Generation",
+        "description": "Produce official licenses, invoices, and operational reports on demand. Export to PDF, Excel, or geospatial formats.",
+        "image": "/images/invoice_from_SIRH_to_print.png",
+        "imageAlt": "SIRH document and report generation",
+        "imageFit": "contain"
+      },
+      {
+        "icon": "billing",
+        "title": "Billing & Revenue Recovery",
+        "description": "Automate invoice generation, process batches by basin or cycle and track payments, and outstanding balances in one place.",
+        "image": "/images/SIRH_screenshot_invoices.png",
+        "imageAlt": "SIRH billing and revenue recovery module",
+        "imageFit": "contain"
       }
     ]
   },
-  "sustainability": {
-    "eyebrow": "Institutional Cost Recovery",
-    "title": "Financial Sustainability and Cost Recovery",
-    "description": "SIRH is an investment that pays for itself by professionalising the billing cycle.",
-    "benefits": [
-      {
-        "title": "Revenue Increase",
-        "description": "Proven growth in financial capacity through better tracking and illegal water use regularisation."
-      },
-      {
-        "title": "Flexible Billing",
-        "description": "Automated generation of invoices based on water use, permit issuance, or multiple activities per area."
-      },
-      {
-        "title": "Batch Processing",
-        "description": "Efficiently generate and manage invoices in batches by basin or billing frequency."
-      },
-      {
-        "title": "Debt Management",
-        "description": "Integrated monitoring of payments, penalties, and outstanding balances."
-      }
-    ],
-    "panelTitle": "Automated Billing Engine",
-    "panelRun": "Invoice Run #RUN-2026-06",
-    "panelBadge": "Batch System Active",
-    "stats": [
-      {
-        "label": "Calculated Invoices",
-        "value": "1,482",
-        "valueClass": "text-neutral-700"
-      },
-      {
-        "label": "Accrued Fees",
-        "value": "$184,300",
-        "valueClass": "text-emerald-600"
-      },
-      {
-        "label": "Defaulters flagged",
-        "value": "14",
-        "valueClass": "text-rose-500"
-      }
-    ],
-    "progressLabel": "Generating PDF Invoices...",
-    "progressPercent": "94%",
-    "invoiceTitle": "WATER AGENCY INVOICE",
-    "invoiceBasin": "Basin: Limpopo North",
-    "invoiceNumber": "INV-2026-0943",
-    "invoiceDate": "Date: 17 Jun 2026",
-    "invoiceLines": [
-      {
-        "description": "Base Water Abstraction Charge (34,000m³)",
-        "amount": "$680.00"
-      },
-      {
-        "description": "Pollution Factor Surcharge (Low COD)",
-        "amount": "$120.00"
-      }
-    ],
-    "invoiceTotalLabel": "Total Due",
-    "invoiceTotal": "$800.00"
-  },
   "ecosystem": {
     "eyebrow": "Advanced Modules & Tech Roadmap",
-    "title": "Scalable Ecosystem: The Evolution of Your Digital Strategy",
-    "description": "SIRH is designed to grow alongside your institution. Once core management is consolidated, the system can expand through advanced tools to further digitalise field operations and public transparency.",
+    "title": "Scalable Ecosystem:<br>The Evolution of Your Digital Strategy",
+    "description": "SIRH is designed to grow alongside your institution.<br>Once core management is consolidated, the system can expand through advanced tools to further digitalise field operations and public transparency.",
     "modules": [
       {
-        "badge": "Phase II Add-on",
-        "icon": "portal",
-        "title": "Digital Customer Portal",
-        "description": "A fully digital service channel to improve communication and transparency with water users.",
-        "features": [
-          {
-            "label": "Self-Service Access",
-            "text": "Customers can check permit details, authorized consumption, and validity in real-time."
-          },
-          {
-            "label": "Status Monitoring",
-            "text": "Users can track the progress of their permit applications and invoice payments online."
-          },
-          {
-            "label": "Full Synchronisation",
-            "text": "Data is updated automatically from the central SIRH database."
-          }
-        ]
-      },
-      {
         "badge": "Field Ops Add-on",
-        "icon": "mobile",
         "title": "SIRH Mobile",
         "description": "A dedicated application for field teams to collect, update, and validate data on-site.",
+        "image": "/images/mobile_mockup_transparent.png",
+        "imageAlt": "SIRH Mobile mockup showing field map editing with GPS coordinates",
         "features": [
           {
             "label": "Paperless Fieldwork",
@@ -274,11 +203,32 @@
           },
           {
             "label": "Real-time Reliability",
-            "text": "Information collected in the field is synchronised instantly with the central registry."
+            "text": "Information collected in the field is synchronised with the central registry."
           },
           {
             "label": "Improved Quality",
-            "text": "High-consistency data collection including photos and precise GPS coordinates for operation areas."
+            "text": "High-consistency data collection including precise GPS coordinates."
+          }
+        ]
+      },
+      {
+        "badge": "Phase II Add-on",
+        "title": "Digital Customer Portal",
+        "description": "A digital service channel to improve communication and transparency with water users.",
+        "image": "/images/OV_mockup_transparent.png",
+        "imageAlt": "Customer portal mockup on tablet and smartphone showing operation areas and licenses",
+        "features": [
+          {
+            "label": "License & Billing Information",
+            "text": "Water users can access up-to-date details of their licenses, invoices, balances, and key dates."
+          },
+          {
+            "label": "Licensing Interactions",
+            "text": "Users can submit applications, upload supporting documents, and respond to requests from the institution."
+          },
+          {
+            "label": "Status Tracking",
+            "text": "Both users and the institution track each licensing step in one shared workflow."
           }
         ]
       }
@@ -286,8 +236,10 @@
   },
   "methodology": {
     "eyebrow": "Implementation Paradigm",
-    "title": "Our Difference: Collaborative Implementation that leads to Technology Ownership",
-    "description": "We don't just deliver software; we ensure it is organically integrated into your institution's daily operations.",
+    "title": "Our Difference: Collaborative Implementation<br>that leads to Technology Ownership",
+    "description": "We don't just deliver software—you build it with us.",
+    "image": "/images/photo_printed_permits.jpeg",
+    "imageAlt": "Workshop reviewing printed water licenses alongside the digital system",
     "items": [
       {
         "step": "01",
@@ -297,7 +249,7 @@
       {
         "step": "02",
         "title": "Phased Growth Strategy",
-        "description": "Implementation is structured in three strategic phases (Foundation, Advanced Procedures, and Billing) to reduce risk and allow progressive institutional adaptation."
+        "description": "Implementation is structured in three strategic phases (Water User and License Registry, Procedures, and Billing) to reduce risk and allow progressive institutional adaptation."
       },
       {
         "step": "03",
