@@ -1,5 +1,5 @@
 ---
-name: anti-generic-design-criteria
+name: criterios-anti-diseno-generico
 description: >-
   Criterios de diseño senior y anti-patrones de UI genérica de LLM para la
   landing comercial (HTML estático, Tailwind, SVG). Usar al crear, mejorar o
@@ -12,12 +12,12 @@ description: >-
 
 ## Propósito
 
-Aplicar criterio de diseño senior y restricciones explícitas que eviten la UI repetitiva que generan los LLM. Complementa la skill `brand-visual-patterns`: allí vive el sistema de marca; aquí viven las **prohibiciones y alternativas** de calidad visual.
+Aplicar criterio de diseño senior y restricciones explícitas que eviten la UI repetitiva que generan los LLM. Complementa la skill `patrones-visuales-de-marca`: allí vive el sistema de marca; aquí viven las **prohibiciones y alternativas** de calidad visual.
 
 ## Documentación del repositorio (leer según afecte)
 
 - Estructura y convenciones del repo: `<docs/devs/repository-structure.md>`
-- Patrones de marca: skill `brand-visual-patterns` en la misma carpeta
+- Patrones de marca: skill `patrones-visuales-de-marca` en la misma carpeta
 - Comandos de preview: `<README.md>`
 
 ## Cuándo usar esta skill
@@ -134,4 +134,4 @@ No entregar CTAs “planos” sin estados.
 - [ ] Espaciado en escala Tailwind coherente (`py-20`, `gap-8`, `p-8`).
 - [ ] CTAs y enlaces con hover + focus visibles.
 - [ ] Layout probado mentalmente con textos ES más largos.
-- [ ] Coherencia con `brand-visual-patterns` y secciones vecinas.
+- [ ] Coherencia con `patrones-visuales-de-marca` y secciones vecinas.

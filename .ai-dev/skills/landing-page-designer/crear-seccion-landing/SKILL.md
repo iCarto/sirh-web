@@ -1,5 +1,5 @@
 ---
-name: create-landing-section
+name: crear-seccion-landing
 description: >-
   Añadir o reemplazar una sección de la landing comercial: plantilla HTML, claves en
   locales en/es, registro en build.mjs y enlace en nav. Usar al crear bloques
@@ -16,8 +16,8 @@ Integrar una sección nueva (o sustituir una existente) en el pipeline estático
 
 - Estructura y convenciones del repo: `<docs/devs/repository-structure.md>`
 - Build y orden de secciones: `<build.mjs>`
-- Patrones visuales: skill `brand-visual-patterns`
-- Criterios de diseño: skill `anti-generic-design-criteria`
+- Patrones visuales: skill `patrones-visuales-de-marca`
+- Criterios de diseño: skill `criterios-anti-diseno-generico`
 
 ## Cuándo usar esta skill
 
@@ -40,7 +40,7 @@ Integrar una sección nueva (o sustituir una existente) en el pipeline estático
 4. **Replicar** las mismas claves en `locales/es.json` (el build **falla** si faltan claves en español).
 5. **Registrar** el nombre en el array `SECTIONS` de `build.mjs` en la posición deseada del scroll.
 6. Si debe aparecer en el menú: añadir entrada en `nav` de ambos locales con `href: "#<id>"` coincidiendo con `id` del `<section>`.
-7. Aplicar `brand-visual-patterns` y `anti-generic-design-criteria`.
+7. Aplicar `patrones-visuales-de-marca` y `criterios-anti-diseno-generico`.
 8. Verificar: `npm run build` (o `npm run dev` + refresh con `npm run preview`).
 
 ## Casos particulares

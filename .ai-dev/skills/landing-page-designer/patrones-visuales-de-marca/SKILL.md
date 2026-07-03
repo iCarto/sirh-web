@@ -1,5 +1,5 @@
 ---
-name: brand-visual-patterns
+name: patrones-visuales-de-marca
 description: >-
   Sistema visual de facto de la landing comercial: paleta icarto, tipografía
   Inter, ritmo de secciones, cabeceras, cards, CTAs y referencias a plantillas
@@ -11,7 +11,7 @@ description: >-
 
 ## Propósito
 
-Documentar el **design system de facto** ya presente en el código: tokens, composiciones y clases Tailwind reutilizables. Es la fuente operativa de cómo se ve el sitio hoy. Para prohibiciones y anti-patrones genéricos de LLM, combinar con skill `anti-generic-design-criteria`.
+Documentar el **design system de facto** ya presente en el código: tokens, composiciones y clases Tailwind reutilizables. Es la fuente operativa de cómo se ve el sitio hoy. Para prohibiciones y anti-patrones genéricos de LLM, combinar con skill `criterios-anti-diseno-generico`.
 
 ## Documentación del repositorio (leer según afecte)
 
@@ -124,7 +124,7 @@ Al añadir contenido, **copiar el tono visual** de la sección más parecida en 
 
 - SVG **inline** en plantilla; clave `icon` en JSON + bloques `{{#eq icon "registry"}}` (ver `capabilities.html`).
 - Trazo: `stroke="currentColor" stroke-width="1.5"`, `fill="none"`.
-- No emojis (ver skill `anti-generic-design-criteria`).
+- No emojis (ver skill `criterios-anti-diseno-generico`).
 
 ---
 

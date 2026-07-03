@@ -1,5 +1,5 @@
 ---
-name: manage-i18n-content
+name: gestionar-contenido-i18n
 description: >-
   Editar textos, cifras, enlaces y metadatos de la landing en locales/en.json y
   locales/es.json manteniendo paridad de claves y layouts compatibles con ES más
@@ -45,13 +45,13 @@ Separar cambios de **contenido** (JSON) de cambios de **presentación** (HTML). 
 3. Para arrays (`nav`, `items`, `figures`): mantener **mismo número de elementos** y mismas claves en cada item salvo rediseño acordado.
 4. Rutas de imagen: valor en JSON (p. ej. `hero.screenshot: "/images/…"`), no en HTML.
 5. Ejecutar `npm run build` para validar paridad; corregir claves faltantes en `es.json`.
-6. Si el texto ES es mucho más largo y rompe el layout → escalar cambio a plantilla HTML (skill `create-landing-section`), no acortar traducción artificialmente.
+6. Si el texto ES es mucho más largo y rompe el layout → escalar cambio a plantilla HTML (skill `crear-seccion-landing`), no acortar traducción artificialmente.
 
 ## Reglas de copy y layout
 
 - CTAs: verbos claros (“Request a technical demo”, “Solicitar demo técnica”).
 - Anclas: `href` debe coincidir con `id` de la sección (`#contact`, `#capabilities`).
-- No usar emojis en valores JSON (skill `anti-generic-design-criteria`).
+- No usar emojis en valores JSON (skill `criterios-anti-diseno-generico`).
 - `langActive`: idioma activo lleva clases (`bg-icarto-50 text-icarto-700`); el otro idioma string vacío.
 
 ## Anti‑patrones

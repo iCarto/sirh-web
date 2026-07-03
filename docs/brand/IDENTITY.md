@@ -3,7 +3,7 @@
 Contrato de identidad visual portable entre productos del ecosistema SIRH (aplicación interna, landing comercial, marketing).  
 Las **reglas** viven aquí (`IDENTITY.md`). Los **valores** semánticos portables viven en `docs/brand/tokens.json`, sincronizados desde la implementación del tema de cada producto.
 
-En **esta landing estática**: sincronizar valores desde `templates/layout.html` (Tailwind CDN, roles semánticos de `tokens.json`, Inter). Los patrones operativos de maquetación viven en la skill `brand-visual-patterns`.
+En **esta landing estática**: sincronizar valores desde `templates/layout.html` (Tailwind CDN, roles semánticos de `tokens.json`, Inter). Los patrones operativos de maquetación viven en la skill `patrones-visuales-de-marca`.
 
 ## Overview
 
@@ -81,7 +81,7 @@ Patrones estables en la landing:
 - Cards con densidad y ritmo similares entre secciones vecinas.
 - Iconos SVG inline con trazo uniforme; sin emojis como iconografía.
 
-Las variantes nuevas solo si resuelven un caso recurrente; deben aplicarse primero en `templates/layout.html` (si afectan tokens globales) y reflejarse en `tokens.json`. El detalle de clases y composiciones vive en `brand-visual-patterns`, no en este documento.
+Las variantes nuevas solo si resuelven un caso recurrente; deben aplicarse primero en `templates/layout.html` (si afectan tokens globales) y reflejarse en `tokens.json`. El detalle de clases y composiciones vive en `patrones-visuales-de-marca`, no en este documento.
 
 ## Do's and Don'ts
 
@@ -92,7 +92,7 @@ Las variantes nuevas solo si resuelven un caso recurrente; deben aplicarse prime
 - Priorizar contraste legible, foco visible y estados hover coherentes.
 - Mantener consistencia entre idiomas y entre secciones del mismo tipo.
 - Actualizar `IDENTITY.md` solo cuando cambien reglas o intención visual.
-- Delegar patrones operativos de maquetación a la skill `brand-visual-patterns`.
+- Delegar patrones operativos de maquetación a la skill `patrones-visuales-de-marca`.
 
 ### Don't
 

@@ -1,12 +1,12 @@
 ---
-name: review-responsive-accessibility
+name: revisar-adaptabilidad-y-accesibilidad
 description: >-
   Checklist de revisión mobile-first, estados focus, contraste y semántica HTML
   antes de cerrar cambios visuales en la landing comercial. Usar al finalizar
   maquetación o rediseño de secciones.
 ---
 
-# Skill: Revisar responsive y accesibilidad
+# Skill: Revisar adaptabilidad y accesibilidad
 
 ## Propósito
 

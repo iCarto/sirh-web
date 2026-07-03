@@ -6,6 +6,12 @@
 
 - **Skills aplicadas**
   - Revisar `.ai-dev/skills/lead-dev` y cargar las que apliquen a la tarea concreta.
+  - Pipeline y build: `mantener-pipeline-de-compilacion`.
+  - Motor de plantillas en `build.mjs`: `extender-motor-plantillas`.
+  - Shell del documento (`layout.html`, partials, meta, tokens Tailwind): `modificar-envoltura-del-sitio`.
+  - Assets en `public/` y sus rutas: `gestionar-recursos-estaticos`.
+  - Documentación en `docs/devs/`: `redactar-documentacion-tecnica`.
+  - Secciones nuevas de la landing (HTML + copy + nav): coordinar con skill `crear-seccion-landing` del **landing page designer**; lead-dev interviene en `SECTIONS` y build si hace falta.
 
 - **Visión general**
   - Mantener la alineación con `docs/devs/repository-structure.md`.

@@ -26,7 +26,7 @@ No editar `tokens.json` como paso inicial de un cambio visual.
 - Contrato global de agentes: `<AGENTS.md>`
 - Estructura y convenciones del repo: `<docs/devs/repository-structure.md>`
 - Implementación del tema en este repo: `<templates/layout.html>` (`tailwind.config`, fuente Inter, estilos globales)
-- Patrones visuales operativos de la landing: skill `brand-visual-patterns` en la misma carpeta
+- Patrones visuales operativos de la landing: skill `patrones-visuales-de-marca` en la misma carpeta
 
 ## Cuándo usar esta skill
 
@@ -46,12 +46,12 @@ La fuente de verdad de **valores** en este repositorio es `templates/layout.html
 | Color de texto base del body | `<style>` / clases en `<body>` |
 | Neutros (`slate-*`) | Clases Tailwind por defecto en plantillas (no redefinidos en config) |
 
-Los detalles de **uso** en secciones (ritmo `py-20`, cards, CTAs) viven en la skill `brand-visual-patterns`; esta skill no los duplica.
+Los detalles de **uso** en secciones (ritmo `py-20`, cards, CTAs) viven en la skill `patrones-visuales-de-marca`; esta skill no los duplica.
 
 ## Pasos operativos
 
 1. Leer `templates/layout.html` e inspeccionar la configuración Tailwind y estilos globales.
-2. Si el cambio afecta a secciones, contrastar con `brand-visual-patterns` y secciones vecinas en `templates/sections/`.
+2. Si el cambio afecta a secciones, contrastar con `patrones-visuales-de-marca` y secciones vecinas en `templates/sections/`.
 3. Extraer valores semánticos desde la implementación:
    - Colores de la escala `icarto` y roles que representan en la landing (acento primario, texto, fondos).
    - Tipografía (`Inter`), tamaños base si están definidos.
@@ -94,7 +94,7 @@ Tratar `layout.html` como fuente de verdad en este repo; sincronizar `tokens.jso
 
 - Editar `tokens.json` primero y luego `templates/layout.html`.
 - Duplicar hex entre `layout.html` y `tokens.json` sin sincronizar tras el cambio.
-- Copiar en `IDENTITY.md` patrones de sección, clases Tailwind o contenido de `brand-visual-patterns`.
+- Copiar en `IDENTITY.md` patrones de sección, clases Tailwind o contenido de `patrones-visuales-de-marca`.
 - Referenciar tema MUI, React o docs de frontend que no existen en este repositorio.
 - Sobrescribir roles `color.domain.*` de la app SIRH al sincronizar solo la landing comercial.
 - Hardcodear colores nuevos en secciones sin añadirlos antes a `layout.html` cuando deban ser tokens de marca.
@@ -104,7 +104,7 @@ Tratar `layout.html` como fuente de verdad en este repo; sincronizar `tokens.jso
 - [ ] Los valores en `tokens.json` reflejan `templates/layout.html` (no al revés).
 - [ ] `IDENTITY.md` describe intención y reglas; sin hex duplicados.
 - [ ] Do's and Don'ts actualizados solo si cambió la política visual.
-- [ ] Detalle operativo de secciones sigue en `brand-visual-patterns`, no en `docs/brand/`.
+- [ ] Detalle operativo de secciones sigue en `patrones-visuales-de-marca`, no en `docs/brand/`.
 - [ ] Build OK tras cambios en tema (`npm run build`).
 
 ## Plantilla textual

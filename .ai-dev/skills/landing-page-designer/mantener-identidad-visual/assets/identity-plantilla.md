@@ -40,7 +40,7 @@ En **esta landing estática**: sincronizar desde `templates/layout.html` (Tailwi
 - Cambiar valores primero en `templates/layout.html`; sincronizar `tokens.json` después.
 - Mantener jerarquía visual clara en cada sección del scroll.
 - Actualizar `IDENTITY.md` solo cuando cambien reglas o intención.
-- Delegar patrones operativos de maquetación a la skill `brand-visual-patterns`.
+- Delegar patrones operativos de maquetación a la skill `patrones-visuales-de-marca`.
 
 ### Don't
 
