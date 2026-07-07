@@ -1,53 +1,38 @@
-    <section id="challenges" class="scroll-mt-20 py-20 bg-neutral-0 border-y border-neutral-200">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+<section id="challenges" class="scroll-mt-20 py-12 md:py-16 bg-neutral-0 border-y border-neutral-200">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-start">
+      <div class="lg:col-span-5 space-y-4">
+        <span
+          class="text-xs font-semibold uppercase tracking-wider text-neutral-400"
+          >{{challenges.eyebrow}}</span
+        >
+        <h2
+          class="text-2xl sm:text-3xl font-bold text-neutral-900 tracking-tight"
+        >
+          {{challenges.title}}
+        </h2>
+        <p class="text-neutral-600 leading-relaxed">
+          {{challenges.description}}
+        </p>
+      </div>
 
-                <div class="lg:col-span-5 space-y-6">
-                    <span class="text-xs font-semibold uppercase tracking-wider text-neutral-400">{{challenges.eyebrow}}</span>
-                    <h2 class="text-2xl sm:text-3xl font-bold text-neutral-900 tracking-tight">
-                        {{challenges.title}}
-                    </h2>
-                    <p class="text-neutral-600 leading-relaxed">
-                        {{challenges.description}}
-                    </p>
-
-                    <div class="bg-amber-50/50 border border-amber-200 rounded-lg p-5">
-                        <div class="flex gap-3">
-                            <svg class="w-5 h-5 text-amber-600 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path>
-                            </svg>
-                            <div>
-                                <span class="font-semibold text-neutral-900 text-sm block">{{challenges.warningTitle}}</span>
-                                <span class="text-xs text-neutral-600">{{challenges.warningText}}</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="lg:col-span-7 space-y-6">
-                    <div class="bg-neutral-50 rounded-xl border border-neutral-200 overflow-hidden divide-y divide-neutral-200">
-                        {{#each challenges.items}}
-                        <div class="p-6 flex flex-col md:flex-row md:items-center justify-between gap-4">
-                            <div class="space-y-1">
-                                {{#if note}}
-                                <div class="flex items-center gap-2">
-                                    <span class="text-xs font-semibold text-amber-700 bg-amber-50 border border-amber-100 px-2 py-0.5 rounded">{{tag}}</span>
-                                    <span class="text-[10px] text-red-600 font-medium">{{note}}</span>
-                                </div>
-                                {{/if}}
-                                {{#unless note}}
-                                <span class="text-xs font-semibold text-amber-700 bg-amber-50 border border-amber-100 px-2 py-0.5 rounded">{{tag}}</span>
-                                {{/unless}}
-                                <p class="text-sm text-neutral-500 pt-1">{{problem}}</p>
-                            </div>
-                            <div class="flex-shrink-0 flex items-center gap-2 text-emerald-700 font-medium text-sm bg-emerald-50 border border-emerald-100 px-3 py-1.5 rounded-lg">
-                                <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-                                <span>{{solution}}</span>
-                            </div>
-                        </div>
-                        {{/each}}
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+      <div class="lg:col-span-7">
+        <ul class="space-y-3" role="list">
+          {{#each challenges.items}}
+          <li
+            class="rounded-lg border border-neutral-200 border-l-[3px] border-l-neutral-400 bg-neutral-50 px-4 py-3.5"
+          >
+            <span
+              class="text-xs font-semibold uppercase tracking-wide text-neutral-700"
+              >{{tag}}</span
+            >
+            <p class="mt-1 text-sm text-neutral-600 leading-relaxed">
+              {{problem}}
+            </p>
+          </li>
+          {{/each}}
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,33 +1,32 @@
-import fs from 'fs';
-import path from 'path';
-import { fileURLToPath } from 'url';
+import fs from "fs";
+import path from "path";
+import { fileURLToPath } from "url";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = __dirname;
 
-const LOCALES = ['en', 'es'];
+const LOCALES = ["en", "es"];
 const SECTIONS = [
-  'hero',
-  'proven',
-  'challenges',
-  'capabilities',
-  'sustainability',
-  'ecosystem',
-  'methodology',
-  'contact',
+  "hero",
+  "challenges",
+  "proven",
+  "capabilities",
+  "ecosystem",
+  "methodology",
+  "contact",
 ];
 
 function readFile(filePath) {
-  return fs.readFileSync(path.join(ROOT, filePath), 'utf8');
+  return fs.readFileSync(path.join(ROOT, filePath), "utf8");
 }
 
 function loadLocale(code) {
   return JSON.parse(readFile(`locales/${code}.json`));
 }
 
-function collectKeys(obj, prefix = '') {
+function collectKeys(obj, prefix = "") {
   const keys = new Set();
-  if (obj !== null && typeof obj === 'object' && !Array.isArray(obj)) {
+  if (obj !== null && typeof obj === "object" && !Array.isArray(obj)) {
     for (const [key, value] of Object.entries(obj)) {
       const fullKey = prefix ? `${prefix}.${key}` : key;
       keys.add(fullKey);
@@ -44,13 +43,14 @@ function validateLocales(en, es) {
   const esKeys = collectKeys(es);
   const missing = [...enKeys].filter((k) => !esKeys.has(k));
   if (missing.length > 0) {
-    throw new Error(`es.json missing keys: ${missing.join(', ')}`);
+    throw new Error(`es.json missing keys: ${missing.join(", ")}`);
   }
 }
 
 function getValue(context, key) {
   if (key in context) return context[key];
-  if (key.includes('.')) return key.split('.').reduce((o, k) => o?.[k], context);
+  if (key.includes("."))
+    return key.split(".").reduce((o, k) => o?.[k], context);
   return undefined;
 }
 
@@ -58,13 +58,13 @@ function resolveScalars(template, context) {
   return template.replace(/\{\{([^#/{][^}]*)\}\}/g, (_, rawKey) => {
     const key = rawKey.trim();
     const value = getValue(context, key);
-    return value === undefined || value === null ? '' : String(value);
+    return value === undefined || value === null ? "" : String(value);
   });
 }
 
 function findBlockClose(template, startPos, openPattern, closePattern) {
-  const openRe = new RegExp(openPattern, 'g');
-  const closeRe = new RegExp(closePattern, 'g');
+  const openRe = new RegExp(openPattern, "g");
+  const closeRe = new RegExp(closePattern, "g");
   let depth = 1;
   let pos = startPos;
 
@@ -90,7 +90,7 @@ function findBlockClose(template, startPos, openPattern, closePattern) {
 function renderBlocks(template, context, { openRe, closeTag, renderBlock }) {
   const openPattern = openRe.source;
   const closePattern = `\\{\\{/${closeTag}\\}\\}`;
-  let result = '';
+  let result = "";
   let pos = 0;
 
   while (pos < template.length) {
@@ -103,7 +103,12 @@ function renderBlocks(template, context, { openRe, closeTag, renderBlock }) {
 
     result += template.slice(pos, match.index);
     const blockStart = match.index + match[0].length;
-    const closeIndex = findBlockClose(template, blockStart, openPattern, closePattern);
+    const closeIndex = findBlockClose(
+      template,
+      blockStart,
+      openPattern,
+      closePattern,
+    );
     if (closeIndex === -1) {
       result += template.slice(match.index);
       break;
@@ -120,10 +125,10 @@ function renderBlocks(template, context, { openRe, closeTag, renderBlock }) {
 function renderIfBlocks(template, context) {
   return renderBlocks(template, context, {
     openRe: /\{\{#if\s+([^}]+)\}\}/g,
-    closeTag: 'if',
+    closeTag: "if",
     renderBlock: (match, block) => {
       const value = getValue(context, match[1].trim());
-      return value ? renderTemplate(block, context) : '';
+      return value ? renderTemplate(block, context) : "";
     },
   });
 }
@@ -131,10 +136,10 @@ function renderIfBlocks(template, context) {
 function renderUnlessBlocks(template, context) {
   return renderBlocks(template, context, {
     openRe: /\{\{#unless\s+([^}]+)\}\}/g,
-    closeTag: 'unless',
+    closeTag: "unless",
     renderBlock: (match, block) => {
       const value = getValue(context, match[1].trim());
-      return !value ? renderTemplate(block, context) : '';
+      return !value ? renderTemplate(block, context) : "";
     },
   });
 }
@@ -142,10 +147,10 @@ function renderUnlessBlocks(template, context) {
 function renderEqBlocks(template, context) {
   return renderBlocks(template, context, {
     openRe: /\{\{#eq\s+([^}\s]+)\s+"([^"]*)"\}\}/g,
-    closeTag: 'eq',
+    closeTag: "eq",
     renderBlock: (match, block) => {
       const value = getValue(context, match[1].trim());
-      return String(value) === match[2] ? renderTemplate(block, context) : '';
+      return String(value) === match[2] ? renderTemplate(block, context) : "";
     },
   });
 }
@@ -153,19 +158,19 @@ function renderEqBlocks(template, context) {
 function renderEachBlocks(template, context) {
   return renderBlocks(template, context, {
     openRe: /\{\{#each\s+([^}]+)\}\}/g,
-    closeTag: 'each',
+    closeTag: "each",
     renderBlock: (match, block) => {
       const items = getValue(context, match[1].trim());
-      if (!Array.isArray(items)) return '';
+      if (!Array.isArray(items)) return "";
       return items
         .map((item) => {
           const itemContext =
-            typeof item === 'object' && item !== null
+            typeof item === "object" && item !== null
               ? { ...context, ...item, _item: item }
-              : { ...context, _item: item, '.': item };
+              : { ...context, _item: item, ".": item };
           return renderTemplate(block, itemContext);
         })
-        .join('');
+        .join("");
     },
   });
 }
@@ -185,14 +190,17 @@ function renderTemplate(template, context) {
 }
 
 function renderPage(data) {
-  const header = renderTemplate(readFile('templates/partials/header.html'), data);
-  const layout = readFile('templates/layout.html');
+  const header = renderTemplate(
+    readFile("templates/partials/header.html"),
+    data,
+  );
+  const layout = readFile("templates/layout.html");
   const bodySections = [];
   for (const name of SECTIONS) {
     const section = readFile(`templates/sections/${name}.html`);
     bodySections.push(renderTemplate(section, data));
   }
-  const sections = `${header}\n\n<main id="main-content">\n${bodySections.join('\n\n')}\n</main>`;
+  const sections = `${header}\n\n<main id="main-content">\n${bodySections.join("\n\n")}\n</main>`;
   return renderTemplate(layout, { ...data, sections });
 }
 
@@ -210,23 +218,23 @@ function copyDir(src, dest) {
 }
 
 function copyPublic() {
-  const publicDir = path.join(ROOT, 'public');
-  const distDir = path.join(ROOT, 'dist');
+  const publicDir = path.join(ROOT, "public");
+  const distDir = path.join(ROOT, "dist");
   if (!fs.existsSync(publicDir)) return;
   copyDir(publicDir, distDir);
 }
 
 export function build() {
-  const en = loadLocale('en');
-  const es = loadLocale('es');
+  const en = loadLocale("en");
+  const es = loadLocale("es");
   validateLocales(en, es);
 
   for (const code of LOCALES) {
-    const data = code === 'en' ? en : es;
+    const data = code === "en" ? en : es;
     const html = renderPage(data);
-    const outDir = path.join(ROOT, 'dist', code);
+    const outDir = path.join(ROOT, "dist", code);
     fs.mkdirSync(outDir, { recursive: true });
-    fs.writeFileSync(path.join(outDir, 'index.html'), html);
+    fs.writeFileSync(path.join(outDir, "index.html"), html);
   }
 
   copyPublic();
@@ -246,7 +254,7 @@ function buildAll(isWatch = false) {
 
 function watch() {
   buildAll(true);
-  const dirs = ['locales', 'templates', 'public'];
+  const dirs = ["locales", "templates", "public"];
   let debounceTimer;
   for (const dir of dirs) {
     const watchPath = path.join(ROOT, dir);
@@ -256,10 +264,10 @@ function watch() {
       debounceTimer = setTimeout(() => buildAll(true), 150);
     });
   }
-  console.log('Watching locales/, templates/, public/ — Ctrl+C to stop');
+  console.log("Watching locales/, templates/, public/ — Ctrl+C to stop");
 }
 
-if (process.argv.includes('--watch')) {
+if (process.argv.includes("--watch")) {
   watch();
 } else {
   buildAll(false);
