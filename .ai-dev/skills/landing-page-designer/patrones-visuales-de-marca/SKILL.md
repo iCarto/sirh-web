@@ -130,6 +130,7 @@ Al maquetar un bloque nuevo, **clonar la plantilla cuyo árbol de componentes en
 
 - SVG **inline** en plantilla; clave `icon` en JSON + bloques `{{#eq icon "registry"}}` (ver `capabilities.html`).
 - Trazo: `stroke="currentColor" stroke-width="1.5"`, `fill="none"`.
+- Fuente: **Heroicons v2** outline (MIT); copiar con «Copy SVG» desde heroicons.com. Catálogo y reglas: `<docs/brand/icons.md>`.
 - No emojis (ver skill `criterios-anti-diseno-generico`).
 
 ---

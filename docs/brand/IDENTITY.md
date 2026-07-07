@@ -79,7 +79,7 @@ Patrones estables en la landing:
 - Cabecera de sección: eyebrow + título + subtítulo centrados.
 - CTAs primario y secundario con la misma jerarquía en hero, header y contacto.
 - Cards con densidad y ritmo similares entre secciones vecinas.
-- Iconos SVG inline con trazo uniforme; sin emojis como iconografía.
+- Iconos SVG inline con trazo uniforme; sin emojis como iconografía. Fuente y catálogo: `icons.md`.
 
 Las variantes nuevas solo si resuelven un caso recurrente; deben aplicarse primero en `templates/layout.html` (si afectan tokens globales) y reflejarse en `tokens.json`. El detalle de clases y composiciones vive en `patrones-visuales-de-marca`, no en este documento.
 

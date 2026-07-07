@@ -51,7 +51,7 @@ Gobernar la envoltura HTML del sitio: `<head>`, estructura del documento, partia
 
 **Skip link:** el texto "Skip to content" está hardcodeado en inglés en `layout.html`; unificar i18n del shell requiere claves en locales y plantilla del layout.
 
-**OG image global:** actualmente fija en layout (`/images/SIRH_Screenshot_Map_2.png`); mover a locale si debe variar por idioma.
+**OG image global:** actualmente fija en layout; mover a locale si debe variar por idioma.
 
 **Header sticky:** cambios estructurales en `header.html` pueden afectar anclas y responsive; revisar con skill `revisar-adaptabilidad-y-accesibilidad` del designer.
 
