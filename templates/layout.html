@@ -1,91 +1,108 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="{{meta.lang}}" class="scroll-smooth">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{{meta.title}}</title>
-    <meta name="description" content="{{meta.description}}">
-    <meta property="og:title" content="{{meta.title}}">
-    <meta property="og:description" content="{{meta.description}}">
-    <meta property="og:image" content="/images/SIRH_Screenshot_Map_2.png">
-    <meta property="og:type" content="website">
-    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="/images/favicon-192x192.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
-    <link rel="alternate" hreflang="en" href="{{alternate.en}}">
-    <link rel="alternate" hreflang="es" href="{{alternate.es}}">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <meta name="description" content="{{meta.description}}" />
+    <meta property="og:title" content="{{meta.title}}" />
+    <meta property="og:description" content="{{meta.description}}" />
+    <meta property="og:image" content="/images/SIRH_screenshot_map_2.png" />
+    <meta property="og:type" content="website" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/images/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="/images/favicon-192x192.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/images/apple-touch-icon.png"
+    />
+    <link rel="alternate" hreflang="en" href="{{alternate.en}}" />
+    <link rel="alternate" hreflang="es" href="{{alternate.es}}" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    fontFamily: {
-                        sans: ['Inter', 'sans-serif'],
-                    },
-                    colors: {
-                        primary: {
-                            lighter: '#f0fdfa',
-                            light: '#ccfbf1',
-                            main: '#00bec5',
-                            dark: '#1ba7ba',
-                            contrastText: '#ffffff',
-                        },
-                        secondary: {
-                            lighter: '#d7ddd5',
-                            light: '#a3af9e',
-                            main: '#52684b',
-                            dark: '#3f4a3c',
-                        },
-                        neutral: {
-                            0: '#ffffff',
-                            50: '#f8fafc',
-                            100: '#f1f5f9',
-                            200: '#e2e8f0',
-                            300: '#cbd5e1',
-                            400: '#94a3b8',
-                            500: '#64748b',
-                            600: '#475569',
-                            700: '#334155',
-                            800: '#1e293b',
-                            900: '#383836',
-                        },
-                    }
-                }
-            }
-        }
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ["Inter", "sans-serif"],
+            },
+            colors: {
+              primary: {
+                lighter: "#f0fdfa",
+                light: "#ccfbf1",
+                main: "#00bec5",
+                dark: "#1ba7ba",
+                contrastText: "#ffffff",
+              },
+              secondary: {
+                lighter: "#d7ddd5",
+                light: "#a3af9e",
+                main: "#52684b",
+                dark: "#3f4a3c",
+              },
+              neutral: {
+                0: "#ffffff",
+                50: "#f8fafc",
+                100: "#f1f5f9",
+                200: "#e2e8f0",
+                300: "#cbd5e1",
+                400: "#94a3b8",
+                500: "#64748b",
+                600: "#475569",
+                700: "#334155",
+                800: "#1e293b",
+                900: "#383836",
+              },
+            },
+          },
+        },
+      };
     </script>
     <style>
-        .skip-link {
-            position: absolute;
-            left: -9999px;
-            z-index: 100;
-            padding: 0.75rem 1rem;
-            background: #00bec5;
-            color: #ffffff;
-            font-weight: 600;
-            font-size: 0.875rem;
-            border-radius: 0.375rem;
-        }
-        .skip-link:focus {
-            left: 1rem;
-            top: 1rem;
-        }
-        body {
-            font-feature-settings: "cv02", "cv03", "cv04", "cv11";
-            -webkit-font-smoothing: antialiased;
-            -moz-osx-font-smoothing: grayscale;
-            color: #383836;
-        }
+      .skip-link {
+        position: absolute;
+        left: -9999px;
+        z-index: 100;
+        padding: 0.75rem 1rem;
+        background: #00bec5;
+        color: #ffffff;
+        font-weight: 600;
+        font-size: 0.875rem;
+        border-radius: 0.375rem;
+      }
+      .skip-link:focus {
+        left: 1rem;
+        top: 1rem;
+      }
+      body {
+        font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        color: #383836;
+      }
     </style>
-</head>
-<body class="bg-neutral-50 text-neutral-900 font-sans antialiased selection:bg-primary-light selection:text-primary-dark">
+  </head>
+  <body
+    class="bg-neutral-50 text-neutral-900 font-sans antialiased selection:bg-primary-light selection:text-primary-dark"
+  >
+    <a href="#main-content" class="skip-link">Skip to content</a>
 
-<a href="#main-content" class="skip-link">Skip to content</a>
-
-{{sections}}
-
-</body>
+    {{sections}}
+  </body>
 </html>
