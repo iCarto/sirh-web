@@ -5,7 +5,7 @@ import { fileURLToPath } from "url";
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = __dirname;
 
-const LOCALES = ["en", "es"];
+const LOCALES = ["en", "es", "pt"];
 const SECTIONS = [
   "hero",
   "challenges",
@@ -38,12 +38,17 @@ function collectKeys(obj, prefix = "") {
   return keys;
 }
 
-function validateLocales(en, es) {
+function validateLocales(en, es, pt) {
   const enKeys = collectKeys(en);
   const esKeys = collectKeys(es);
-  const missing = [...enKeys].filter((k) => !esKeys.has(k));
-  if (missing.length > 0) {
-    throw new Error(`es.json missing keys: ${missing.join(", ")}`);
+  const ptKeys = collectKeys(pt);
+  const missingEs = [...enKeys].filter((k) => !esKeys.has(k));
+  const missingPt = [...enKeys].filter((k) => !ptKeys.has(k));
+  if (missingEs.length > 0) {
+    throw new Error(`es.json missing keys: ${missingEs.join(", ")}`);
+  }
+  if (missingPt.length > 0) {
+    throw new Error(`pt.json missing keys: ${missingPt.join(", ")}`);
   }
 }
 
@@ -227,10 +232,11 @@ function copyPublic() {
 export function build() {
   const en = loadLocale("en");
   const es = loadLocale("es");
-  validateLocales(en, es);
+  const pt = loadLocale("pt");
+  validateLocales(en, es, pt);
 
   for (const code of LOCALES) {
-    const data = code === "en" ? en : es;
+    const data = code === "en" ? en : code === "pt" ? pt : es;
     const html = renderPage(data);
     const outDir = path.join(ROOT, "dist", code);
     fs.mkdirSync(outDir, { recursive: true });

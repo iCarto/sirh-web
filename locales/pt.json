@@ -1,0 +1,345 @@
+{
+  "meta": {
+    "title": "TODO",
+    "description": "TODO",
+    "lang": "pt"
+  },
+  "alternate": {
+    "en": "/en/",
+    "es": "/es/",
+    "pt": "/pt/"
+  },
+  "langActive": {
+    "en": "",
+    "es": "",
+    "pt": "bg-primary-lighter text-primary-dark"
+  },
+  "brand": {
+    "name": "TODO",
+    "tagline": "TODO",
+    "logo": "/images/logo_icarto.png",
+    "link": "https://icarto.es/en/"
+  },
+  "nav": [
+    {
+      "label": "TODO",
+      "href": "#proven"
+    },
+    {
+      "label": "TODO",
+      "href": "#challenges"
+    },
+    {
+      "label": "TODO",
+      "href": "#capabilities"
+    },
+    {
+      "label": "TODO",
+      "href": "#ecosystem"
+    },
+    {
+      "label": "TODO",
+      "href": "#methodology"
+    }
+  ],
+  "cta": {
+    "header": "TODO",
+    "headerHref": "#contact"
+  },
+  "hero": {
+    "badge": "TODO",
+    "title": "TODO",
+    "titleHighlight": "TODO",
+    "titleSuffix": "TODO",
+    "description": "TODO",
+    "ctaPrimary": "TODO",
+    "ctaPrimaryHref": "#contact",
+    "ctaSecondary": "TODO",
+    "ctaSecondaryHref": "#capabilities",
+    "browserUrl": "sirh.icarto.es",
+    "browserBadge": "TODO",
+    "screenshot": "TODO",
+    "screenshotAlt": "TODO",
+    "placeholderTitle": "TODO",
+    "placeholderHint": "TODO"
+  },
+  "proven": {
+    "eyebrow": "TODO",
+    "title": "TODO",
+    "subtitle": "TODO",
+    "contextsTitle": "TODO",
+    "mapLabel": "TODO",
+    "countryList": [
+      {
+        "name": "TODO",
+        "map": "/images/map_MZQ.png",
+        "mapAlt": "TODO"
+      },
+      {
+        "name": "TODO",
+        "map": "/images/map_ESW.png",
+        "mapAlt": "TODO",
+        "mapFill": true
+      }
+    ],
+    "figuresDeploymentLabel": "TODO",
+    "figuresDeployment": [
+      { "value": "2", "label": "TODO", "icon": "globe" },
+      { "value": "6", "label": "TODO", "icon": "building" }
+    ],
+    "figuresScaleLabel": "TODO",
+    "figures": [
+      {
+        "value": "+100",
+        "label": "TODO",
+        "icon": "TODO"
+      },
+      {
+        "value": "+4,000",
+        "label": "TODO",
+        "icon": "TODO"
+      },
+      {
+        "value": "+5,000",
+        "label": "TODO",
+        "icon": "TODO"
+      }
+    ],
+    "donorsTitle": "TODO",
+    "donors": [
+      {
+        "logo": "/images/logo_world_bank.jpg",
+        "alt": "Banco Mundial",
+        "logoClass": "max-h-16 md:max-h-[4.5rem] w-auto max-w-full object-contain"
+      },
+      {
+        "logo": "/images/logo_blue_deal.png",
+        "alt": "Blue Deal",
+        "logoClass": "max-h-12 md:max-h-14 w-auto max-w-full object-contain"
+      },
+      {
+        "logo": "/images/logo_coop_galega.png",
+        "alt": "Cooperación Galega",
+        "logoClass": "max-h-10 md:max-h-12 w-auto max-w-full object-contain"
+      }
+    ],
+    "resultsTitle": "TODO",
+    "resultsFootnote": "TODO",
+    "resultsItems": [
+      { "title": "TODO" },
+      { "title": "TODO" },
+      { "title": "TODO" },
+      { "title": "TODO" },
+      { "title": "TODO" },
+      { "title": "TODO" }
+    ]
+  },
+  "challenges": {
+    "eyebrow": "Barreras operativas",
+    "title": "Los retos de una gestión hídrica fragmentada",
+    "description": "Muchas autoridades hídricas siguen gestionando licencias y facturación en libros en papel y hojas de cálculo desconectadas. Esa fragmentación genera fricción diaria entre departamentos y dificulta el cumplimiento de la recuperación de costes exigida por ley.",
+    "items": [
+      {
+        "tag": "Registros fragmentados",
+        "problem": "Datos de licencias y facturación repartidos entre papel, hojas de cálculo y departamentos sin una visión compartida."
+      },
+      {
+        "tag": "Procedimientos lentos",
+        "problem": "Cálculos manuales y tramitación en papel retrasan renovaciones de licencias y el trabajo diario."
+      },
+      {
+        "tag": "Baja recaudación",
+        "problem": "Lagunas de seguimiento y cuellos de botella en el cobro debilitan la recuperación de costes y los ingresos institucionales."
+      }
+    ]
+  },
+  "capabilities": {
+    "eyebrow": "Capacidades de la plataforma",
+    "title": "Capacidades esenciales para la gestión del agua",
+    "subtitle": "Pensado para gestores del agua y equipos técnicos.",
+    "banner": "Una base de datos centralizada, compartida entre departamentos y sin archivos duplicados ni traspasos manuales.",
+    "tabListLabel": "Capacidades de la plataforma",
+    "panelLabel": "Detalle de capacidad",
+    "items": [
+      {
+        "icon": "registry",
+        "title": "Registro estandarizado",
+        "description": "Procedimientos unificados para registrar usuarios del agua y emitir permisos, alineados con las normas y circuitos de aprobación de su autoridad.",
+        "image": "/images/SIRH_screenshot_procedure.png",
+        "imageAlt": "Pantalla de registro de usuarios y permisos en SIRH",
+        "imageFit": "cover",
+        "imageSizeHint": "Recomendado 960×540 px"
+      },
+      {
+        "icon": "gis",
+        "title": "Cartografía georreferenciada",
+        "description": "Registre y visualice ámbitos de explotación, cultivos y puntos de captación o vertido en mapas interactivos vinculados a los permisos.",
+        "image": "/images/SIRH_screenshot_map_detail.png",
+        "imageAlt": "Mapa georreferenciado de ámbitos de explotación en SIRH",
+        "imageFit": "cover",
+        "imageSizeHint": "Recomendado 960×540 px"
+      },
+      {
+        "icon": "estimation",
+        "title": "Estimación automatizada",
+        "description": "Aplique valores de referencia institucionales para calcular el consumo de agua automáticamente, sustituyendo estimaciones manuales en renovaciones y ciclos de facturación.",
+        "image": "/images/SIRH_screenshot_estimation.png",
+        "imageAlt": "Estimación automatizada de consumo de agua en SIRH",
+        "imageFit": "cover",
+        "imageSizeHint": "Recomendado 960×540 px"
+      },
+      {
+        "icon": "workflow",
+        "title": "Seguimiento de solicitudes y renovaciones",
+        "description": "Supervise solicitudes y renovaciones de permisos en cada paso institucional, con estado claro para el personal y los responsables.",
+        "image": "/images/SIRH_screenshot_procedures.png",
+        "imageAlt": "Flujo de solicitudes y renovaciones de permisos en SIRH",
+        "imageFit": "cover",
+        "imageSizeHint": "Recomendado 960×540 px"
+      },
+      {
+        "icon": "document",
+        "title": "Generación de documentos e informes",
+        "description": "Genere permisos oficiales, facturas e informes operativos bajo demanda. Exporte a PDF, Excel o formatos geoespaciales cuando los equipos necesiten compartir o analizar datos fuera del sistema.",
+        "image": "/images/invoice_from_SIRH_to_print.png",
+        "imageAlt": "Generación de documentos e informes en SIRH",
+        "imageFit": "contain",
+        "imageSizeHint": "Recomendado 800×600 px"
+      },
+      {
+        "icon": "billing",
+        "title": "Facturación y recuperación de costes",
+        "description": "Automatice la generación de facturas, procese lotes por cuenca o ciclo de facturación y haga seguimiento de pagos y saldos pendientes en un solo lugar.",
+        "image": "/images/SIRH_screenshot_invoices.png",
+        "imageAlt": "Módulo de facturación y recuperación de costes en SIRH",
+        "imageFit": "cover",
+        "imageSizeHint": "Recomendado 960×540 px"
+      }
+    ]
+  },
+  "ecosystem": {
+    "eyebrow": "TODO",
+    "title": "TODO",
+    "description": "TODO",
+    "modules": [
+      {
+        "badge": "TODO",
+        "title": "TODO",
+        "description": "TODO",
+        "image": "/images/mobile_mockup_transparent.png",
+        "imageAlt": "TODO",
+        "features": [
+          {
+            "label": "TODO",
+            "text": "TODO"
+          },
+          {
+            "label": "TODO",
+            "text": "TODO"
+          },
+          {
+            "label": "TODO",
+            "text": "TODO"
+          }
+        ]
+      },
+      {
+        "badge": "TODO",
+        "title": "TODO",
+        "description": "TODO",
+        "image": "/images/OV_mockup_transparent.png",
+        "imageAlt": "TODO",
+        "features": [
+          {
+            "label": "TODO",
+            "text": "TODO"
+          },
+          {
+            "label": "TODO",
+            "text": "TODO"
+          },
+          {
+            "label": "TODO",
+            "text": "TODO"
+          }
+        ]
+      }
+    ]
+  },
+  "methodology": {
+    "eyebrow": "TODO",
+    "title": "TODO",
+    "description": "TODO",
+    "image": "/images/photo_printed_permits.jpeg",
+    "imageAlt": "Taller de revisión de permisos de agua impresos junto al sistema digital",
+    "items": [
+      {
+        "step": "01",
+        "title": "TODO",
+        "description": "TODO"
+      },
+      {
+        "step": "02",
+        "title": "TODO",
+        "description": "TODO"
+      },
+      {
+        "step": "03",
+        "title": "TODO",
+        "description": "We dedicate 40–50% of the project effort to co-design workshops, training and capacity building."
+      },
+      {
+        "step": "04",
+        "title": "TODO",
+        "description": "TODO",
+        "last": true
+      }
+    ]
+  },
+  "results": {
+    "eyebrow": "TODO",
+    "title": "TODO",
+    "description": "TODO",
+    "footnote": "TODO",
+    "items": [
+      {
+        "value": "200–300%",
+        "description": "TODO"
+      },
+      {
+        "value": "85%",
+        "description": "TODO"
+      },
+      {
+        "value": "50%",
+        "description": "TODO"
+      },
+      {
+        "value": "40%",
+        "description": "TODO",
+        "last": true
+      }
+    ]
+  },
+  "contact": {
+    "eyebrow": "TODO",
+    "title": "TODO",
+    "description": "TODO",
+    "channelLabel": "TODO",
+    "email": "info@icarto.es",
+    "emailHint": "TODO",
+    "headquartersLabel": "TODO",
+    "addressLine1": "TODO",
+    "addressLine2": "TODO",
+    "phoneLabel": "TODO",
+    "phone": "+34 881 927 808",
+    "portalsLabel": "TODO",
+    "corporateLabel": "TODO",
+    "corporateUrl": "https://www.icarto.es",
+    "corporateText": "www.icarto.es",
+    "gisLabel": "TODO",
+    "gisUrl": "https://geovisores.icarto.es",
+    "gisText": "geovisores.icarto.es",
+    "copyright": "TODO"
+  }
+}
