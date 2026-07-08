@@ -16,6 +16,37 @@ const SECTIONS = [
   "contact",
 ];
 
+function normalizeBasePath(rawBasePath) {
+  if (!rawBasePath || rawBasePath === "/") return "";
+  let basePath = String(rawBasePath).trim();
+  if (!basePath.startsWith("/")) basePath = `/${basePath}`;
+  if (basePath.endsWith("/")) basePath = basePath.slice(0, -1);
+  return basePath;
+}
+
+function prefixRootPath(value, basePath) {
+  if (typeof value !== "string") return value;
+  if (!basePath) return value;
+  // Transform root-relative paths while preserving external/protocol-relative URLs.
+  if (!value.startsWith("/") || value.startsWith("//")) return value;
+  return `${basePath}${value}`;
+}
+
+function mapDeepStrings(node, mapString) {
+  if (Array.isArray(node)) {
+    return node.map((item) => mapDeepStrings(item, mapString));
+  }
+  if (node !== null && typeof node === "object") {
+    return Object.fromEntries(
+      Object.entries(node).map(([key, value]) => [
+        key,
+        mapDeepStrings(value, mapString),
+      ]),
+    );
+  }
+  return typeof node === "string" ? mapString(node) : node;
+}
+
 function readFile(filePath) {
   return fs.readFileSync(path.join(ROOT, filePath), "utf8");
 }
@@ -230,14 +261,18 @@ function copyPublic() {
 }
 
 export function build() {
-  const en = loadLocale("en");
-  const es = loadLocale("es");
-  const pt = loadLocale("pt");
-  validateLocales(en, es, pt);
+  const basePath = normalizeBasePath(process.env.BASE_PATH);
+  const enRaw = loadLocale("en");
+  const esRaw = loadLocale("es");
+  const ptRaw = loadLocale("pt");
+  validateLocales(enRaw, esRaw, ptRaw);
+  const en = mapDeepStrings(enRaw, (value) => prefixRootPath(value, basePath));
+  const es = mapDeepStrings(esRaw, (value) => prefixRootPath(value, basePath));
+  const pt = mapDeepStrings(ptRaw, (value) => prefixRootPath(value, basePath));
 
   for (const code of LOCALES) {
     const data = code === "en" ? en : code === "pt" ? pt : es;
-    const html = renderPage(data);
+    const html = renderPage({ ...data, basePath });
     const outDir = path.join(ROOT, "dist", code);
     fs.mkdirSync(outDir, { recursive: true });
     fs.writeFileSync(path.join(outDir, "index.html"), html);
