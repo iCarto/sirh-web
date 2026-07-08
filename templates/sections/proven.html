@@ -91,49 +91,16 @@
                 </svg>
                 <span>{{name}}</span>
               </div>
-              {{#if map}}
               <div
                 class="flex-1 min-h-[9rem] sm:min-h-[10rem] lg:min-h-[12rem] w-full overflow-hidden rounded-lg border border-neutral-200 bg-neutral-100"
               >
-                {{#if mapFill}}
                 <img
                   src="{{map}}"
                   alt="{{mapAlt}}"
                   class="w-full h-full object-cover object-center"
                   loading="lazy"
                 />
-                {{/if}} {{#unless mapFill}}
-                <img
-                  src="{{map}}"
-                  alt="{{mapAlt}}"
-                  class="w-full h-full object-contain object-center"
-                  loading="lazy"
-                />
-                {{/unless}}
               </div>
-              {{/if}} {{#unless map}}
-              <div
-                class="flex-1 min-h-[9rem] sm:min-h-[10rem] lg:min-h-[12rem] w-full bg-neutral-50 border border-dashed border-neutral-200 rounded-lg flex flex-col items-center justify-center text-center p-3"
-              >
-                <svg
-                  class="w-8 h-8 text-neutral-300 mb-2"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="1.5"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M9 6.75002V15M15 9.00002V17.25M15.5031 20.7485L20.3781 18.311C20.7592 18.1204 21 17.7309 21 17.3047V4.82031C21 3.98401 20.1199 3.44007 19.3719 3.81408L15.5031 5.74847C15.1864 5.90683 14.8136 5.90683 14.4969 5.74847L9.50312 3.25158C9.1864 3.09322 8.8136 3.09322 8.49688 3.25158L3.62188 5.68908C3.24075 5.87965 3 6.26919 3 6.69531V19.1797C3 20.016 3.8801 20.56 4.62811 20.186L8.49688 18.2516C8.8136 18.0932 9.1864 18.0932 9.50312 18.2516L14.4969 20.7485C14.8136 20.9068 15.1864 20.9068 15.5031 20.7485Z"
-                  ></path>
-                </svg>
-                <span
-                  class="text-[10px] font-medium text-neutral-400 uppercase tracking-wide"
-                  >{{proven.mapLabel}}</span
-                >
-              </div>
-              {{/unless}}
             </div>
             {{/each}}
           </div>
@@ -229,9 +196,6 @@
           </div>
 
           <div class="px-6 py-4 flex flex-col gap-4">
-            <p class="text-xs text-neutral-500 leading-relaxed">
-              {{proven.resultsDescription}}
-            </p>
             <div class="space-y-4">
               {{#each proven.resultsItems}}
               <div class="flex gap-2.5 items-center">
