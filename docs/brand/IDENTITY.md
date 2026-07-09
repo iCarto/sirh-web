@@ -1,9 +1,9 @@
 # Identidad visual SIRH
 
 Contrato de identidad visual portable entre productos del ecosistema SIRH (aplicación interna, landing comercial, marketing).  
-Las **reglas** viven aquí (`IDENTITY.md`). Los **valores** semánticos portables viven en `docs/brand/tokens.json`, sincronizados desde la implementación del tema de cada producto.
+Las **reglas** viven aquí (`IDENTITY.md`). Los **valores** semánticos portables viven en `docs/brand/tokens.json`, que debe actuar como fuente primaria para el tema de cada producto.
 
-En **esta landing estática**: sincronizar valores desde `templates/layout.html` (Tailwind CDN, roles semánticos de `tokens.json`, Inter). Los patrones operativos de maquetación viven en la skill `patrones-visuales-de-marca`.
+En **esta landing estática**: el build inyecta los colores de `docs/brand/tokens.json` en `templates/layout.html` (Tailwind CDN, roles semánticos `primary`, `secondary`, `neutral`, Inter). Los patrones operativos de maquetación viven en la skill `patrones-visuales-de-marca`.
 
 ## Overview
 
@@ -87,7 +87,7 @@ Las variantes nuevas solo si resuelven un caso recurrente; deben aplicarse prime
 
 ### Do
 
-- Cambiar valores primero en `templates/layout.html`; sincronizar `tokens.json` después.
+- Cambiar valores en `docs/brand/tokens.json`; el build sincroniza el tema de `layout.html`.
 - Mantener jerarquía visual clara en cada sección del scroll.
 - Priorizar contraste legible, foco visible y estados hover coherentes.
 - Mantener consistencia entre idiomas y entre secciones del mismo tipo.
@@ -96,7 +96,7 @@ Las variantes nuevas solo si resuelven un caso recurrente; deben aplicarse prime
 
 ### Don't
 
-- Editar `tokens.json` como primer paso del cambio visual en esta landing.
+- Editar colores hardcodeados en `layout.html` sin reflejarlos en `tokens.json`.
 - Hardcodear colores de marca fuera de la paleta definida en `layout.html`.
 - Duplicar valores entre tema y `tokens.json` sin sincronizar tras el cambio.
 - Mezclar reglas de implementación Tailwind o rutas de plantillas en este documento.

@@ -38,9 +38,12 @@ La clave `icon` en `locales/*.json` se resuelve con el helper `{{iconSvg icon}}`
 ## Fuentes de verdad operativas
 
 - Catálogo técnico centralizado de SVG: `data/icons.mjs` (objeto `ICONS`).
-- Resolución de iconos en el render: `build.mjs` (`iconSvg` / `renderIconSvg`).
+- Resolución de iconos en el render: `lib/template-engine.mjs` (`iconSvg` / `renderIconSvg`), usado por `build.mjs`.
 - Uso en secciones/partials:
   - `templates/sections/capabilities.html` (`{{iconSvg icon}}`)
+  - `templates/sections/proven.html` (`{{iconSvg "globe"}}`, `{{iconSvg "estimation"}}`, `{{iconSvg "check"}}`)
+  - `templates/sections/contact.html` (`{{iconSvg "mail"}}`)
+  - `templates/partials/header.html` (`{{iconSvg "menu"}}`)
   - `templates/sections/` y `templates/partials/` para iconos no parametrizados por clave.
 
 Al añadir un icono nuevo:
