@@ -10,13 +10,14 @@
     "pt": "/pt/"
   },
   "langActive": {
-    "en": "bg-primary-lighter text-primary-dark",
+    "en": "text-neutral-0 font-semibold",
     "es": "",
     "pt": ""
   },
   "brand": {
     "name": "iCarto",
-    "logo": "/images/logo_icarto.png",
+    "logo": "/images/logo_icarto.webp",
+    "logoWhite": "/images/logo_icarto_white.webp",
     "link": "https://icarto.es/en/"
   },
   "nav": [
@@ -31,35 +32,33 @@
     "headerHref": "#contact"
   },
   "hero": {
-    "badge": "Water Resources Information System",
-    "title": "SIRH:",
-    "titleHighlight": "A Single Source of Truth",
-    "titleSuffix": "for Water Authorities",
-    "description": "The integrated platform to manage the full lifecycle of water licenses, professionalise billing and effectively engage with users—all powered by native GIS analysis for efficient water administration.",
-    "ctaPrimary": "Request a technical demo",
+    "badge": "SIRH: Water Resources Information System",
+    "title": "A Single </br>Source of Truth</br>for Water Authorities",
+    "description": "The integrated GIS-powered platform to manage the full lifecycle of water licenses, professionalise billing and effectively engage with water users.",
+    "ctaPrimary": "Request a Technical Demo",
     "ctaPrimaryHref": "#contact",
     "ctaSecondary": "Explore Capabilities",
     "ctaSecondaryHref": "#capabilities",
     "browserUrl": "sirh.icarto.es",
     "browserBadge": "Demo Environment",
-    "screenshot": "/images/SIRH_screenshot_map.png",
+    "screenshot": "/images/SIRH_screenshot_map.webp",
     "screenshotAlt": "SIRH operation areas map with GIS layers and license overlays"
   },
   "proven": {
     "eyebrow": "Measured Results",
-    "title": "Proven at National Level",
+    "title": "Proven at national level",
     "subtitle": "10 years improving water user and licence management",
     "contextsTitle": "Implemented in Different Contexts",
     "mapLabel": "Map Interface",
     "countryList": [
       {
         "name": "Mozambique",
-        "map": "/images/map_MZQ.png",
+        "map": "/images/map_MZQ.webp",
         "mapAlt": "SIRH map interface showing operation areas in Mozambique"
       },
       {
         "name": "Eswatini",
-        "map": "/images/map_ESW.png",
+        "map": "/images/map_ESW.webp",
         "mapAlt": "SIRH map interface showing operation areas in Eswatini"
       }
     ],
@@ -70,28 +69,28 @@
     ],
     "figuresScaleLabel": "System scale",
     "figures": [
-      { "value": "+100", "label": "system users", "icon": "users" },
+      { "value": "+100", "label": "System Users", "icon": "users" },
       {
         "value": "+4,000",
-        "label": "registered</br>water users",
+        "label": "Water Users",
         "icon": "person"
       },
-      { "value": "+5,000", "label": "registered licenses", "icon": "check" }
+      { "value": "+5,000", "label": "Licenses", "icon": "check" }
     ],
     "donorsTitle": "Supported by",
     "donors": [
       {
-        "logo": "/images/logo_world_bank.png",
+        "logo": "/images/logo_world_bank.webp",
         "alt": "World Bank",
         "logoClass": "max-h-16 md:max-h-[4.5rem] w-auto max-w-full object-contain"
       },
       {
-        "logo": "/images/logo_dutch_water_authorities.png",
+        "logo": "/images/logo_dutch_water_authorities.webp",
         "alt": "Dutch Water Authorities",
         "logoClass": "max-h-16 md:max-h-16 w-auto max-w-full object-contain"
       },
       {
-        "logo": "/images/logo_coop_galega.png",
+        "logo": "/images/logo_coop_galega.webp",
         "alt": "Cooperación Galega",
         "logoClass": "max-h-10 md:max-h-12 w-auto max-w-full object-contain"
       }
@@ -129,72 +128,65 @@
   },
   "capabilities": {
     "eyebrow": "Platform capabilities",
-    "title": "Core capabilities for water administration",
-    "subtitle": "Built for water managers and technical teams.",
-    "banner": "One centralised database—shared across departments, without duplicate files or manual handoffs.",
+    "title": "One centralised database</br>for your entire water administration",
+    "subtitle": "Digital capabilities shared across departments, without duplicate files or manual handoffs.",
     "tabListLabel": "Platform capabilities",
     "panelLabel": "Capability detail",
     "items": [
       {
         "icon": "registry",
         "title": "Standardised Registry",
-        "description": "Unified procedures for registering water users and issuing licenses, aligned with your authority's rules and approval paths.",
-        "image": "/images/SIRH_screenshot_procedure.png",
-        "imageAlt": "SIRH water user and license registry screen",
-        "imageFit": "contain"
+        "description": "Unified procedures for registering water users and issuing licenses, aligned with your authority's rules and procedures.",
+        "image": "/images/SIRH_screenshot_procedure.webp",
+        "imageAlt": "SIRH water user and license registry screen"
       },
       {
         "icon": "gis",
         "title": "Georeferenced Mapping",
         "description": "Register and visualise operation areas, crops, and abstraction or discharge points on interactive maps linked to license records.",
-        "image": "/images/SIRH_screenshot_map_detail.png",
-        "imageAlt": "SIRH georeferenced operation areas map",
-        "imageFit": "contain"
+        "image": "/images/SIRH_screenshot_map_detail.webp",
+        "imageAlt": "SIRH georeferenced operation areas map"
       },
       {
         "icon": "estimation",
         "title": "Automated Estimation",
         "description": "Apply institutional reference values to calculate water consumption automatically—replacing manual estimates in renewals and billing runs.",
-        "image": "/images/SIRH_screenshot_estimation.png",
-        "imageAlt": "SIRH automated water consumption estimation",
-        "imageFit": "contain"
+        "image": "/images/SIRH_screenshot_estimation.webp",
+        "imageAlt": "SIRH automated water consumption estimation"
       },
       {
         "icon": "workflow",
         "title": "Application & Renewal Tracking",
         "description": "Monitor license applications and renewals through each institutional step, with clear status for staff and supervisors.",
-        "image": "/images/SIRH_screenshot_procedures.png",
-        "imageAlt": "SIRH license application and renewal workflow",
-        "imageFit": "contain"
+        "image": "/images/SIRH_screenshot_procedures.webp",
+        "imageAlt": "SIRH license application and renewal workflow"
       },
       {
         "icon": "document",
         "title": "Document & Report Generation",
         "description": "Produce official licenses, invoices, and operational reports on demand. Export to PDF, Excel, or geospatial formats.",
-        "image": "/images/invoice_from_SIRH_to_print.png",
-        "imageAlt": "SIRH document and report generation",
-        "imageFit": "contain"
+        "image": "/images/SIRH_from_screen_to_print.webp",
+        "imageAlt": "SIRH document and report generation"
       },
       {
         "icon": "billing",
         "title": "Billing & Revenue Recovery",
         "description": "Automate invoice generation, process batches by basin or cycle and track payments, and outstanding balances in one place.",
-        "image": "/images/SIRH_screenshot_invoices.png",
-        "imageAlt": "SIRH billing and revenue recovery module",
-        "imageFit": "contain"
+        "image": "/images/SIRH_screenshot_invoices.webp",
+        "imageAlt": "SIRH billing and revenue recovery module"
       }
     ]
   },
   "ecosystem": {
     "eyebrow": "Advanced Modules & Tech Roadmap",
-    "title": "Scalable Ecosystem:<br>The Evolution of Your Digital Strategy",
+    "title": "Scalable ecosystem:<br>the evolution of your digital strategy",
     "description": "SIRH is designed to grow alongside your institution.<br>Once core management is consolidated, the system can expand through advanced tools to further digitalise field operations and public transparency.",
     "modules": [
       {
         "badge": "Field Ops Add-on",
         "title": "SIRH Mobile",
         "description": "A dedicated application for field teams to collect, update, and validate data on-site.",
-        "image": "/images/mobile_mockup_transparent.png",
+        "image": "/images/mobile_mockup_transparent.webp",
         "imageAlt": "SIRH Mobile mockup showing field map editing with GPS coordinates",
         "features": [
           {
@@ -214,8 +206,8 @@
       {
         "badge": "Phase II Add-on",
         "title": "Digital Customer Portal",
-        "description": "A digital service channel to improve communication and transparency with water users.",
-        "image": "/images/OV_mockup_transparent.png",
+        "description": "A digital platform to improve communication and transparency with water users.",
+        "image": "/images/OV_mockup_transparent.webp",
         "imageAlt": "Customer portal mockup on tablet and smartphone showing operation areas and licenses",
         "features": [
           {
@@ -236,9 +228,9 @@
   },
   "methodology": {
     "eyebrow": "Implementation Paradigm",
-    "title": "Our Difference: Collaborative Implementation<br>that leads to Technology Ownership",
+    "title": "Our difference: collaborative implementation<br>that leads to technology ownership",
     "description": "We don't just deliver software—you build it with us.",
-    "image": "/images/photo_printed_permits.jpeg",
+    "image": "/images/photo_printed_permits.webp",
     "imageAlt": "Workshop reviewing printed water licenses alongside the digital system",
     "items": [
       {
@@ -265,24 +257,29 @@
     ]
   },
   "contact": {
-    "eyebrow": "Partnering with Authorities",
+    "eyebrow": "Your Technology Partner",
     "title": "Ready to modernise your water administration?",
-    "description": "iCarto is your technology partner. We specialise in supporting water authorities with limited resources to overcome technological constraints.",
-    "channelLabel": "Direct Inquiry Channel",
-    "email": "info@icarto.es",
-    "emailHint": "Contact our team for technical questions, budget estimations or proposal documentation.",
-    "headquartersLabel": "Headquarters",
-    "addressLine1": "C/ Rafael Alberti, 13 - 1ºD",
-    "addressLine2": "15008 A Coruña, Spain",
-    "phoneLabel": "Phone contact",
-    "phone": "+34 881 927 808",
-    "portalsLabel": "Digital portals",
-    "corporateLabel": "Corporate:",
-    "corporateUrl": "https://www.icarto.es",
-    "corporateText": "www.icarto.es",
-    "gisLabel": "GIS:",
-    "gisUrl": "https://geovisores.icarto.es",
-    "gisText": "geovisores.icarto.es",
+    "description": "Contact our team for technical questions, budget estimations or a platform demo.",
+    "ctaLabel": "E-mail Us",
+    "email": "info@icarto.es"
+  },
+  "footer": {
+    "tagline": "We support water authorities overcoming technological constraints.",
+    "officesLabel": "Offices",
+    "office1Name": "A Coruña (Spain)",
+    "office1AddressLine1": "C/ Rafael Alberti, 13 - 1ºD",
+    "office1AddressLine2": "15008 A Coruña",
+    "office1PhoneLabel": "Tel.:",
+    "office1Phone": "+34 881 927 808",
+    "office2Name": "El Salvador",
+    "office2AddressLine1": "Santa Tecla, San Salvador",
+    "office2PhoneLabel": "Tel.:",
+    "office2Phone": "+503 2520 0856",
+    "contactLabel": "Contact",
+    "websiteUrl": "https://icarto.es/",
+    "websiteText": "icarto.es",
+    "geovisorsUrl": "https://geovisores.icarto.es",
+    "geovisorsText": "geovisores.icarto.es",
     "copyright": "© 2026 iCarto - Innovación, Cooperación, Cartografía y Territorio S.L."
   }
 }

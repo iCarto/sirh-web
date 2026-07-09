@@ -11,13 +11,14 @@
   },
   "langActive": {
     "en": "",
-    "es": "bg-primary-lighter text-primary-dark",
+    "es": "text-neutral-0 font-semibold",
     "pt": ""
   },
   "brand": {
     "name": "TODO",
     "tagline": "TODO",
-    "logo": "/images/logo_icarto.png",
+    "logo": "/images/logo_icarto.webp",
+    "logoWhite": "/images/logo_icarto_white.webp",
     "link": "https://icarto.es/"
   },
   "nav": [
@@ -49,8 +50,6 @@
   "hero": {
     "badge": "TODO",
     "title": "TODO",
-    "titleHighlight": "TODO",
-    "titleSuffix": "TODO",
     "description": "TODO",
     "ctaPrimary": "TODO",
     "ctaPrimaryHref": "#contact",
@@ -72,12 +71,12 @@
     "countryList": [
       {
         "name": "TODO",
-        "map": "/images/map_MZQ.png",
+        "map": "/images/map_MZQ.webp",
         "mapAlt": "TODO"
       },
       {
         "name": "TODO",
-        "map": "/images/map_ESW.png",
+        "map": "/images/map_ESW.webp",
         "mapAlt": "TODO",
         "mapFill": true
       }
@@ -108,17 +107,17 @@
     "donorsTitle": "TODO",
     "donors": [
       {
-        "logo": "/images/logo_world_bank.jpg",
+        "logo": "/images/logo_world_bank.webp",
         "alt": "Banco Mundial",
         "logoClass": "max-h-16 md:max-h-[4.5rem] w-auto max-w-full object-contain"
       },
       {
-        "logo": "/images/logo_blue_deal.png",
+        "logo": "/images/logo_blue_deal.webp",
         "alt": "Blue Deal",
         "logoClass": "max-h-12 md:max-h-14 w-auto max-w-full object-contain"
       },
       {
-        "logo": "/images/logo_coop_galega.png",
+        "logo": "/images/logo_coop_galega.webp",
         "alt": "Cooperación Galega",
         "logoClass": "max-h-10 md:max-h-12 w-auto max-w-full object-contain"
       }
@@ -156,8 +155,7 @@
   "capabilities": {
     "eyebrow": "Capacidades de la plataforma",
     "title": "Capacidades esenciales para la gestión del agua",
-    "subtitle": "Pensado para gestores del agua y equipos técnicos.",
-    "banner": "Una base de datos centralizada, compartida entre departamentos y sin archivos duplicados ni traspasos manuales.",
+    "subtitle": "Una base de datos centralizada compartida entre departamentos.",
     "tabListLabel": "Capacidades de la plataforma",
     "panelLabel": "Detalle de capacidad",
     "items": [
@@ -165,7 +163,7 @@
         "icon": "registry",
         "title": "Registro estandarizado",
         "description": "Procedimientos unificados para registrar usuarios del agua y emitir permisos, alineados con las normas y circuitos de aprobación de su autoridad.",
-        "image": "/images/SIRH_screenshot_procedure.png",
+        "image": "/images/SIRH_screenshot_procedure.webp",
         "imageAlt": "Pantalla de registro de usuarios y permisos en SIRH",
         "imageFit": "cover",
         "imageSizeHint": "Recomendado 960×540 px"
@@ -174,7 +172,7 @@
         "icon": "gis",
         "title": "Cartografía georreferenciada",
         "description": "Registre y visualice ámbitos de explotación, cultivos y puntos de captación o vertido en mapas interactivos vinculados a los permisos.",
-        "image": "/images/SIRH_screenshot_map_detail.png",
+        "image": "/images/SIRH_screenshot_map_detail.webp",
         "imageAlt": "Mapa georreferenciado de ámbitos de explotación en SIRH",
         "imageFit": "cover",
         "imageSizeHint": "Recomendado 960×540 px"
@@ -183,7 +181,7 @@
         "icon": "estimation",
         "title": "Estimación automatizada",
         "description": "Aplique valores de referencia institucionales para calcular el consumo de agua automáticamente, sustituyendo estimaciones manuales en renovaciones y ciclos de facturación.",
-        "image": "/images/SIRH_screenshot_estimation.png",
+        "image": "/images/SIRH_screenshot_estimation.webp",
         "imageAlt": "Estimación automatizada de consumo de agua en SIRH",
         "imageFit": "cover",
         "imageSizeHint": "Recomendado 960×540 px"
@@ -192,7 +190,7 @@
         "icon": "workflow",
         "title": "Seguimiento de solicitudes y renovaciones",
         "description": "Supervise solicitudes y renovaciones de permisos en cada paso institucional, con estado claro para el personal y los responsables.",
-        "image": "/images/SIRH_screenshot_procedures.png",
+        "image": "/images/SIRH_screenshot_procedures.webp",
         "imageAlt": "Flujo de solicitudes y renovaciones de permisos en SIRH",
         "imageFit": "cover",
         "imageSizeHint": "Recomendado 960×540 px"
@@ -201,7 +199,7 @@
         "icon": "document",
         "title": "Generación de documentos e informes",
         "description": "Genere permisos oficiales, facturas e informes operativos bajo demanda. Exporte a PDF, Excel o formatos geoespaciales cuando los equipos necesiten compartir o analizar datos fuera del sistema.",
-        "image": "/images/invoice_from_SIRH_to_print.png",
+        "image": "/images/SIRH_from_screen_to_print.webp",
         "imageAlt": "Generación de documentos e informes en SIRH",
         "imageFit": "contain",
         "imageSizeHint": "Recomendado 800×600 px"
@@ -210,7 +208,7 @@
         "icon": "billing",
         "title": "Facturación y recuperación de costes",
         "description": "Automatice la generación de facturas, procese lotes por cuenca o ciclo de facturación y haga seguimiento de pagos y saldos pendientes en un solo lugar.",
-        "image": "/images/SIRH_screenshot_invoices.png",
+        "image": "/images/SIRH_screenshot_invoices.webp",
         "imageAlt": "Módulo de facturación y recuperación de costes en SIRH",
         "imageFit": "cover",
         "imageSizeHint": "Recomendado 960×540 px"
@@ -226,7 +224,7 @@
         "badge": "TODO",
         "title": "TODO",
         "description": "TODO",
-        "image": "/images/mobile_mockup_transparent.png",
+        "image": "/images/mobile_mockup_transparent.webp",
         "imageAlt": "TODO",
         "features": [
           {
@@ -247,7 +245,7 @@
         "badge": "TODO",
         "title": "TODO",
         "description": "TODO",
-        "image": "/images/OV_mockup_transparent.png",
+        "image": "/images/OV_mockup_transparent.webp",
         "imageAlt": "TODO",
         "features": [
           {
@@ -270,7 +268,7 @@
     "eyebrow": "TODO",
     "title": "TODO",
     "description": "TODO",
-    "image": "/images/photo_printed_permits.jpeg",
+    "image": "/images/photo_printed_permits.webp",
     "imageAlt": "Taller de revisión de permisos de agua impresos junto al sistema digital",
     "items": [
       {
@@ -325,21 +323,26 @@
     "eyebrow": "TODO",
     "title": "TODO",
     "description": "TODO",
-    "channelLabel": "TODO",
-    "email": "info@icarto.es",
-    "emailHint": "TODO",
-    "headquartersLabel": "TODO",
-    "addressLine1": "TODO",
-    "addressLine2": "TODO",
-    "phoneLabel": "TODO",
-    "phone": "+34 881 927 808",
-    "portalsLabel": "TODO",
-    "corporateLabel": "TODO",
-    "corporateUrl": "https://www.icarto.es",
-    "corporateText": "www.icarto.es",
-    "gisLabel": "TODO",
-    "gisUrl": "https://geovisores.icarto.es",
-    "gisText": "geovisores.icarto.es",
-    "copyright": "TODO"
+    "ctaLabel": "Contacta",
+    "email": "info@icarto.es"
+  },
+  "footer": {
+    "tagline": "Acompañamos a las autoridades del agua a superar las limitaciones tecnológicas.",
+    "officesLabel": "Oficinas",
+    "office1Name": "A Coruña (España)",
+    "office1AddressLine1": "C/ Rafael Alberti, 13 - 1ºD",
+    "office1AddressLine2": "15008 A Coruña",
+    "office1PhoneLabel": "Tel.:",
+    "office1Phone": "+34 881 927 808",
+    "office2Name": "El Salvador",
+    "office2AddressLine1": "Santa Tecla, San Salvador",
+    "office2PhoneLabel": "Tel.:",
+    "office2Phone": "+503 2520 0856",
+    "contactLabel": "Contacto",
+    "websiteUrl": "https://icarto.es/",
+    "websiteText": "icarto.es",
+    "geovisorsUrl": "https://geovisores.icarto.es",
+    "geovisorsText": "geovisores.icarto.es",
+    "copyright": "© 2026 iCarto - Innovación, Cooperación, Cartografía y Territorio S.L."
   }
 }
