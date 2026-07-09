@@ -1,6 +1,7 @@
 import fs from "fs";
 import path from "path";
 import { fileURLToPath } from "url";
+import { ICONS } from "./data/icons.mjs";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = __dirname;
@@ -90,9 +91,19 @@ function getValue(context, key) {
   return undefined;
 }
 
+function renderIconSvg(rawArg, context) {
+  const arg = rawArg.trim();
+  const iconName = getValue(context, arg);
+  if (iconName === undefined || iconName === null) return "";
+  return ICONS[String(iconName)] ?? "";
+}
+
 function resolveScalars(template, context) {
   return template.replace(/\{\{([^#/{][^}]*)\}\}/g, (_, rawKey) => {
     const key = rawKey.trim();
+    if (key.startsWith("iconSvg ")) {
+      return renderIconSvg(key.slice("iconSvg ".length), context);
+    }
     const value = getValue(context, key);
     return value === undefined || value === null ? "" : String(value);
   });
