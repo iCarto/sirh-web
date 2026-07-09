@@ -22,6 +22,7 @@ Gobernar la envoltura HTML del sitio: `<head>`, estructura del documento, partia
 
 ## Cuándo usar esta skill
 
+- Cargar siempre `escribir-codigo-limpio` junto con esta skill cuando haya cambios en código.
 - Añadir o cambiar meta tags, Open Graph, `hreflang` o favicons.
 - Actualizar `tailwind.config` embebido en `layout.html` (colores, fuentes).
 - Modificar skip link, clases base de `<body>` o punto de inyección `{{sections}}`.

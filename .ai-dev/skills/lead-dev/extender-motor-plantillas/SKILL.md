@@ -20,6 +20,7 @@ Gobernar el mini-motor de plantillas embebido en `<build.mjs>`. Las plantillas e
 
 ## Cuándo usar esta skill
 
+- Cargar siempre `escribir-codigo-limpio` junto con esta skill cuando haya cambios en código.
 - Añadir un tipo de bloque nuevo (p. ej. `{{#eq}}` adicional, helper).
 - Corregir bugs de anidamiento o de cierre de bloques (`findBlockClose`).
 - Cambiar cómo se resuelven claves con punto (`objeto.prop`) o valores en iteraciones.

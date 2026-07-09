@@ -6,6 +6,7 @@
 
 - **Skills aplicadas**
   - Revisar `.ai-dev/skills/lead-dev` y cargar las que apliquen a la tarea concreta.
+  - **Obligatoria al escribir o refactorizar código**: `escribir-codigo-limpio`.
   - Pipeline y build: `mantener-pipeline-de-compilacion`.
   - Motor de plantillas en `build.mjs`: `extender-motor-plantillas`.
   - Shell del documento (`layout.html`, partials, meta, tokens Tailwind): `modificar-envoltura-del-sitio`.

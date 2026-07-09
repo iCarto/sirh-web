@@ -54,6 +54,7 @@ Regla práctica: si una sección describe "**qué se hace en el proyecto**" y de
 4. Busca y enlaza la **fuente de verdad**.
    - Identifica 1–3 docs relevantes en `docs/` y enlázalos con formato `<ruta/relativa>`.
    - La skill no debe re-explicar todo el doc: debe **apuntar** y resumir lo mínimo necesario para la ejecución.
+   - Si la skill se inspira, adapta o migra desde una fuente externa conocida (repo, marketplace, docs públicas), añade en la propia skill una sección `## Referencia de origen` con enlaces explícitos.
 
 5. Diseña la **estructura mínima** (ver plantilla abajo).
    - Mantén la skill corta; si crece, divide por "sub-skills" o extrae norma a `docs/`.
@@ -92,6 +93,7 @@ Incluye estas secciones, en este orden (adapta nombres si necesitas, pero no eli
 - [ ] El `name` es corto, sin espacios, y consistente (kebab-case).
 - [ ] El `description` permite elegir la skill sin abrirla.
 - [ ] La skill enlaza a la documentación normativa relevante en `docs/` usando `<ruta/relativa>`.
+- [ ] Si existe fuente externa conocida, la skill incluye `## Referencia de origen` con URL(s) de procedencia.
 - [ ] No duplica normas: el detalle "canónico" vive en `docs/`, la skill es operativa.
 - [ ] Incluye pasos accionables y al menos un criterio "si X → haz Y".
 - [ ] Incluye anti‑patrones con síntoma + acción correctiva.
@@ -104,6 +106,7 @@ Incluye estas secciones, en este orden (adapta nombres si necesitas, pero no eli
 - Skill que copia/pega un doc completo de `docs/` y termina divergiendo.
 - Skill que mezcla varios problemas ("build + diseño + documentación IA") sin frontera clara.
 - Skill importada de otro proyecto sin adaptar stack, rutas ni convenciones.
+- Skill adaptada desde una fuente externa sin dejar trazabilidad de origen.
 - Skill que requiere interacción humana continua ("pregunta al usuario cada detalle") en lugar de una receta.
 
 ## Plantilla textual

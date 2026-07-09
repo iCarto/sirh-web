@@ -22,6 +22,7 @@ Gobernar archivos en `public/` y sus referencias desde locales, layout o plantil
 
 ## Cuándo usar esta skill
 
+- Cargar siempre `escribir-codigo-limpio` junto con esta skill cuando haya cambios en código.
 - Añadir imágenes, iconos, PDFs u otros archivos estáticos.
 - Actualizar rutas de imagen en JSON o en `layout.html`.
 - Sustituir favicons o apple-touch-icon.

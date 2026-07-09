@@ -21,6 +21,7 @@ Gobernar el script de build del sitio estático: carga de locales, validación i
 
 ## Cuándo usar esta skill
 
+- Cargar siempre `escribir-codigo-limpio` junto con esta skill cuando haya cambios en código.
 - Depurar errores de `npm run build` o del modo watch (`npm run dev`).
 - Añadir, quitar o reordenar entradas en el array `SECTIONS`.
 - Añadir un idioma nuevo al array `LOCALES`.
