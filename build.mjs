@@ -9,6 +9,7 @@ import {
   prefixRootPath,
   validateLocales,
 } from "./lib/i18n-utils.mjs";
+import { loadBrandTheme } from "./lib/brand-tokens.mjs";
 import { createTemplateRenderer } from "./lib/template-engine.mjs";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
@@ -71,6 +72,7 @@ function copyPublic() {
 
 export function build() {
   const basePath = normalizeBasePath(process.env.BASE_PATH);
+  const brandTheme = loadBrandTheme(ROOT);
   const enRaw = loadLocale(ROOT, "en");
   const esRaw = loadLocale(ROOT, "es");
   const ptRaw = loadLocale(ROOT, "pt");
@@ -82,7 +84,7 @@ export function build() {
 
   for (const code of LOCALES) {
     const data = localeDataByCode[code];
-    const html = renderPage({ ...data, basePath });
+    const html = renderPage({ ...data, ...brandTheme, basePath });
     const outDir = path.join(ROOT, "dist", code);
     fs.mkdirSync(outDir, { recursive: true });
     fs.writeFileSync(path.join(outDir, "index.html"), html);

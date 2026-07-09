@@ -46,34 +46,7 @@
             fontFamily: {
               sans: ["Inter", "sans-serif"],
             },
-            colors: {
-              primary: {
-                lighter: "#f0fdfa",
-                light: "#ccfbf1",
-                main: "#00bec5",
-                dark: "#1ba7ba",
-                contrastText: "#ffffff",
-              },
-              secondary: {
-                lighter: "#d7ddd5",
-                light: "#a3af9e",
-                main: "#52684b",
-                dark: "#3f4a3c",
-              },
-              neutral: {
-                0: "#ffffff",
-                50: "#f8fafc",
-                100: "#f1f5f9",
-                200: "#e2e8f0",
-                300: "#cbd5e1",
-                400: "#94a3b8",
-                500: "#64748b",
-                600: "#475569",
-                700: "#334155",
-                800: "#1e293b",
-                900: "#383836",
-              },
-            },
+            colors: {{tailwindColorsJson}},
           },
         },
       };
@@ -84,8 +57,8 @@
         left: -9999px;
         z-index: 100;
         padding: 0.75rem 1rem;
-        background: #00bec5;
-        color: #ffffff;
+        background: {{tailwindColors.primary.main}};
+        color: {{tailwindColors.primary.contrastText}};
         font-weight: 600;
         font-size: 0.875rem;
         border-radius: 0.375rem;
@@ -98,7 +71,7 @@
         font-feature-settings: "cv02", "cv03", "cv04", "cv11";
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
-        color: #383836;
+        color: {{tailwindColors.neutral.900}};
       }
     </style>
   </head>
