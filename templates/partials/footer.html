@@ -1,0 +1,109 @@
+<footer class="bg-neutral-900 text-neutral-0 pb-10">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div
+      class="pt-8 border-t border-neutral-600 grid grid-cols-1 md:grid-cols-4 gap-10 md:gap-12 mb-16 items-start text-left text-xs text-neutral-400"
+    >
+      <div class="min-w-0 md:col-span-2">
+        <div class="min-h-10 flex items-center">
+          <a
+            href="{{brand.link}}"
+            class="inline-flex items-center rounded focus:outline-none focus:ring-2 focus:ring-primary-dark focus:ring-offset-2 focus:ring-offset-neutral-900"
+            aria-label="{{brand.name}}"
+          >
+            <img
+              src="{{brand.logoWhite}}"
+              alt="{{brand.name}}"
+              class="h-12 w-auto"
+            />
+          </a>
+        </div>
+        <p class="mt-6 text-neutral-400 max-w-sm leading-relaxed italic">
+          {{footer.tagline}}
+        </p>
+      </div>
+
+      <div class="min-w-0">
+        <div class="min-h-10 flex items-center">
+          <h4 class="text-sm text-neutral-0 font-semibold">
+            {{footer.officesLabel}}
+          </h4>
+        </div>
+        <div class="mt-6 space-y-4">
+          <p>
+            <span class="text-neutral-300 font-semibold"
+              >{{footer.office1Name}}</span
+            ><br />
+            {{footer.office1AddressLine1}}<br />
+            {{footer.office1AddressLine2}}<br />
+            {{footer.office1PhoneLabel}} {{footer.office1Phone}}
+          </p>
+          <p>
+            <span class="text-neutral-300 font-semibold"
+              >{{footer.office2Name}}</span
+            ><br />
+            {{footer.office2AddressLine1}}<br />
+            {{footer.office2PhoneLabel}} {{footer.office2Phone}}
+          </p>
+        </div>
+      </div>
+
+      <div class="min-w-0">
+        <div class="min-h-10 flex items-center">
+          <h4 class="text-sm text-neutral-0 font-semibold">
+            {{footer.contactLabel}}
+          </h4>
+        </div>
+        <ul class="mt-6 space-y-3" role="list">
+          <li class="flex items-start gap-2.5">
+            <span
+              class="shrink-0 text-primary-main mt-0.5 [&_svg]:w-3 [&_svg]:h-3"
+              aria-hidden="true"
+              >{{iconSvg "mail"}}</span
+            >
+            <a
+              href="mailto:{{contact.email}}"
+              class="text-neutral-300 hover:text-neutral-0 hover:underline decoration-neutral-500 underline-offset-4 focus:outline-none focus:ring-2 focus:ring-primary-dark focus:ring-offset-2 focus:ring-offset-neutral-900 rounded"
+              >{{contact.email}}</a
+            >
+          </li>
+          <li class="flex items-start gap-2.5">
+            <span
+              class="shrink-0 text-primary-main mt-0.5 [&_svg]:w-3 [&_svg]:h-3"
+              aria-hidden="true"
+              >{{iconSvg "link"}}</span
+            >
+            <a
+              href="{{footer.websiteUrl}}"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="text-neutral-300 hover:text-neutral-0 hover:underline decoration-neutral-500 underline-offset-4 focus:outline-none focus:ring-2 focus:ring-primary-dark focus:ring-offset-2 focus:ring-offset-neutral-900 rounded"
+              >{{footer.websiteText}}</a
+            >
+          </li>
+          <li class="flex items-start gap-2.5">
+            <span
+              class="shrink-0 text-primary-main mt-0.5 [&_svg]:w-3 [&_svg]:h-3"
+              aria-hidden="true"
+              >{{iconSvg "globe"}}</span
+            >
+            <a
+              href="{{footer.geovisorsUrl}}"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="text-neutral-300 hover:text-neutral-0 hover:underline decoration-neutral-500 underline-offset-4 focus:outline-none focus:ring-2 focus:ring-primary-dark focus:ring-offset-2 focus:ring-offset-neutral-900 rounded"
+              >{{footer.geovisorsText}}</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="text-center">
+      <div
+        class="inline-block border-t border-neutral-800 pt-6 text-[9px] text-neutral-500 uppercase tracking-widest"
+      >
+        <span>{{footer.copyright}}</span>
+      </div>
+    </div>
+  </div>
+</footer>

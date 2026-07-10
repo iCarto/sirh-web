@@ -1,48 +1,36 @@
-    <section id="contact" class="scroll-mt-20 py-20 bg-neutral-900 text-neutral-0 relative">
-        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center space-y-10">
+<section
+  id="contact"
+  class="scroll-mt-20 pt-20 pb-20 bg-neutral-900 text-neutral-0 relative"
+>
+  <div
+    class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center space-y-10"
+  >
+    <div class="space-y-4">
+      <span
+        class="text-xs font-semibold uppercase tracking-widest text-primary-light"
+        >{{contact.eyebrow}}</span
+      >
+      <h2 class="text-3xl sm:text-4xl font-bold tracking-tight">
+        {{contact.title}}
+      </h2>
+      <p class="text-neutral-300 text-base max-w-2xl mx-auto leading-relaxed">
+        {{contact.description}}
+      </p>
+    </div>
 
-            <div class="space-y-4">
-                <span class="text-xs font-semibold uppercase tracking-widest text-primary-light">{{contact.eyebrow}}</span>
-                <h2 class="text-3xl sm:text-4xl font-bold tracking-tight">
-                    {{contact.title}}
-                </h2>
-                <p class="text-neutral-300 text-base max-w-2xl mx-auto leading-relaxed">
-                    {{contact.description}}
-                </p>
-            </div>
-
-            <div class="bg-neutral-800/50 border border-neutral-700/60 rounded-xl p-8 max-w-xl mx-auto space-y-4">
-                <span class="text-xs font-semibold uppercase tracking-wider text-neutral-400 block">{{contact.channelLabel}}</span>
-                <a href="mailto:{{contact.email}}" class="inline-flex items-center gap-3 bg-primary-main hover:bg-primary-dark text-primary-contrastText font-semibold text-lg px-8 py-4 rounded-md transition-all shadow-md group focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-neutral-900 focus:ring-primary-main">
-                    <span class="text-primary-contrastText group-hover:scale-105 transition-transform">{{iconSvg "mail"}}</span>
-                    {{contact.email}}
-                </a>
-                <p class="text-xs text-neutral-400">{{contact.emailHint}}</p>
-            </div>
-
-            <div class="pt-8 border-t border-neutral-800 grid grid-cols-1 sm:grid-cols-3 gap-6 text-left max-w-3xl mx-auto text-sm text-neutral-400">
-                <div class="space-y-2">
-                    <h4 class="text-neutral-300 font-semibold uppercase tracking-widest text-xs">{{contact.headquartersLabel}}</h4>
-                    <p class="text-neutral-400">
-                        {{contact.addressLine1}}<br>
-                        {{contact.addressLine2}}
-                    </p>
-                </div>
-                <div class="space-y-2">
-                    <h4 class="text-neutral-300 font-semibold uppercase tracking-widest text-xs">{{contact.phoneLabel}}</h4>
-                    <p class="text-neutral-400">{{contact.phone}}</p>
-                </div>
-                <div class="space-y-2">
-                    <h4 class="text-neutral-300 font-semibold uppercase tracking-widest text-xs">{{contact.portalsLabel}}</h4>
-                    <p class="text-neutral-400">
-                        {{contact.corporateLabel}} <a href="{{contact.corporateUrl}}" target="_blank" rel="noopener noreferrer" class="hover:text-neutral-0 underline decoration-primary-main underline-offset-4 focus:outline-none focus:ring-2 focus:ring-primary-main focus:ring-offset-2 focus:ring-offset-neutral-900 rounded">{{contact.corporateText}}</a><br>
-                        {{contact.gisLabel}} <a href="{{contact.gisUrl}}" target="_blank" rel="noopener noreferrer" class="hover:text-neutral-0 underline decoration-primary-main underline-offset-4 focus:outline-none focus:ring-2 focus:ring-primary-main focus:ring-offset-2 focus:ring-offset-neutral-900 rounded">{{contact.gisText}}</a>
-                    </p>
-                </div>
-            </div>
-
-            <div class="pt-12 text-xs text-neutral-500">
-                <span>{{contact.copyright}}</span>
-            </div>
-        </div>
-    </section>
+    <div
+      class="bg-neutral-800/50 border border-neutral-700/60 rounded-xl p-8 max-w-xl mx-auto space-y-4"
+    >
+      <a
+        href="mailto:{{contact.email}}"
+        class="inline-flex items-center gap-3 bg-primary-main hover:bg-primary-dark text-primary-contrastText font-semibold text-lg px-8 py-4 rounded-md transition-all shadow-md group focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-neutral-900 focus:ring-primary-main"
+      >
+        <span
+          class="text-primary-contrastText group-hover:scale-105 transition-transform"
+          >{{iconSvg "mail"}}</span
+        >
+        {{contact.email}}
+      </a>
+    </div>
+  </div>
+</section>
