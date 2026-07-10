@@ -45,3 +45,5 @@ All deployable artefacts are produced under `dist/`. This directory should be sa
 `dist/` is in `.gitignore`. CI and local preview always build fresh output. Do not commit generated HTML unless your deployment pipeline explicitly requires it.
 
 For local development, run `npm run dev` (watch) and `npm run preview` (serve `dist/` at http://localhost:3000).
+
+For page weight, external resources, and sustainability baseline, see [web-sustainability.md](./web-sustainability.md).

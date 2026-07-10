@@ -53,7 +53,7 @@ Gobernar archivos en `public/` y sus referencias desde locales, layout o plantil
 
 **Assets solo en `dist/`:** incorrecto; siempre añadir la fuente en `public/`.
 
-**Tamaño y formato:** optimizar imágenes antes de commit; sin pipeline de optimización en build.
+**Tamaño y formato:** optimizar imágenes antes de commit; sin pipeline de optimización en build. Criterios y prioridades: `<docs/devs/web-sustainability.md>`.
 
 ## Anti‑patrones
 

@@ -56,25 +56,11 @@ Pensar la **estructura del mensaje** de la landing comercial antes de maquetar o
    - Qué se mantiene, fusiona, mueve al hero, baja a subcopy o elimina del scroll.
    - Nuevo orden narrativo y propuesta de `nav` alineada.
 7. **Validar con el usuario** antes de implementar; esta skill es de pensamiento y decisión, no de commit masivo.
-8. **Persistir** el resultado en `docs/content/landing-information-architecture.md` (crear si no existe) usando la plantilla de `<assets/inventario-landing-plantilla.md>`.
+8. **Persistir** el resultado en `docs/content/landing-information-architecture.md` (crear si no existe): inventario por sección, matriz de solapamiento, arco narrativo objetivo y decisiones acordadas.
 9. **Derivar implementación** por capas:
    - Copy y claves → `gestionar-contenido-i18n`
    - HTML y secciones → `crear-seccion-landing`
    - Reordenar `SECTIONS` → coordinar con lead-dev (`mantener-pipeline-de-compilacion`)
-
-## Temas recurrentes a revisar en esta landing
-
-Comprobar si estos mensajes aparecen en más de un sitio y si el refuerzo es intencional:
-
-| Tema | Secciones habituales | Pregunta clave |
-|------|---------------------|----------------|
-| Credibilidad / despliegue | `hero`, `proven` | ¿Hacen falta dos bloques de confianza seguidos? |
-| Problema vs solución | `challenges`, `capabilities` | ¿Cada ítem problem+solution duplica una capability? |
-| Facturación / ingresos | `challenges`, `capabilities`, `sustainability` | ¿Un solo bloque debería “poseer” el mensaje de billing? |
-| GIS / registro | `hero`, `capabilities` | ¿El hero ya anuncia lo que capabilities detalla? |
-| Roadmap / módulos | `ecosystem`, `capabilities` | ¿Ecosystem añade visión o repite features? |
-| Implementación / fases | `methodology`, `ecosystem` | ¿Dos marcos de “cómo crece el proyecto”? |
-| Impacto institucional | `proven`, `sustainability`, `challenges` | ¿Los mismos beneficios con distintas palabras? |
 
 ## Criterios de decisión
 
@@ -111,7 +97,3 @@ Comprobar si estos mensajes aparecen en más de un sitio y si el refuerzo es int
 - [ ] Decisiones validadas con el usuario antes de implementar.
 - [ ] Documento en `docs/content/landing-information-architecture.md` actualizado (o plan para crearlo).
 - [ ] Siguiente paso enlazado a skill concreta (`gestionar-contenido-i18n`, `crear-seccion-landing`, lead-dev).
-
-## Plantilla textual
-
-Plantilla para el inventario y decisiones: `<assets/inventario-landing-plantilla.md>`.

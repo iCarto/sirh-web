@@ -11,6 +11,7 @@
   - Motor de plantillas en `build.mjs`: `extender-motor-plantillas`.
   - Shell del documento (`layout.html`, partials, meta, tokens Tailwind): `modificar-envoltura-del-sitio`.
   - Assets en `public/` y sus rutas: `gestionar-recursos-estaticos`.
+  - Huella web y peso de página: `auditar-huella-web` (baseline en `docs/devs/web-sustainability.md`).
   - Documentación en `docs/devs/`: `redactar-documentacion-tecnica`.
   - Secciones nuevas de la landing (HTML + copy + nav): coordinar con skill `crear-seccion-landing` del **landing page designer**; lead-dev interviene en `SECTIONS` y build si hace falta.
 
