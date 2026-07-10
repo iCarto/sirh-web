@@ -7,7 +7,7 @@
   >
     <div class="space-y-4">
       <span
-        class="text-xs font-semibold uppercase tracking-widest text-primary-light"
+        class="text-xs font-semibold uppercase tracking-widest text-primary-main"
         >{{contact.eyebrow}}</span
       >
       <h2 class="text-3xl sm:text-4xl font-bold tracking-tight">
@@ -18,19 +18,15 @@
       </p>
     </div>
 
-    <div
-      class="bg-neutral-800/50 border border-neutral-700/60 rounded-xl p-8 max-w-xl mx-auto space-y-4"
+    <a
+      href="mailto:{{contact.email}}"
+      class="inline-flex items-center gap-3 bg-primary-main hover:bg-primary-dark text-primary-contrastText font-semibold text-lg px-8 py-4 rounded-md transition-all shadow-md group focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-neutral-900 focus:ring-primary-main"
     >
-      <a
-        href="mailto:{{contact.email}}"
-        class="inline-flex items-center gap-3 bg-primary-main hover:bg-primary-dark text-primary-contrastText font-semibold text-lg px-8 py-4 rounded-md transition-all shadow-md group focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-neutral-900 focus:ring-primary-main"
+      <span
+        class="text-primary-contrastText group-hover:scale-105 transition-transform"
+        >{{iconSvg "mail"}}</span
       >
-        <span
-          class="text-primary-contrastText group-hover:scale-105 transition-transform"
-          >{{iconSvg "mail"}}</span
-        >
-        {{contact.email}}
-      </a>
-    </div>
+      {{contact.ctaLabel}}
+    </a>
   </div>
 </section>

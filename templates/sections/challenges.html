@@ -1,9 +1,12 @@
-<section id="challenges" class="scroll-mt-20 py-16 md:py-20 bg-gradient-to-b from-neutral-0 to-primary-lighter/20 border-y border-neutral-200">
+<section
+  id="challenges"
+  class="scroll-mt-20 py-16 md:py-20 bg-neutral-100 border-y border-neutral-200"
+>
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-start">
       <div class="lg:col-span-5 space-y-4">
         <span
-          class="text-xs font-semibold uppercase tracking-wider text-neutral-400"
+          class="text-xs font-semibold uppercase tracking-wider text-primary-dark"
           >{{challenges.eyebrow}}</span
         >
         <h2
@@ -20,11 +23,13 @@
         <ul class="space-y-4" role="list">
           {{#each challenges.items}}
           <li
-            class="rounded-lg border border-neutral-200 border-l-4 border-l-neutral-400 bg-neutral-50 px-5 py-4 hover:border-primary-light/80 transition-colors"
+            class="rounded-lg border border-neutral-200 border-l-4 border-l-primary-dark bg-neutral-0 px-5 py-4 shadow-card hover:border-l-neutral-500 hover:border-neutral-300 transition-colors"
           >
             <span
               class="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-wide text-primary-dark"
-              ><span class="w-1.5 h-1.5 rounded-full bg-primary-main animate-pulse"></span
+              ><span
+                class="w-1.5 h-1.5 rounded-full bg-primary-main animate-pulse"
+              ></span
               >{{tag}}</span
             >
             <p class="mt-1 text-sm text-neutral-600 leading-relaxed">

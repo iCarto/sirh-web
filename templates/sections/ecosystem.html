@@ -1,61 +1,81 @@
-    <section id="ecosystem" class="scroll-mt-20 py-20 bg-neutral-50">
-        <style>
-            @media (min-width: 1024px) {
-                #ecosystem .ecosystem-card-header {
-                    height: 10.5rem;
-                }
-            }
-        </style>
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="max-w-3xl mx-auto text-center mb-16">
-                <span class="text-xs font-semibold uppercase tracking-wider text-primary-main">{{ecosystem.eyebrow}}</span>
-                <h2 class="text-2xl sm:text-3xl font-bold text-neutral-900 tracking-tight mt-1">
-                    {{ecosystem.title}}
-                </h2>
-                <p class="mt-4 text-neutral-600 text-lg leading-relaxed">
-                    {{ecosystem.description}}
-                </p>
-            </div>
+<section
+  id="ecosystem"
+  class="scroll-mt-20 py-20 bg-neutral-0 border-y border-neutral-200"
+>
+  <style>
+    @media (min-width: 1024px) {
+      #ecosystem .ecosystem-card-header {
+        height: 10.5rem;
+      }
+    }
+  </style>
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="max-w-3xl mx-auto text-center mb-16">
+      <span
+        class="text-xs font-semibold uppercase tracking-wider text-primary-dark"
+        >{{ecosystem.eyebrow}}</span
+      >
+      <h2
+        class="text-2xl sm:text-3xl font-bold text-neutral-900 tracking-tight mt-1"
+      >
+        {{ecosystem.title}}
+      </h2>
+      <p class="mt-4 text-neutral-600 text-lg leading-relaxed">
+        {{ecosystem.description}}
+      </p>
+    </div>
 
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-stretch">
-                {{#each ecosystem.modules}}
-                <div class="bg-neutral-0 border border-neutral-200/80 rounded-xl p-6 sm:p-8 hover:shadow-md transition-shadow relative overflow-hidden flex flex-col h-full">
-                    <div class="absolute top-0 right-0 bg-primary-lighter text-primary-dark font-mono text-[9px] font-bold px-3 py-1 border-b border-l border-neutral-200 uppercase">
-                        {{badge}}
-                    </div>
-
-                    <div class="flex flex-col flex-1 min-h-0">
-                        <div class="ecosystem-card-header flex items-end gap-4 sm:gap-5 min-h-[10rem] sm:min-h-[10.5rem]">
-                            <div class="flex-1 min-w-0 flex flex-col pr-10 sm:pr-12">
-                                <h3 class="text-xl font-bold text-neutral-900 leading-snug">{{title}}</h3>
-                                <p class="mt-2 text-sm text-neutral-500 leading-relaxed">
-                                    {{description}}
-                                </p>
-                            </div>
-
-                            <div class="w-32 sm:w-36 shrink-0 flex justify-end">
-                                <div class="h-32 sm:h-36 flex items-end justify-end rounded-lg bg-gradient-to-br from-primary-lighter/40 via-neutral-50 to-neutral-0 border border-neutral-100 p-1.5 sm:p-2 overflow-hidden">
-                                    <img
-                                        src="{{image}}"
-                                        alt="{{imageAlt}}"
-                                        class="h-24 sm:h-28 w-auto max-w-full object-contain object-right ml-auto"
-                                        loading="lazy"
-                                    >
-                                </div>
-                            </div>
-                        </div>
-
-                        <ul class="mt-3 pt-3 border-t border-neutral-100 space-y-2">
-                            {{#each features}}
-                            <li class="flex items-start gap-2.5 text-neutral-600 text-sm">
-                                <span class="text-primary-main font-bold text-xs mt-0.5">•</span>
-                                <div><strong>{{label}}:</strong> {{text}}</div>
-                            </li>
-                            {{/each}}
-                        </ul>
-                    </div>
-                </div>
-                {{/each}}
-            </div>
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-stretch">
+      {{#each ecosystem.modules}}
+      <div
+        class="bg-neutral-100 border border-neutral-200 rounded-xl p-6 sm:p-8 shadow-card shadow-card-hover transition-shadow relative overflow-hidden flex flex-col h-full"
+      >
+        <div
+          class="absolute top-0 right-0 bg-primary-lighter/80 text-primary-dark font-mono text-[9px] font-bold px-3 py-1 border-b border-l border-primary-light/60 uppercase"
+        >
+          {{badge}}
         </div>
-    </section>
+
+        <div class="flex flex-col flex-1 min-h-0">
+          <div
+            class="ecosystem-card-header flex items-end gap-4 sm:gap-5 min-h-[10rem] sm:min-h-[10.5rem]"
+          >
+            <div class="flex-1 min-w-0 flex flex-col pr-10 sm:pr-12">
+              <h3
+                class="leading-snug text-lg sm:text-xl font-bold uppercase tracking-tight"
+              >
+                {{title}}
+              </h3>
+              <p class="mt-2 text-sm text-neutral-500 leading-relaxed">
+                {{description}}
+              </p>
+            </div>
+
+            <div class="w-32 sm:w-36 shrink-0 flex justify-end">
+              <div
+                class="h-32 sm:h-36 flex items-end justify-end rounded-lg bg-neutral-0 border border-neutral-200 p-1.5 sm:p-2 overflow-hidden"
+              >
+                <img
+                  src="{{image}}"
+                  alt="{{imageAlt}}"
+                  class="h-24 sm:h-28 w-auto max-w-full object-contain object-right ml-auto"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+          </div>
+
+          <ul class="mt-3 pt-3 border-t border-neutral-200 space-y-2">
+            {{#each features}}
+            <li class="flex items-start gap-2.5 text-neutral-600 text-sm">
+              <span class="text-primary-dark font-bold text-xs mt-0.5">•</span>
+              <div><strong>{{label}}:</strong> {{text}}</div>
+            </li>
+            {{/each}}
+          </ul>
+        </div>
+      </div>
+      {{/each}}
+    </div>
+  </div>
+</section>
