@@ -1,109 +1,136 @@
-    <section id="capabilities" class="scroll-mt-20 py-20 bg-neutral-0 border-t border-neutral-200">
-        <style>
-            @media (min-width: 1024px) {
-                #capabilities-tabs .capabilities-columns {
-                    height: 32rem;
-                }
-                #capabilities-tabs .capabilities-col,
-                #capabilities-tabs .capabilities-col-inner,
-                #capabilities-tabs .capabilities-panel:not(.hidden) {
-                    height: 100%;
-                    min-height: 0;
-                }
-            }
-        </style>
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center max-w-3xl mx-auto mb-12">
-                <span class="text-xs font-semibold uppercase tracking-wider text-neutral-400">{{capabilities.eyebrow}}</span>
-                <h2 class="text-2xl sm:text-3xl font-bold text-neutral-900 tracking-tight mt-1">
-                    {{capabilities.title}}
-                </h2>
-                <p class="mt-4 text-neutral-600 text-lg leading-relaxed">
-                    {{capabilities.subtitle}}
-                </p>
-            </div>
+<section
+  id="capabilities"
+  class="scroll-mt-20 py-20 bg-neutral-100 border-y border-neutral-200"
+>
+  <style>
+    @media (min-width: 1024px) {
+      #capabilities-tabs .capabilities-card,
+      #capabilities-tabs .capabilities-columns {
+        height: 32rem;
+      }
+      #capabilities-tabs .capabilities-col,
+      #capabilities-tabs .capabilities-panel:not(.hidden) {
+        height: 100%;
+        min-height: 0;
+      }
+    }
+  </style>
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center max-w-3xl mx-auto mb-12">
+      <span
+        class="text-xs font-semibold uppercase tracking-wider text-primary-dark"
+        >{{capabilities.eyebrow}}</span
+      >
+      <h2
+        class="text-2xl sm:text-3xl font-bold text-neutral-900 tracking-tight mt-1"
+      >
+        {{capabilities.title}}
+      </h2>
+      <p class="mt-4 text-neutral-600 text-lg leading-relaxed">
+        {{capabilities.subtitle}}
+      </p>
+    </div>
 
-            <div class="max-w-4xl mx-auto mb-12">
-                <div class="relative overflow-hidden rounded-xl border border-primary-light bg-primary-lighter px-6 py-5 sm:px-8 sm:py-6 text-center shadow-sm">
-                    <p class="text-base sm:text-lg font-semibold text-neutral-900 tracking-tight pl-2">
-                        {{capabilities.banner}}
-                    </p>
+    <div id="capabilities-tabs" class="capabilities-tabs">
+      <div
+        class="capabilities-card rounded-xl border border-neutral-200 bg-neutral-0 shadow-card overflow-hidden"
+      >
+        <div
+          class="capabilities-columns lg:grid lg:grid-cols-12 lg:gap-0 lg:items-stretch"
+        >
+          <div
+            class="capabilities-col lg:col-span-4 lg:h-full lg:min-h-0 bg-neutral-0 border-b lg:border-b-0 lg:border-r border-neutral-200"
+          >
+            <div
+              class="sticky top-20 z-10 lg:static lg:h-full lg:flex lg:flex-col p-3 sm:p-4"
+            >
+              <p
+                class="hidden lg:block flex-shrink-0 text-[10px] font-semibold uppercase tracking-wider text-neutral-400 mb-2 px-1"
+              >
+                {{capabilities.tabListLabel}}
+              </p>
+              <div
+                class="flex lg:flex-1 lg:flex-col lg:min-h-0 gap-1 lg:gap-0.5 overflow-x-auto lg:overflow-hidden pb-1 lg:pb-0 snap-x snap-mandatory lg:snap-none"
+                role="tablist"
+                aria-label="{{capabilities.tabListLabel}}"
+              >
+                {{#each capabilities.items}}
+                <button
+                  type="button"
+                  role="tab"
+                  id="cap-tab-{{icon}}"
+                  class="capabilities-tab flex-shrink-0 snap-start min-w-[12rem] lg:min-w-0 lg:w-full lg:flex-1 lg:min-h-0 text-left flex items-center gap-3 p-3 rounded-lg border border-transparent transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-dark focus-visible:ring-offset-2 hover:bg-neutral-100"
+                  aria-selected="false"
+                  aria-controls="cap-panel-{{icon}}"
+                  tabindex="-1"
+                  data-capability-tab="{{icon}}"
+                >
+                  <span
+                    class="capabilities-tab-icon flex-shrink-0 w-9 h-9 rounded-lg bg-neutral-0 border border-neutral-200 text-primary-dark flex items-center justify-center transition-colors"
+                  >
+                    {{iconSvg icon}}
+                  </span>
+                  <span class="min-w-0 flex-1">
+                    <span
+                      class="capabilities-tab-label block text-sm font-bold uppercase text-neutral-900 leading-snug transition-colors"
+                      >{{title}}</span
+                    >
+                  </span>
+                </button>
+                {{/each}}
+              </div>
+            </div>
+          </div>
+
+          <div class="capabilities-col lg:col-span-8 lg:h-full lg:min-h-0">
+            {{#each capabilities.items}}
+            <div
+              role="tabpanel"
+              id="cap-panel-{{icon}}"
+              class="capabilities-panel h-full lg:h-full"
+              aria-labelledby="cap-tab-{{icon}}"
+              tabindex="0"
+              data-capability-panel="{{icon}}"
+            >
+              <div class="cap-panel-body h-full min-h-0 flex flex-col">
+                <div
+                  class="capabilities-panel-header flex-shrink-0 p-4 sm:p-5 border-b border-neutral-200 border-l-4 border-l-primary-dark"
+                >
+                  <div class="flex items-start justify-between gap-4">
+                    <h3 class="text-lg sm:text-xl font-bold text-primary-dark">
+                      {{title}}
+                    </h3>
+                    <span
+                      class="flex-shrink-0 text-[11px] font-mono text-neutral-400"
+                      data-capability-counter
+                      aria-live="polite"
+                    ></span>
+                  </div>
+                  <p
+                    class="mt-2 text-sm sm:text-base text-neutral-600 leading-relaxed"
+                  >
+                    {{description}}
+                  </p>
                 </div>
-            </div>
 
-            <div id="capabilities-tabs" class="capabilities-tabs">
-                <div class="capabilities-columns lg:grid lg:grid-cols-12 lg:gap-8 lg:items-stretch">
-                    <div class="capabilities-col lg:col-span-5 lg:h-full lg:min-h-0 mb-5 lg:mb-0">
-                        <div
-                            class="capabilities-col-inner sticky top-20 z-10 lg:static lg:h-full lg:flex lg:flex-col rounded-xl border border-neutral-200 bg-neutral-50 p-4 shadow-sm"
-                        >
-                            <p class="hidden lg:block flex-shrink-0 text-[10px] font-semibold uppercase tracking-wider text-neutral-400 mb-3 px-1">
-                                {{capabilities.tabListLabel}}
-                            </p>
-                            <div
-                                class="flex lg:flex-1 lg:flex-col lg:min-h-0 gap-2 lg:gap-2 overflow-x-auto lg:overflow-hidden pb-1 lg:pb-0 snap-x snap-mandatory lg:snap-none"
-                                role="tablist"
-                                aria-label="{{capabilities.tabListLabel}}"
-                            >
-                                {{#each capabilities.items}}
-                                <button
-                                    type="button"
-                                    role="tab"
-                                    id="cap-tab-{{icon}}"
-                                    class="capabilities-tab flex-shrink-0 snap-start min-w-[14rem] lg:min-w-0 lg:w-full lg:flex-1 lg:min-h-0 text-left flex items-center gap-4 p-4 rounded-lg border transition-all focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-main focus-visible:ring-offset-2 border-neutral-200 bg-neutral-0 hover:bg-primary-lighter/50 hover:border-primary-light"
-                                    aria-selected="false"
-                                    aria-controls="cap-panel-{{icon}}"
-                                    tabindex="-1"
-                                    data-capability-tab="{{icon}}"
-                                >
-                                    <span class="flex-shrink-0 w-11 h-11 rounded-lg bg-neutral-0 border border-neutral-200 text-primary-main flex items-center justify-center shadow-sm">
-                                        {{iconSvg icon}}
-                                    </span>
-                                    <span class="min-w-0 flex-1">
-                                        <span class="block text-sm sm:text-base font-bold text-neutral-900 leading-snug">{{title}}</span>
-                                    </span>
-                                </button>
-                                {{/each}}
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="capabilities-col lg:col-span-7 lg:h-full lg:min-h-0">
-                        <div class="capabilities-col-inner rounded-xl border border-neutral-200 bg-neutral-0 shadow-md overflow-hidden lg:h-full">
-                            {{#each capabilities.items}}
-                            <div
-                                role="tabpanel"
-                                id="cap-panel-{{icon}}"
-                                class="capabilities-panel h-full lg:h-full"
-                                aria-labelledby="cap-tab-{{icon}}"
-                                tabindex="0"
-                                data-capability-panel="{{icon}}"
-                            >
-                                <div class="cap-panel-body h-full min-h-0 flex flex-col">
-                                    <div class="flex-shrink-0 p-4 border-b border-neutral-200 border-l-4 border-l-primary-main bg-gradient-to-r from-primary-lighter/40 to-neutral-0">
-                                        <div class="flex items-start justify-between gap-4">
-                                            <h3 class="text-lg sm:text-xl font-bold text-neutral-900 tracking-tight">{{title}}</h3>
-                                            <span class="flex-shrink-0 text-[11px] font-mono text-neutral-400" data-capability-counter aria-live="polite"></span>
-                                        </div>
-                                        <p class="mt-2 text-sm sm:text-base text-neutral-600 leading-relaxed">{{description}}</p>
-                                    </div>
-
-                                    <div class="relative w-full flex-1 min-h-[240px] lg:min-h-0 bg-neutral-100">
-                                        <img
-                                            src="{{image}}"
-                                            alt="{{imageAlt}}"
-                                            class="absolute inset-0 w-full h-full object-contain object-center"
-                                            loading="lazy"
-                                        >
-                                    </div>
-                                </div>
-                            </div>
-                            {{/each}}
-                        </div>
-                    </div>
+                <div
+                  class="relative w-full flex-1 min-h-[240px] lg:min-h-0 bg-neutral-100"
+                >
+                  <img
+                    src="{{image}}"
+                    alt="{{imageAlt}}"
+                    class="absolute inset-0 w-full h-full object-contain object-center"
+                    loading="lazy"
+                  />
                 </div>
+              </div>
             </div>
+            {{/each}}
+          </div>
         </div>
+      </div>
+    </div>
+  </div>
 
-        <script src="{{basePath}}/js/capabilities-tabs.js"></script>
-    </section>
+  <script src="{{basePath}}/js/capabilities-tabs.js"></script>
+</section>

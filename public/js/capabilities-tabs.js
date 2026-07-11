@@ -2,24 +2,35 @@
   const root = document.getElementById("capabilities-tabs");
   if (!root) return;
 
-  const tabs = Array.prototype.slice.call(root.querySelectorAll('[role="tab"]'));
-  const panels = Array.prototype.slice.call(root.querySelectorAll('[role="tabpanel"]'));
+  const tabs = Array.prototype.slice.call(
+    root.querySelectorAll('[role="tab"]'),
+  );
+  const panels = Array.prototype.slice.call(
+    root.querySelectorAll('[role="tabpanel"]'),
+  );
   if (tabs.length === 0 || panels.length === 0) return;
 
-  const inactiveTabClasses = [
-    "border-neutral-200",
-    "bg-neutral-0",
-    "hover:bg-primary-lighter/50",
-    "hover:border-primary-light",
-  ];
+  const inactiveTabClasses = ["hover:bg-neutral-100"];
   const activeTabClasses = [
     "is-active",
-    "border-primary-main",
-    "bg-primary-lighter",
-    "border-l-[3px]",
-    "border-l-primary-main",
-    "shadow-sm",
+    "bg-neutral-0",
+    "border-t",
+    "border-b",
+    "border-t-primary-light",
+    "border-b-primary-light",
+    "border-l-4",
+    "border-l-primary-dark",
+    "lg:relative",
+    "lg:z-10",
+    "lg:rounded-r-none",
+    "lg:-mr-px",
+    "lg:border-r-0",
   ];
+  const inactiveIconClasses = ["border", "border-neutral-200"];
+  const activeIconClasses = ["border-2", "border-primary-dark"];
+
+  const inactiveLabelClasses = ["text-neutral-900"];
+  const activeLabelClasses = ["text-primary-dark"];
 
   function setTabClasses(tab, isActive) {
     inactiveTabClasses.forEach(function (cls) {
@@ -28,6 +39,24 @@
     activeTabClasses.forEach(function (cls) {
       tab.classList.toggle(cls, isActive);
     });
+    const icon = tab.querySelector(".capabilities-tab-icon");
+    if (icon) {
+      inactiveIconClasses.forEach(function (cls) {
+        icon.classList.toggle(cls, !isActive);
+      });
+      activeIconClasses.forEach(function (cls) {
+        icon.classList.toggle(cls, isActive);
+      });
+    }
+    const label = tab.querySelector(".capabilities-tab-label");
+    if (label) {
+      inactiveLabelClasses.forEach(function (cls) {
+        label.classList.toggle(cls, !isActive);
+      });
+      activeLabelClasses.forEach(function (cls) {
+        label.classList.toggle(cls, isActive);
+      });
+    }
   }
 
   function setPanelVisibility(activePanelId) {
