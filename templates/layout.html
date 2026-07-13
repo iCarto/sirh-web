@@ -79,6 +79,21 @@
       .shadow-card-hover:hover {
         box-shadow: 0 12px 28px -10px rgba(0, 0, 0, 0.2);
       }
+      body:has(.mobile-menu[open]) {
+        overflow: hidden;
+      }
+      .mobile-menu > summary .icon-close {
+        display: none;
+      }
+      .mobile-menu[open] > summary .icon-menu {
+        display: none;
+      }
+      .mobile-menu[open] > summary .icon-close {
+        display: inline-flex;
+      }
+      .mobile-menu > summary svg {
+        display: block;
+      }
     </style>
   </head>
   <body
@@ -87,5 +102,6 @@
     <a href="#main-content" class="skip-link">Skip to content</a>
 
     {{sections}}
+    <script src="{{basePath}}/js/mobile-menu.js" defer></script>
   </body>
 </html>
