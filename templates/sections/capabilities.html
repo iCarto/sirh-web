@@ -3,6 +3,23 @@
   class="scroll-mt-20 py-20 bg-neutral-100 border-y border-neutral-200"
 >
   <style>
+    .capabilities-accordion > details > summary {
+      list-style: none;
+    }
+    .capabilities-accordion > details > summary::-webkit-details-marker {
+      display: none;
+    }
+    .capabilities-accordion-chevron {
+      transition: transform 0.25s ease-out;
+    }
+    .capabilities-accordion-item[open] .capabilities-accordion-chevron {
+      transform: rotate(180deg);
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .capabilities-accordion-chevron {
+        transition: none;
+      }
+    }
     @media (min-width: 1024px) {
       #capabilities-tabs .capabilities-card,
       #capabilities-tabs .capabilities-columns {
@@ -36,21 +53,67 @@
         class="capabilities-card rounded-xl border border-neutral-200 bg-neutral-0 shadow-card overflow-hidden"
       >
         <div
-          class="capabilities-columns lg:grid lg:grid-cols-12 lg:gap-0 lg:items-stretch"
+          class="capabilities-accordion lg:hidden divide-y divide-neutral-200"
+        >
+          {{#each capabilities.items}}
+          <details
+            name="capabilities-accordion"
+            class="capabilities-accordion-item"
+            {{#eq icon "registry"}}open{{/eq}}
+          >
+            <summary
+              class="flex min-h-11 cursor-pointer items-center gap-3 border-l-4 border-l-transparent p-4 transition-colors duration-200 hover:bg-neutral-50 open:bg-neutral-50 open:border-l-primary-dark focus:outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-primary-dark"
+            >
+              <span
+                class="flex-shrink-0 w-9 h-9 rounded-lg bg-neutral-0 border border-neutral-200 text-primary-dark flex items-center justify-center"
+              >
+                {{iconSvg icon}}
+              </span>
+              <span
+                class="min-w-0 flex-1 text-sm font-bold uppercase text-neutral-900 leading-snug"
+                >{{title}}</span
+              >
+              <span
+                class="capabilities-accordion-chevron flex-shrink-0 text-neutral-400"
+                aria-hidden="true"
+                >{{iconSvg "chevron-down"}}</span
+              >
+            </summary>
+            <div
+              class="border-l-4 border-l-primary-dark px-4 pb-4 pt-1 bg-neutral-50"
+            >
+              <p class="text-sm text-neutral-600 leading-relaxed">
+                {{description}}
+              </p>
+              <div
+                class="relative mt-4 w-full min-h-[240px] rounded-lg bg-neutral-100 overflow-hidden"
+              >
+                <img
+                  src="{{image}}"
+                  alt="{{imageAlt}}"
+                  class="absolute inset-0 w-full h-full object-contain object-center"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+          </details>
+          {{/each}}
+        </div>
+
+        <div
+          class="capabilities-columns hidden lg:grid lg:grid-cols-12 lg:gap-0 lg:items-stretch"
         >
           <div
-            class="capabilities-col lg:col-span-4 lg:h-full lg:min-h-0 bg-neutral-0 border-b lg:border-b-0 lg:border-r border-neutral-200"
+            class="capabilities-col lg:col-span-4 lg:h-full lg:min-h-0 bg-neutral-0 border-r border-neutral-200"
           >
-            <div
-              class="sticky top-20 z-10 lg:static lg:h-full lg:flex lg:flex-col p-3 sm:p-4"
-            >
+            <div class="lg:h-full lg:flex lg:flex-col p-3 sm:p-4">
               <p
-                class="hidden lg:block flex-shrink-0 text-[10px] font-semibold uppercase tracking-wider text-neutral-400 mb-2 px-1"
+                class="flex-shrink-0 text-[10px] font-semibold uppercase tracking-wider text-neutral-400 mb-2 px-1"
               >
                 {{capabilities.tabListLabel}}
               </p>
               <div
-                class="flex lg:flex-1 lg:flex-col lg:min-h-0 gap-1 lg:gap-0.5 overflow-x-auto lg:overflow-hidden pb-1 lg:pb-0 snap-x snap-mandatory lg:snap-none"
+                class="flex lg:flex-1 lg:flex-col lg:min-h-0 gap-0.5"
                 role="tablist"
                 aria-label="{{capabilities.tabListLabel}}"
               >
@@ -59,7 +122,7 @@
                   type="button"
                   role="tab"
                   id="cap-tab-{{icon}}"
-                  class="capabilities-tab flex-shrink-0 snap-start min-w-[12rem] lg:min-w-0 lg:w-full lg:flex-1 lg:min-h-0 text-left flex items-center gap-3 p-3 rounded-lg border border-transparent transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-dark focus-visible:ring-offset-2 hover:bg-neutral-100"
+                  class="capabilities-tab lg:min-w-0 lg:w-full lg:flex-1 lg:min-h-0 text-left flex items-center gap-3 p-3 rounded-lg border border-transparent transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-dark focus-visible:ring-offset-2 hover:bg-neutral-100"
                   aria-selected="false"
                   aria-controls="cap-panel-{{icon}}"
                   tabindex="-1"
