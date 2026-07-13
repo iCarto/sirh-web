@@ -20,42 +20,64 @@
 
     <div class="mb-6 lg:mb-8 rounded-xl bg-neutral-900 p-6 shadow-card">
       <div
-        class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-6 lg:gap-4 lg:divide-x lg:divide-neutral-700/80"
+        class="flex flex-col gap-8 lg:flex-row lg:items-start lg:gap-0 lg:divide-x lg:divide-neutral-700/80"
       >
-        {{#each proven.figuresDeployment}}
-        <div class="px-2 lg:px-4 text-center min-w-0">
-          <span
-            class="text-3xl sm:text-4xl font-bold font-mono tabular-nums text-primary-main block leading-none"
-            >{{value}}</span
+        <div class="lg:flex-1 lg:px-4 min-w-0">
+          <p
+            class="text-[10px] font-semibold uppercase tracking-wider text-neutral-400 text-center mb-4"
           >
-          <span
-            class="text-xs sm:text-sm font-medium text-neutral-200 mt-2 block leading-snug"
-            >{{label}}</span
-          >
+            {{proven.figuresDeploymentLabel}}
+          </p>
+          <div class="grid grid-cols-2 lg:grid-cols-2 gap-2 sm:gap-4 lg:gap-4">
+            {{#each proven.figuresDeployment}}
+            <div class="px-0 sm:px-2 lg:px-0 text-center min-w-0">
+              <span
+                class="text-2xl sm:text-4xl font-bold font-mono tabular-nums text-primary-main block leading-none"
+                >{{value}}</span
+              >
+              <span
+                class="text-[10px] sm:text-sm font-medium text-neutral-200 mt-1.5 sm:mt-2 block leading-tight sm:leading-snug"
+                >{{label}}</span
+              >
+            </div>
+            {{/each}}
+          </div>
         </div>
-        {{/each}} {{#each proven.figures}}
-        <div class="px-2 lg:px-4 text-center min-w-0">
-          <span
-            class="text-3xl sm:text-4xl font-bold font-mono tabular-nums text-primary-main block leading-none"
-            >{{value}}</span
+
+        <div class="lg:flex-[1.5] lg:px-4 min-w-0">
+          <p
+            class="text-[10px] font-semibold uppercase tracking-wider text-neutral-400 text-center mb-4"
           >
-          <span
-            class="text-xs sm:text-sm font-medium text-neutral-200 mt-2 block leading-snug"
-            >{{label}}</span
-          >
+            {{proven.figuresScaleLabel}}
+          </p>
+          <div class="grid grid-cols-3 gap-2 sm:gap-4 lg:gap-4">
+            {{#each proven.figures}}
+            <div class="px-0 sm:px-2 lg:px-0 text-center min-w-0">
+              <span
+                class="text-2xl sm:text-4xl font-bold font-mono tabular-nums text-primary-main block leading-none"
+                >{{value}}</span
+              >
+              <span
+                class="text-[10px] sm:text-sm font-medium text-neutral-200 mt-1.5 sm:mt-2 block leading-tight sm:leading-snug"
+                >{{label}}</span
+              >
+            </div>
+            {{/each}}
+          </div>
         </div>
-        {{/each}}
       </div>
     </div>
 
-    <div class="rounded-xl bg-neutral-100 p-5 sm:p-6 lg:p-8">
+    <div class="lg:rounded-xl lg:bg-neutral-100 lg:p-8">
       <div
-        class="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-8 items-stretch"
+        class="grid grid-cols-1 lg:grid-cols-12 gap-4 lg:gap-8 items-stretch"
       >
         <div
-          class="lg:col-span-7 flex flex-col bg-neutral-0 rounded-xl border border-neutral-200 shadow-card overflow-hidden"
+          class="lg:col-span-7 flex flex-col bg-neutral-0 rounded-xl border border-neutral-200 lg:border-0 shadow-card overflow-hidden"
         >
-          <div class="px-6 pt-5 pb-5 border-b border-neutral-100 shrink-0">
+          <div
+            class="px-4 pt-4 pb-4 sm:px-6 sm:pt-5 sm:pb-5 border-b border-neutral-100 shrink-0"
+          >
             <div class="flex items-center gap-3">
               <div
                 class="w-10 h-10 rounded-lg bg-neutral-100 border border-neutral-200 text-primary-dark flex items-center justify-center shrink-0"
@@ -70,15 +92,15 @@
             </div>
           </div>
 
-          <div class="p-6 flex flex-col flex-1 min-h-0">
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-5 flex-1 min-h-0">
+          <div class="p-4 sm:p-6 flex flex-col flex-1 min-h-0">
+            <div class="grid grid-cols-2 gap-3 sm:gap-5 flex-1 min-h-0">
               {{#each proven.countryList}}
-              <div class="flex flex-col gap-2 min-h-0">
+              <div class="flex flex-col gap-1.5 sm:gap-2 min-h-0 min-w-0">
                 <div
-                  class="flex items-center justify-center gap-1.5 text-xs font-semibold text-primary-dark shrink-0"
+                  class="flex items-center justify-center gap-1.5 sm:gap-1.5 text-xs sm:text-sm font-semibold text-primary-dark shrink-0"
                 >
                   <svg
-                    class="w-3.5 h-3.5 text-primary-dark shrink-0"
+                    class="w-3.5 h-3.5 sm:w-4 sm:h-4 text-primary-dark shrink-0"
                     fill="none"
                     stroke="currentColor"
                     stroke-width="1.5"
@@ -95,15 +117,15 @@
                       d="M19.5 10.5C19.5 17.6421 12 21.75 12 21.75C12 21.75 4.5 17.6421 4.5 10.5C4.5 6.35786 7.85786 3 12 3C16.1421 3 19.5 6.35786 19.5 10.5Z"
                     ></path>
                   </svg>
-                  <span>{{name}}</span>
+                  <span class="truncate">{{name}}</span>
                 </div>
                 <div
-                  class="flex-1 min-h-[9rem] sm:min-h-[10rem] lg:min-h-[12rem] w-full overflow-hidden rounded-lg border border-neutral-200 bg-neutral-100"
+                  class="w-full overflow-hidden rounded-md sm:rounded-lg border border-neutral-200 bg-neutral-100 aspect-square sm:aspect-auto sm:min-h-[10rem] lg:min-h-[12rem]"
                 >
                   <img
                     src="{{map}}"
                     alt="{{mapAlt}}"
-                    class="w-full h-full object-cover object-center"
+                    class="w-full h-full object-contain object-center sm:object-cover"
                     loading="lazy"
                   />
                 </div>
@@ -115,9 +137,11 @@
 
         <div class="lg:col-span-5 flex flex-col min-h-0">
           <div
-            class="bg-neutral-0 rounded-xl border border-neutral-200 shadow-card overflow-hidden flex flex-col flex-1"
+            class="bg-neutral-0 rounded-xl border border-neutral-200 lg:border-0 shadow-card overflow-hidden flex flex-col flex-1"
           >
-            <div class="px-6 pt-5 pb-4 border-b border-neutral-100 shrink-0">
+            <div
+              class="px-4 pt-4 pb-3 sm:px-6 sm:pt-5 sm:pb-4 border-b border-neutral-100 shrink-0"
+            >
               <div class="flex items-center gap-3">
                 <div
                   class="w-10 h-10 rounded-lg bg-neutral-100 border border-neutral-200 text-primary-dark flex items-center justify-center shrink-0"
@@ -132,7 +156,7 @@
               </div>
             </div>
 
-            <div class="p-6 flex flex-col gap-6 flex-1">
+            <div class="p-4 sm:p-6 flex flex-col gap-6 flex-1">
               <div class="space-y-6">
                 {{#each proven.resultsItems}}
                 <div class="flex gap-3 items-center">
@@ -173,22 +197,22 @@
     </div>
 
     <div
-      class="mt-12 pt-10 border-t border-neutral-200 max-w-5xl mx-auto rounded-xl bg-neutral-100 px-6 py-8"
+      class="mt-10 sm:mt-12 pt-8 sm:pt-10 border-t border-neutral-200 max-w-5xl mx-auto rounded-xl bg-neutral-100 px-4 sm:px-6 py-6 sm:py-8"
     >
       <p
-        class="text-xs font-semibold uppercase tracking-wider text-neutral-400 text-center mb-8"
+        class="text-xs font-semibold uppercase tracking-wider text-neutral-400 text-center mb-6 sm:mb-8"
       >
         {{proven.donorsTitle}}
       </p>
       <div
-        class="grid grid-cols-1 sm:grid-cols-3 gap-6 sm:gap-8 items-center max-w-3xl mx-auto"
+        class="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-8 items-center max-w-3xl mx-auto"
       >
         {{#each proven.donors}}
-        <div class="flex items-center justify-center px-4 py-3">
+        <div class="flex items-center justify-center px-2 py-2 sm:px-4 sm:py-3">
           <img
             src="{{logo}}"
             alt="{{alt}}"
-            class="{{logoClass}}"
+            class="{{logoClass}} max-h-10 sm:max-h-16"
             loading="lazy"
           />
         </div>
