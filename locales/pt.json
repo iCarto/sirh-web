@@ -1,7 +1,7 @@
 {
   "meta": {
-    "title": "TODO",
-    "description": "TODO",
+    "title": "Sistema de Informação de Recursos Hídricos (SIRH) — iCarto",
+    "description": "Plataforma digital integrada para a gestão de licenças, faturação e análise SIG. Implementada em Moçambique e Eswatini.",
     "lang": "pt"
   },
   "alternate": {
@@ -15,96 +15,63 @@
     "pt": "text-neutral-0 font-semibold"
   },
   "brand": {
-    "name": "TODO",
-    "tagline": "TODO",
-    "logo": "/images/logo_icarto.webp",
-    "logoWhite": "/images/logo_icarto_white.webp",
+    "name": "iCarto",
+    "logo": "/images/logo_icarto_white.webp",
     "link": "https://icarto.es/en/"
   },
   "nav": [
-    {
-      "label": "TODO",
-      "href": "#proven"
-    },
-    {
-      "label": "TODO",
-      "href": "#challenges"
-    },
-    {
-      "label": "TODO",
-      "href": "#capabilities"
-    },
-    {
-      "label": "TODO",
-      "href": "#ecosystem"
-    },
-    {
-      "label": "TODO",
-      "href": "#methodology"
-    }
+    { "label": "Contexto", "href": "#challenges" },
+    { "label": "Resultados", "href": "#proven" },
+    { "label": "Funcionalidades", "href": "#capabilities" },
+    { "label": "Ecossistema", "href": "#ecosystem" },
+    { "label": "A nossa diferença", "href": "#methodology" }
   ],
   "cta": {
-    "header": "TODO",
+    "header": "Solicitar demo",
     "headerHref": "#contact"
   },
   "hero": {
-    "badge": "TODO",
-    "title": "TODO",
-    "description": "TODO",
-    "ctaPrimary": "TODO",
+    "badge": "SIRH: Sistema de Informação de Recursos Hídricos",
+    "title": "Um registo único</br>e fiável para a gestão hídrica",
+    "description": "Plataforma integrada com SIG para gerir o ciclo de vida das licenças de água, modernizar a faturação e melhorar a relação com os utentes de água.",
+    "ctaPrimary": "Solicitar demo técnica",
     "ctaPrimaryHref": "#contact",
-    "ctaSecondary": "TODO",
+    "ctaSecondary": "Descobrir",
     "ctaSecondaryHref": "#capabilities",
     "browserUrl": "sirh.icarto.es",
-    "browserBadge": "TODO",
-    "screenshot": "TODO",
-    "screenshotAlt": "TODO",
-    "placeholderTitle": "TODO",
-    "placeholderHint": "TODO"
+    "browserBadge": "Ambiente de testes",
+    "screenshot": "/images/SIRH_screenshot_map.webp",
+    "screenshotAlt": "Mapa de explorações do SIRH com camadas SIG e licenças"
   },
   "proven": {
-    "eyebrow": "TODO",
-    "title": "TODO",
-    "subtitle": "TODO",
-    "contextsTitle": "TODO",
-    "mapLabel": "TODO",
+    "eyebrow": "Resultados comprovados",
+    "title": "Comprovado a nível nacional",
+    "subtitle": "10 anos a melhorar a gestão de utentes e licenças de água",
+    "contextsTitle": "Implementado em diferentes contextos",
     "countryList": [
       {
-        "name": "TODO",
+        "name": "Moçambique",
         "map": "/images/map_MZQ.webp",
-        "mapAlt": "TODO"
+        "mapAlt": "Interface cartográfica do SIRH com explorações em Moçambique"
       },
       {
-        "name": "TODO",
+        "name": "Eswatini",
         "map": "/images/map_ESW.webp",
-        "mapAlt": "TODO",
-        "mapFill": true
+        "mapAlt": "Interface cartográfica do SIRH com explorações em Eswatini"
       }
     ],
-    "figuresDeploymentLabel": "TODO",
+    "figuresDeploymentLabel": "Implementação",
     "figuresDeployment": [
-      { "value": "2", "label": "TODO", "icon": "globe" },
-      { "value": "6", "label": "TODO", "icon": "building" }
+      { "value": "2", "label": "Países" },
+      { "value": "6", "label": "Autoridades hidrológicas" }
     ],
-    "figuresScaleLabel": "TODO",
+    "figuresScaleLabel": "Escala do sistema",
     "figures": [
-      {
-        "value": "+100",
-        "label": "TODO",
-        "icon": "TODO"
-      },
-      {
-        "value": "+4,000",
-        "label": "TODO",
-        "icon": "TODO"
-      },
-      {
-        "value": "+5,000",
-        "label": "TODO",
-        "icon": "TODO"
-      }
+      { "value": "+100", "label": "Utilizadores do sistema" },
+      { "value": "+4.000", "label": "Utentes de água" },
+      { "value": "+5.000", "label": "Licenças" }
     ],
-    "donorsTitle": "TODO",
+    "donorsTitle": "Com o apoio de",
     "donors": [
       {
         "logo": "/images/logo_world_bank.webp",
@@ -112,9 +79,9 @@
         "logoClass": "max-h-16 md:max-h-[4.5rem] w-auto max-w-full object-contain"
       },
       {
-        "logo": "/images/logo_blue_deal.webp",
-        "alt": "Blue Deal",
-        "logoClass": "max-h-12 md:max-h-14 w-auto max-w-full object-contain"
+        "logo": "/images/logo_dutch_water_authorities.webp",
+        "alt": "Autoridades Hidrológicas Neerlandesas",
+        "logoClass": "max-h-16 md:max-h-16 w-auto max-w-full object-contain"
       },
       {
         "logo": "/images/logo_coop_galega.webp",
@@ -122,212 +89,175 @@
         "logoClass": "max-h-10 md:max-h-12 w-auto max-w-full object-contain"
       }
     ],
-    "resultsTitle": "TODO",
-    "resultsFootnote": "TODO",
+    "resultsTitle": "Impacto demonstrado nas instituições",
+    "resultsFootnote": "Com base na experiência de implementação em Moçambique desde 2018 e Eswatini desde 2024.",
     "resultsItems": [
-      { "title": "TODO" },
-      { "title": "TODO" },
-      { "title": "TODO" },
-      { "title": "TODO" },
-      { "title": "TODO" },
-      { "title": "TODO" }
+      { "title": "Operações diárias mais eficientes" },
+      { "title": "Decisões melhor apoiadas em dados" },
+      { "title": "Menos inconsistências nos dados" },
+      { "title": "Maior cobertura geográfica" },
+      { "title": "Fluxos administrativos digitalizados" },
+      { "title": "Maior número de licenças geridas anualmente" },
+      { "title": "Aumento de receitas e capacidade financeira" }
     ]
   },
   "challenges": {
-    "eyebrow": "Barreras operativas",
-    "title": "Los retos de una gestión hídrica fragmentada",
-    "description": "Muchas autoridades hídricas siguen gestionando licencias y facturación en libros en papel y hojas de cálculo desconectadas. Esa fragmentación genera fricción diaria entre departamentos y dificulta el cumplimiento de la recuperación de costes exigida por ley.",
+    "eyebrow": "Barreiras operacionais",
+    "title": "As consequências de uma gestão fragmentada da água",
+    "description": "Muitas instituições continuam a usar papel e folhas de cálculo desligadas para gerir licenças e faturas. Esta fragmentação gera fricções na operação diária e prejudica a sua capacidade financeira.",
     "items": [
       {
-        "tag": "Registros fragmentados",
-        "problem": "Datos de licencias y facturación repartidos entre papel, hojas de cálculo y departamentos sin una visión compartida."
+        "tag": "Registos desligados",
+        "problem": "Dados de licenças e faturação dispersos entre papel, folhas de cálculo e departamentos sem uma visão partilhada."
       },
       {
-        "tag": "Procedimientos lentos",
-        "problem": "Cálculos manuales y tramitación en papel retrasan renovaciones de licencias y el trabajo diario."
+        "tag": "Processos lentos",
+        "problem": "Os cálculos manuais e a tramitação em papel prolongam os prazos de processamento e abrandam o trabalho diário."
       },
       {
-        "tag": "Baja recaudación",
-        "problem": "Lagunas de seguimiento y cuellos de botella en el cobro debilitan la recuperación de costes y los ingresos institucionales."
+        "tag": "Baixa cobrança",
+        "problem": "A dificuldade em acompanhar licenças e pagamentos enfraquece a capacidade financeira da instituição."
       }
     ]
   },
   "capabilities": {
-    "eyebrow": "Capacidades de la plataforma",
-    "title": "Capacidades esenciales para la gestión del agua",
-    "subtitle": "Uma base de dados centralizada partilhada entre departamentos.",
-    "tabListLabel": "Capacidades de la plataforma",
-    "panelLabel": "Detalle de capacidad",
+    "eyebrow": "Funcionalidades da plataforma",
+    "title": "Uma base de dados centralizada</br>para a sua instituição de gestão da água",
+    "subtitle": "Capacidades digitais partilhadas entre departamentos, sem ficheiros duplicados</br>nem transferências manuais.",
+    "tabListLabel": "Funcionalidades do SIRH",
     "items": [
       {
         "icon": "registry",
-        "title": "Registro estandarizado",
-        "description": "Procedimientos unificados para registrar usuarios del agua y emitir permisos, alineados con las normas y circuitos de aprobación de su autoridad.",
+        "title": "Registo unificado",
+        "description": "Procedimentos unificados para registar utentes e emitir licenças de água, alinhados com a sua legislação e processos.",
         "image": "/images/SIRH_screenshot_procedure.webp",
-        "imageAlt": "Pantalla de registro de usuarios y permisos en SIRH",
-        "imageFit": "cover",
-        "imageSizeHint": "Recomendado 960×540 px"
+        "imageAlt": "Ecrã de registo de utentes e licenças de água no SIRH"
       },
       {
         "icon": "gis",
-        "title": "Cartografía georreferenciada",
-        "description": "Registre y visualice ámbitos de explotación, cultivos y puntos de captación o vertido en mapas interactivos vinculados a los permisos.",
+        "title": "Cartografia georreferenciada",
+        "description": "Registe e visualize explorações, culturas, fontes e pontos de descarga em mapas interativos ligados às licenças.",
         "image": "/images/SIRH_screenshot_map_detail.webp",
-        "imageAlt": "Mapa georreferenciado de ámbitos de explotación en SIRH",
-        "imageFit": "cover",
-        "imageSizeHint": "Recomendado 960×540 px"
+        "imageAlt": "Mapa georreferenciado de explorações no SIRH"
       },
       {
         "icon": "estimation",
-        "title": "Estimación automatizada",
-        "description": "Aplique valores de referencia institucionales para calcular el consumo de agua automáticamente, sustituyendo estimaciones manuales en renovaciones y ciclos de facturación.",
+        "title": "Cálculo automatizado de consumos",
+        "description": "Aplique os valores de referência da sua instituição para calcular automaticamente consumos de água em licenças e faturação.",
         "image": "/images/SIRH_screenshot_estimation.webp",
-        "imageAlt": "Estimación automatizada de consumo de agua en SIRH",
-        "imageFit": "cover",
-        "imageSizeHint": "Recomendado 960×540 px"
+        "imageAlt": "Cálculo automatizado de consumo de água no SIRH"
       },
       {
         "icon": "workflow",
-        "title": "Seguimiento de solicitudes y renovaciones",
-        "description": "Supervise solicitudes y renovaciones de permisos en cada paso institucional, con estado claro para el personal y los responsables.",
+        "title": "Acompanhamento de pedidos e renovações",
+        "description": "Acompanhe o estado de pedidos e renovações de licenças em cada passo institucional, com etapas definidas para a equipa e a direção.",
         "image": "/images/SIRH_screenshot_procedures.webp",
-        "imageAlt": "Flujo de solicitudes y renovaciones de permisos en SIRH",
-        "imageFit": "cover",
-        "imageSizeHint": "Recomendado 960×540 px"
+        "imageAlt": "Fluxo de pedidos e renovações de licenças no SIRH"
       },
       {
         "icon": "document",
-        "title": "Generación de documentos e informes",
-        "description": "Genere permisos oficiales, facturas e informes operativos bajo demanda. Exporte a PDF, Excel o formatos geoespaciales cuando los equipos necesiten compartir o analizar datos fuera del sistema.",
+        "title": "Geração de documentos e extração de dados",
+        "description": "Gere licenças e faturas no formato oficial e extraia dados operacionais quando precisar. Exporte para PDF, Excel ou formatos geoespaciais.",
         "image": "/images/SIRH_from_screen_to_print.webp",
-        "imageAlt": "Generación de documentos e informes en SIRH",
-        "imageFit": "contain",
-        "imageSizeHint": "Recomendado 800×600 px"
+        "imageAlt": "Geração de documentos e relatórios no SIRH"
       },
       {
         "icon": "billing",
-        "title": "Facturación y recuperación de costes",
-        "description": "Automatice la generación de facturas, procese lotes por cuenca o ciclo de facturación y haga seguimiento de pagos y saldos pendientes en un solo lugar.",
+        "title": "Faturação e seguimento de pagos",
+        "description": "Automatize a geração de faturas, processe lotes por bacia ou ciclo e controle pagamentos e saldos pendentes num só lugar.",
         "image": "/images/SIRH_screenshot_invoices.webp",
-        "imageAlt": "Módulo de facturación y recuperación de costes en SIRH",
-        "imageFit": "cover",
-        "imageSizeHint": "Recomendado 960×540 px"
+        "imageAlt": "Módulo de faturação e cobrança no SIRH"
       }
     ]
   },
   "ecosystem": {
-    "eyebrow": "TODO",
-    "title": "TODO",
-    "description": "TODO",
+    "eyebrow": "Módulos avançados e evolução da plataforma web",
+    "title": "Um ecossistema escalável:<br>o futuro da sua transformação digital",
+    "description": "O SIRH foi concebido para crescer junto da sua instituição.<br>Depois de consolidado o uso da plataforma central, o sistema pode expandir-se com ferramentas avançadas para digitalizar o trabalho de campo e a transparência.",
     "modules": [
       {
-        "badge": "TODO",
-        "title": "TODO",
-        "description": "TODO",
+        "badge": "App de campo",
+        "title": "SIRH Móvel",
+        "description": "Aplicação específica para equipas de campo que recolhem, atualizam e validam dados no terreno.",
         "image": "/images/mobile_mockup_transparent.webp",
-        "imageAlt": "TODO",
+        "imageAlt": "Maquete do SIRH Móvel mostrando edição cartográfica de campo com coordenadas GPS",
         "features": [
           {
-            "label": "TODO",
-            "text": "TODO"
+            "label": "Trabalho de campo sem papel",
+            "text": "Elimine os formulários manuais e reduza erros introduzindo os dados diretamente no sistema."
           },
           {
-            "label": "TODO",
-            "text": "TODO"
+            "label": "Sincronização imediata",
+            "text": "Os dados recolhidos no terreno são atualizados de imediato na base de dados central."
           },
           {
-            "label": "TODO",
-            "text": "TODO"
+            "label": "Melhor qualidade",
+            "text": "Dados mais fiáveis com coordenadas GPS precisas e validadas."
           }
         ]
       },
       {
-        "badge": "TODO",
-        "title": "TODO",
-        "description": "TODO",
+        "badge": "Complemento fase II",
+        "title": "Escritório virtual",
+        "description": "Plataforma digital para melhorar a comunicação e a transparência com os utentes de água.",
         "image": "/images/OV_mockup_transparent.webp",
-        "imageAlt": "TODO",
+        "imageAlt": "Maquete do escritório virtual em tablet e smartphone mostrando explorações e licenças",
         "features": [
           {
-            "label": "TODO",
-            "text": "TODO"
+            "label": "Informação de licenças e faturação",
+            "text": "Os utentes de água podem consultar dados atualizados das suas licenças, faturas e saldos."
           },
           {
-            "label": "TODO",
-            "text": "TODO"
+            "label": "Trâmites de licenças",
+            "text": "Os utentes podem submeter pedidos, anexar documentação e responder a requerimentos da instituição."
           },
           {
-            "label": "TODO",
-            "text": "TODO"
+            "label": "Acompanhamento do processo",
+            "text": "Utentes e instituição veem o estado de cada trâmite num mesmo processo partilhado."
           }
         ]
       }
     ]
   },
   "methodology": {
-    "eyebrow": "TODO",
-    "title": "TODO",
-    "description": "TODO",
+    "eyebrow": "Metodologia de implementação",
+    "title": "A nossa diferença: implementação colaborativa<br>que garante a autonomia institucional",
+    "description": "Não nos limitamos a criar software: construímo-lo em conjunto.",
     "image": "/images/photo_printed_permits.webp",
-    "imageAlt": "Taller de revisión de permisos de agua impresos junto al sistema digital",
+    "imageAlt": "Workshop de revisão de licenças de água impressas junto ao sistema digital",
     "items": [
       {
         "step": "01",
-        "title": "TODO",
-        "description": "TODO"
+        "title": "Conceção conjunta e multidisciplinar",
+        "description": "Criamos grupos de trabalho interdepartamentais para desenhar o sistema junto de quem o vai utilizar, adaptado especificamente aos seus processos e necessidades."
       },
       {
         "step": "02",
-        "title": "TODO",
-        "description": "TODO"
+        "title": "Estratégia de implementação faseada",
+        "description": "A implementação estrutura-se em três fases estratégicas (registo de utentes e licenças de água, trâmites e faturação) para permitir uma adaptação progressiva às equipas e à instituição."
       },
       {
         "step": "03",
-        "title": "TODO",
-        "description": "We dedicate 40–50% of the project effort to co-design workshops, training and capacity building."
+        "title": "Fortalecimento institucional",
+        "description": "Dedicamos entre 40 % e 50 % do esforço do projeto a workshops de conceção conjunta, formação e fortalecimento de capacidades."
       },
       {
         "step": "04",
-        "title": "TODO",
-        "description": "TODO",
-        "last": true
-      }
-    ]
-  },
-  "results": {
-    "eyebrow": "TODO",
-    "title": "TODO",
-    "description": "TODO",
-    "footnote": "TODO",
-    "items": [
-      {
-        "value": "200–300%",
-        "description": "TODO"
-      },
-      {
-        "value": "85%",
-        "description": "TODO"
-      },
-      {
-        "value": "50%",
-        "description": "TODO"
-      },
-      {
-        "value": "40%",
-        "description": "TODO",
+        "title": "Filosofia de código aberto",
+        "description": "O uso de tecnologias de <em>open source</em> permite que a instituição seja proprietária do código e dos seus dados, sem depender de fornecedores nem pagar licenças de software dispendiosas.",
         "last": true
       }
     ]
   },
   "contact": {
-    "eyebrow": "TODO",
-    "title": "TODO",
-    "description": "TODO",
-    "ctaLabel": "Contacta",
+    "eyebrow": "O seu parceiro tecnológico",
+    "title": "Quer modernizar a gestão da água na sua instituição?",
+    "description": "Contacte a nossa equipa se tiver questões, quiser pedir um orçamento ou experimentar a plataforma no nosso ambiente de testes.",
+    "ctaLabel": "Envie-nos um e-mail",
     "email": "info@icarto.es"
   },
   "footer": {
-    "tagline": "Apoiamos as autoridades de água a superar limitações tecnológicas.",
+    "tagline": "Acompanhamos as instituições de gestão da água na superação das suas limitações tecnológicas.",
     "officesLabel": "Escritórios",
     "office1Name": "A Coruña (Espanha)",
     "office1AddressLine1": "C/ Rafael Alberti, 13 - 1ºD",

@@ -16,8 +16,7 @@
   },
   "brand": {
     "name": "iCarto",
-    "logo": "/images/logo_icarto.webp",
-    "logoWhite": "/images/logo_icarto_white.webp",
+    "logo": "/images/logo_icarto_white.webp",
     "link": "https://icarto.es/en/"
   },
   "nav": [
@@ -49,7 +48,6 @@
     "title": "Proven at national level",
     "subtitle": "10 years improving water user and licence management",
     "contextsTitle": "Implemented in Different Contexts",
-    "mapLabel": "Map Interface",
     "countryList": [
       {
         "name": "Mozambique",
@@ -64,18 +62,14 @@
     ],
     "figuresDeploymentLabel": "Deployment",
     "figuresDeployment": [
-      { "value": "2", "label": "Countries", "icon": "globe" },
-      { "value": "6", "label": "Water Authorities", "icon": "building" }
+      { "value": "2", "label": "Countries" },
+      { "value": "6", "label": "Water Authorities" }
     ],
     "figuresScaleLabel": "System scale",
     "figures": [
-      { "value": "+100", "label": "System Users", "icon": "users" },
-      {
-        "value": "+4,000",
-        "label": "Water Users",
-        "icon": "person"
-      },
-      { "value": "+5,000", "label": "Licenses", "icon": "check" }
+      { "value": "+100", "label": "System Users" },
+      { "value": "+4,000", "label": "Water Users" },
+      { "value": "+5,000", "label": "Licenses" }
     ],
     "donorsTitle": "Supported by",
     "donors": [
@@ -131,7 +125,6 @@
     "title": "One centralised database</br>for your entire water administration",
     "subtitle": "Digital capabilities shared across departments, without duplicate files or manual handoffs.",
     "tabListLabel": "Platform capabilities",
-    "panelLabel": "Capability detail",
     "items": [
       {
         "icon": "registry",
@@ -246,7 +239,7 @@
       {
         "step": "03",
         "title": "Institutional Strengthening",
-        "description": "We dedicate 40–50% of the project effort to co-design workshops, training and capacity building."
+        "description": "We dedicate 40-50% of the project effort to co-design workshops, training and capacity building."
       },
       {
         "step": "04",
