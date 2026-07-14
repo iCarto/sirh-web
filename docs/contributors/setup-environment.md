@@ -17,7 +17,7 @@ Nice to have:
 ```bash
 # 1. Clone the repository and enter the project folder
 
-# 2. Verify Node.js 20+ is available
+# 2. Verify Node.js 24+ is available
 node -v
 
 # 3. Build once to verify everything works
@@ -60,7 +60,7 @@ Generates `dist/en/` and `dist/es/` plus static assets from `public/`.
 
 - English: `locales/en.json` → `dist/en/index.html`
 - Spanish: `locales/es.json` → `dist/es/index.html` (fill in translations; keys must match `en.json`)
-- URLs: `/en/` and `/es/` — configure your server to redirect `/` → `/en/` if needed
+- URLs: `/en/`, `/es/` and `/pt/`. The build writes `dist/index.html` to redirect `/` → `/en/` (works on GitHub Pages and on a custom domain root).
 
 The build validates that `es.json` contains every key present in `en.json`.
 

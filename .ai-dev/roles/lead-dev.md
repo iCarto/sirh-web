@@ -22,7 +22,7 @@
   - Este repositorio no tiene backend, base de datos, framework frontend ni dependencias npm de aplicación.
 
 - **Stack de este repositorio**
-  - Node.js 20+ solo para ejecutar el script de build.
+  - Node.js 24+ solo para ejecutar el script de build.
   - Plantillas HTML renderizadas por `build.mjs` con sintaxis `{{clave}}` y bloques Handlebars-style.
   - Tailwind CSS vía CDN; tokens de marca en `templates/layout.html`.
   - Salida desplegable en `dist/` (`dist/en/index.html`, `dist/es/index.html`).
