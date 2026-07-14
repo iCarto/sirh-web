@@ -82,6 +82,7 @@ function writeRootLocaleRedirect(basePath) {
 
 export function build() {
   const basePath = normalizeBasePath(process.env.BASE_PATH);
+  const umamiWebsiteId = process.env.UMAMI_WEBSITE_ID?.trim() || "";
   const brandTheme = loadBrandTheme(ROOT);
   const enRaw = loadLocale(ROOT, "en");
   const esRaw = loadLocale(ROOT, "es");
@@ -94,7 +95,12 @@ export function build() {
 
   for (const code of LOCALES) {
     const data = localeDataByCode[code];
-    const html = renderPage({ ...data, ...brandTheme, basePath });
+    const html = renderPage({
+      ...data,
+      ...brandTheme,
+      basePath,
+      umamiWebsiteId,
+    });
     const outDir = path.join(ROOT, "dist", code);
     fs.mkdirSync(outDir, { recursive: true });
     fs.writeFileSync(path.join(outDir, "index.html"), html);

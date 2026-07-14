@@ -30,6 +30,7 @@ jobs:
         run: npm run build
         env:
           BASE_PATH: /
+          UMAMI_WEBSITE_ID: ${{ secrets.UMAMI_WEBSITE_ID }}
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
