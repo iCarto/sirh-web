@@ -39,14 +39,20 @@
       rel="stylesheet"
     />
     <script src="https://cdn.tailwindcss.com"></script>
+    <script type="application/json" id="sirh-tailwind-colors">
+      {{tailwindColorsJson}}
+    </script>
     <script>
+      const sirhThemeColors = JSON.parse(
+        document.getElementById("sirh-tailwind-colors").textContent,
+      );
       tailwind.config = {
         theme: {
           extend: {
             fontFamily: {
               sans: ["Inter", "sans-serif"],
             },
-            colors: {{tailwindColorsJson}},
+            colors: sirhThemeColors,
           },
         },
       };
@@ -57,8 +63,6 @@
         left: -9999px;
         z-index: 100;
         padding: 0.75rem 1rem;
-        background: {{tailwindColors.primary.main}};
-        color: {{tailwindColors.primary.contrastText}};
         font-weight: 600;
         font-size: 0.875rem;
         border-radius: 0.375rem;
@@ -71,7 +75,6 @@
         font-feature-settings: "cv02", "cv03", "cv04", "cv11";
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
-        color: {{tailwindColors.neutral.900}};
       }
       .shadow-card {
         box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.1);
@@ -99,7 +102,11 @@
   <body
     class="bg-neutral-50 text-neutral-900 font-sans antialiased selection:bg-primary-light selection:text-primary-dark"
   >
-    <a href="#main-content" class="skip-link">Skip to content</a>
+    <a
+      href="#main-content"
+      class="skip-link bg-primary-main text-primary-contrastText"
+      >Skip to content</a
+    >
 
     {{sections}}
     <script src="{{basePath}}/js/mobile-menu.js" defer></script>
