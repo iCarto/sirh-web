@@ -70,6 +70,16 @@ function copyPublic() {
   copyDir(publicDir, distDir);
 }
 
+const DEFAULT_LOCALE = LOCALES[0];
+
+function writeRootLocaleRedirect(basePath) {
+  const html = renderTemplate(readFile("templates/root-redirect.html"), {
+    defaultLocale: DEFAULT_LOCALE,
+    canonicalHref: prefixRootPath(`/${DEFAULT_LOCALE}/`, basePath),
+  });
+  fs.writeFileSync(path.join(ROOT, "dist", "index.html"), html);
+}
+
 export function build() {
   const basePath = normalizeBasePath(process.env.BASE_PATH);
   const brandTheme = loadBrandTheme(ROOT);
@@ -91,6 +101,7 @@ export function build() {
   }
 
   copyPublic();
+  writeRootLocaleRedirect(basePath);
 }
 
 function buildAll(isWatch = false) {
