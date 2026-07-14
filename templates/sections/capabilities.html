@@ -195,5 +195,22 @@
     </div>
   </div>
 
-  <script src="{{basePath}}/js/capabilities-tabs.js"></script>
+  <script>
+    (function () {
+      var loaded = false;
+      var mq = window.matchMedia("(min-width: 1024px)");
+
+      function loadTabs() {
+        if (!mq.matches || loaded) return;
+        loaded = true;
+        var script = document.createElement("script");
+        script.src = "{{basePath}}/js/capabilities-tabs.js";
+        script.defer = true;
+        document.body.appendChild(script);
+      }
+
+      loadTabs();
+      mq.addEventListener("change", loadTabs);
+    })();
+  </script>
 </section>
