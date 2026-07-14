@@ -45,7 +45,7 @@
   },
   "proven": {
     "eyebrow": "Resultados comprobados",
-    "title": "Probado a nivel nacional",
+    "title": "Probado a nivel nacional y regional",
     "subtitle": "10 años mejorando la gestión de usuarios y licencias de agua",
     "contextsTitle": "Implementado en distintos contextos",
     "countryList": [
@@ -63,7 +63,7 @@
     "figuresDeploymentLabel": "Despliegue",
     "figuresDeployment": [
       { "value": "2", "label": "Países" },
-      { "value": "6", "label": "Autoridades hidrológicas" }
+      { "value": "5", "label": "Autoridades hidrológicas" }
     ],
     "figuresScaleLabel": "Escala del sistema",
     "figures": [

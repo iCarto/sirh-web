@@ -45,7 +45,7 @@
   },
   "proven": {
     "eyebrow": "Measured Results",
-    "title": "Proven at national level",
+    "title": "Proven at national and regional level",
     "subtitle": "10 years improving water user and licence management",
     "contextsTitle": "Implemented in Different Contexts",
     "countryList": [
@@ -63,7 +63,7 @@
     "figuresDeploymentLabel": "Deployment",
     "figuresDeployment": [
       { "value": "2", "label": "Countries" },
-      { "value": "6", "label": "Water Authorities" }
+      { "value": "5", "label": "Water Authorities" }
     ],
     "figuresScaleLabel": "System scale",
     "figures": [

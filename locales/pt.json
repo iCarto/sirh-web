@@ -45,7 +45,7 @@
   },
   "proven": {
     "eyebrow": "Resultados comprovados",
-    "title": "Comprovado a nível nacional",
+    "title": "Comprovado a nível nacional e regional",
     "subtitle": "10 anos a melhorar a gestão de utentes e licenças de água",
     "contextsTitle": "Implementado em diferentes contextos",
     "countryList": [
@@ -63,7 +63,7 @@
     "figuresDeploymentLabel": "Implementação",
     "figuresDeployment": [
       { "value": "2", "label": "Países" },
-      { "value": "6", "label": "Autoridades hidrológicas" }
+      { "value": "5", "label": "Administrações hidrológicas" }
     ],
     "figuresScaleLabel": "Escala do sistema",
     "figures": [
@@ -80,7 +80,7 @@
       },
       {
         "logo": "/images/logo_dutch_water_authorities.webp",
-        "alt": "Autoridades Hidrológicas Neerlandesas",
+        "alt": "Administrações hidrológicas Neerlandesas",
         "logoClass": "max-h-16 md:max-h-16 w-auto max-w-full object-contain"
       },
       {
@@ -128,7 +128,7 @@
     "items": [
       {
         "icon": "registry",
-        "title": "Registo unificado",
+        "title": "Cadastro unificado",
         "description": "Procedimentos unificados para registar utentes e emitir licenças de água, alinhados com a sua legislação e processos.",
         "image": "/images/SIRH_screenshot_procedure.webp",
         "imageAlt": "Ecrã de registo de utentes e licenças de água no SIRH"
@@ -143,7 +143,7 @@
       {
         "icon": "estimation",
         "title": "Cálculo automatizado de consumos",
-        "description": "Aplique os valores de referência da sua instituição para calcular automaticamente consumos de água em licenças e faturação.",
+        "description": "Aplique os valores de referência da sua instituição para calcular automaticamente os consumos de água associados às licenças e à faturação.",
         "image": "/images/SIRH_screenshot_estimation.webp",
         "imageAlt": "Cálculo automatizado de consumo de água no SIRH"
       },
@@ -173,7 +173,7 @@
   "ecosystem": {
     "eyebrow": "Módulos avançados e evolução da plataforma web",
     "title": "Um ecossistema escalável:<br>o futuro da sua transformação digital",
-    "description": "O SIRH foi concebido para crescer junto da sua instituição.<br>Depois de consolidado o uso da plataforma central, o sistema pode expandir-se com ferramentas avançadas para digitalizar o trabalho de campo e a transparência.",
+    "description": "O SIRH foi concebido para crescer junto da sua instituição.<br>Depois de consolidado o uso da plataforma central, o sistema pode expandir-se com ferramentas avançadas para digitalizar o trabalho de campo e a transparência com o utente.",
     "modules": [
       {
         "badge": "App de campo",
