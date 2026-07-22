@@ -27,16 +27,16 @@
     { "label": "A nossa diferença", "href": "#methodology" }
   ],
   "cta": {
-    "header": "Solicitar demo",
+    "header": "Solicitar demostração",
     "headerHref": "#contact"
   },
   "hero": {
     "badge": "SIRH: Sistema de Informação de Recursos Hídricos",
-    "title": "Um registo único</br>e fiável para a gestão hídrica",
+    "title": "Um cadastro único</br>e fiável para a gestão hídrica",
     "description": "Plataforma integrada com SIG para gerir o ciclo de vida das licenças de água, modernizar a faturação e melhorar a relação com os utentes de água.",
-    "ctaPrimary": "Solicitar demo técnica",
+    "ctaPrimary": "Solicitar demostração técnica",
     "ctaPrimaryHref": "#contact",
-    "ctaSecondary": "Descobrir",
+    "ctaSecondary": "Saber mais",
     "ctaSecondaryHref": "#capabilities",
     "browserUrl": "sirh.icarto.es",
     "browserBadge": "Ambiente de testes",
@@ -45,7 +45,7 @@
   },
   "proven": {
     "eyebrow": "Resultados comprovados",
-    "title": "Comprovado a nível nacional e regional",
+    "title": "A nível nacional e regional",
     "subtitle": "10 anos a melhorar a gestão de utentes e licenças de água",
     "contextsTitle": "Implementado em diferentes contextos",
     "countryList": [
@@ -92,13 +92,13 @@
     "resultsTitle": "Impacto demonstrado nas instituições",
     "resultsFootnote": "Com base na experiência de implementação em Moçambique desde 2018 e Eswatini desde 2024.",
     "resultsItems": [
-      { "title": "Operações diárias mais eficientes" },
-      { "title": "Decisões melhor apoiadas em dados" },
+      { "title": "Trabalho diário mais eficiente" },
+      { "title": "Melhora na tomada de decisões, sustentada em dados" },
       { "title": "Menos inconsistências nos dados" },
       { "title": "Maior cobertura geográfica" },
       { "title": "Fluxos administrativos digitalizados" },
       { "title": "Maior número de licenças geridas anualmente" },
-      { "title": "Aumento de receitas e capacidade financeira" }
+      { "title": "Aumento dos pagamentos e da capacidade financeira" }
     ]
   },
   "challenges": {
@@ -112,31 +112,31 @@
       },
       {
         "tag": "Processos lentos",
-        "problem": "Os cálculos manuais e a tramitação em papel prolongam os prazos de processamento e abrandam o trabalho diário."
+        "problem": "Os cálculos manuais e a gestão em papel prolongam os prazos de processamento e atrasam o trabalho diário."
       },
       {
-        "tag": "Baixa cobrança",
-        "problem": "A dificuldade em acompanhar licenças e pagamentos enfraquece a capacidade financeira da instituição."
+        "tag": "Baixa taxa de cobrança",
+        "problem": "A dificuldade em acompanhar licenças e pagamentos compromete a sustentabilidade financeira da instituição."
       }
     ]
   },
   "capabilities": {
     "eyebrow": "Funcionalidades da plataforma",
-    "title": "Uma base de dados centralizada</br>para a sua instituição de gestão da água",
+    "title": "Uma base de dados centralizada</br>para a sua administração hidrológica",
     "subtitle": "Capacidades digitais partilhadas entre departamentos, sem ficheiros duplicados</br>nem transferências manuais.",
     "tabListLabel": "Funcionalidades do SIRH",
     "items": [
       {
         "icon": "registry",
         "title": "Cadastro unificado",
-        "description": "Procedimentos unificados para registar utentes e emitir licenças de água, alinhados com a sua legislação e processos.",
+        "description": "Procedimentos unificados para cadastrar utentes e emitir licenças de água, alinhados com a sua legislação e processos.",
         "image": "/images/SIRH_screenshot_procedure.webp",
-        "imageAlt": "Ecrã de registo de utentes e licenças de água no SIRH"
+        "imageAlt": "Ecrã de cadastro de utentes e licenças de água no SIRH"
       },
       {
         "icon": "gis",
         "title": "Cartografia georreferenciada",
-        "description": "Registe e visualize explorações, culturas, fontes e pontos de descarga em mapas interativos ligados às licenças.",
+        "description": "Cadastre e visualize explorações, culturas, fontes e pontos de descarga em mapas interativos ligados às licenças.",
         "image": "/images/SIRH_screenshot_map_detail.webp",
         "imageAlt": "Mapa georreferenciado de explorações no SIRH"
       },
@@ -149,7 +149,7 @@
       },
       {
         "icon": "workflow",
-        "title": "Acompanhamento de pedidos e renovações",
+        "title": "Acompanhamento de pedidos de licenciamento e renovações",
         "description": "Acompanhe o estado de pedidos e renovações de licenças em cada passo institucional, com etapas definidas para a equipa e a direção.",
         "image": "/images/SIRH_screenshot_procedures.webp",
         "imageAlt": "Fluxo de pedidos e renovações de licenças no SIRH"
@@ -164,7 +164,7 @@
       {
         "icon": "billing",
         "title": "Faturação e seguimento de pagos",
-        "description": "Automatize a geração de faturas, processe lotes por bacia ou ciclo e controle pagamentos e saldos pendentes num só lugar.",
+        "description": "Automatize a geração de faturas, processe lotes por bacia ou ciclo e controle os pagamentos e saldos pendentes num só lugar.",
         "image": "/images/SIRH_screenshot_invoices.webp",
         "imageAlt": "Módulo de faturação e cobrança no SIRH"
       }
@@ -208,12 +208,12 @@
             "text": "Os utentes de água podem consultar dados atualizados das suas licenças, faturas e saldos."
           },
           {
-            "label": "Trâmites de licenças",
+            "label": "Pedidos de licenças",
             "text": "Os utentes podem submeter pedidos, anexar documentação e responder a requerimentos da instituição."
           },
           {
             "label": "Acompanhamento do processo",
-            "text": "Utentes e instituição veem o estado de cada trâmite num mesmo processo partilhado."
+            "text": "Utentes e instituição veem o estado de cada procedimento num mesmo processo partilhado."
           }
         ]
       }
@@ -229,22 +229,22 @@
       {
         "step": "01",
         "title": "Conceção conjunta e multidisciplinar",
-        "description": "Criamos grupos de trabalho interdepartamentais para desenhar o sistema junto de quem o vai utilizar, adaptado especificamente aos seus processos e necessidades."
+        "description": "Criamos grupos de trabalho interdepartamentais para desenhar o sistema em conjunto com os utilizadores finais, adaptando-o aos seus processos e necessidades."
       },
       {
         "step": "02",
-        "title": "Estratégia de implementação faseada",
-        "description": "A implementação estrutura-se em três fases estratégicas (registo de utentes e licenças de água, trâmites e faturação) para permitir uma adaptação progressiva às equipas e à instituição."
+        "title": "Estratégia de implementação em fases",
+        "description": "A implementação estrutura-se em três fases estratégicas (cadastro de utentes e licenças de água, procedimentos e faturação) para permitir uma adaptação progressiva às equipas e à instituição."
       },
       {
         "step": "03",
         "title": "Fortalecimento institucional",
-        "description": "Dedicamos entre 40 % e 50 % do esforço do projeto a workshops de conceção conjunta, formação e fortalecimento de capacidades."
+        "description": "Dedicamos entre 40 % e 50 % do esforço do projeto a workshops de conceção conjunta, transferência de conhecimentos e fortalecimento de capacidades."
       },
       {
         "step": "04",
         "title": "Filosofia de código aberto",
-        "description": "O uso de tecnologias de <em>open source</em> permite que a instituição seja proprietária do código e dos seus dados, sem depender de fornecedores nem pagar licenças de software dispendiosas.",
+        "description": "O uso de tecnologias <em>open source</em> permite que a instituição seja proprietária do código e dos seus dados, sem depender de fornecedores nem pagar licenças de software dispendiosas.",
         "last": true
       }
     ]
