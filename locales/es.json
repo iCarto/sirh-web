@@ -32,8 +32,8 @@
   },
   "hero": {
     "badge": "SIRH: Sistema de Información de Recursos Hídricos",
-    "title": "Un registro único</br>y fiable para la gestión hídrica",
-    "description": "Plataforma integrada con SIG para gestionar el ciclo de vida de las licencias de agua, modernizar la facturación y mejorar la relación con los usuarios de agua.",
+    "title": "Un registro único y fiable para la gestión de los recursos hídricos",
+    "description": "Plataforma integrada con SIG para gestionar el ciclo completo de las licencias de agua, profesionalizar la facturación y fortalecer la relación con los usuarios de agua.",
     "ctaPrimary": "Solicitar demo técnica",
     "ctaPrimaryHref": "#contact",
     "ctaSecondary": "Descubrir",
@@ -45,7 +45,7 @@
   },
   "proven": {
     "eyebrow": "Resultados comprobados",
-    "title": "Probado a nivel nacional y regional",
+    "title": "A nivel nacional y regional",
     "subtitle": "10 años mejorando la gestión de usuarios y licencias de agua",
     "contextsTitle": "Implementado en distintos contextos",
     "countryList": [
@@ -63,7 +63,7 @@
     "figuresDeploymentLabel": "Despliegue",
     "figuresDeployment": [
       { "value": "2", "label": "Países" },
-      { "value": "5", "label": "Autoridades hidrológicas" }
+      { "value": "5", "label": "Administraciones hidrológicas" }
     ],
     "figuresScaleLabel": "Escala del sistema",
     "figures": [
@@ -80,7 +80,7 @@
       },
       {
         "logo": "/images/logo_dutch_water_authorities.webp",
-        "alt": "Autoridades Hidrológicas Neerlandesas",
+        "alt": "Dutch Water Authorities",
         "logoClass": "max-h-16 md:max-h-16 w-auto max-w-full object-contain"
       },
       {
@@ -93,8 +93,8 @@
     "resultsFootnote": "Basado en la experiencia de implementación en Mozambique desde 2018 y Esuatini desde 2024.",
     "resultsItems": [
       { "title": "Operaciones diarias más eficientes" },
-      { "title": "Decisiones mejor apoyadas en datos" },
-      { "title": "Menos inconsistencias en los datos" },
+      { "title": "Decisiones mejor fundamentadas" },
+      { "title": "Reducción de errores en los datos" },
       { "title": "Mayor cobertura geográfica" },
       { "title": "Flujos administrativos digitalizados" },
       { "title": "Mayor número de licencias gestionadas anualmente" },
@@ -116,55 +116,55 @@
       },
       {
         "tag": "Baja recaudación",
-        "problem": "La dificultad para realizar un seguimiento de licencias y pagos debilitan la capacidad de generar ingresos."
+        "problem": "La dificultad para realizar un seguimiento eficiente de licencias y pagos debilita la capacidad de generar ingresos."
       }
     ]
   },
   "capabilities": {
     "eyebrow": "Funcionalidades de la plataforma",
-    "title": "Una base de datos centralizada</br>para su institución de gestión del agua",
+    "title": "Una base de datos centralizada para su administración hidrológica",
     "subtitle": "Capacidades digitales compartidas entre departamentos, sin archivos duplicados ni traspasos manuales.",
     "tabListLabel": "Funcionalidades de SIRH",
     "items": [
       {
         "icon": "registry",
         "title": "Registro unificado",
-        "description": "Procedimientos unificados para registrar usuarios y emitir licencias de agua, alineados con su legislación y procesos.",
+        "description": "Procedimientos unificados para registrar usuarios y emitir licencias de agua, adaptados a su legislación y procesos.",
         "image": "/images/SIRH_screenshot_procedure.webp",
         "imageAlt": "Pantalla de registro de usuarios y licencias de agua en SIRH"
       },
       {
         "icon": "gis",
         "title": "Cartografía georreferenciada",
-        "description": "Registre y visualice explotaciones, cultivos, fuentes y puntos de vertido en mapas interactivos vinculados a las licencias.",
+        "description": "Registro y visualización de explotaciones, cultivos, fuentes y puntos de vertido en mapas interactivos vinculados a las licencias.",
         "image": "/images/SIRH_screenshot_map_detail.webp",
         "imageAlt": "Mapa georreferenciado de explotaciones en SIRH"
       },
       {
         "icon": "estimation",
         "title": "Cálculo automatizado de consumos",
-        "description": "Aplique los valores de referencia de su institución para calcular de forma automática consumos de agua en licencias y facturación.",
+        "description": "SIRH utiliza criterios institucionales personalizados para calcular de forma automática el consumo de agua.",
         "image": "/images/SIRH_screenshot_estimation.webp",
         "imageAlt": "Cálculo automatizado del consumo de agua en SIRH"
       },
       {
         "icon": "workflow",
         "title": "Seguimiento de solicitudes y renovaciones",
-        "description": "Supervise el estado de solicitudes y renovaciones de las licencias en cada paso institucional, con pasos definidos para el equipo y la gerencia.",
+        "description": "Supervise en todo momento el estado de solicitudes y renovaciones de licencias, con pasos definidos para equipo y gerencia.",
         "image": "/images/SIRH_screenshot_procedures.webp",
         "imageAlt": "Flujo de solicitudes y renovaciones de licencias en SIRH"
       },
       {
         "icon": "document",
         "title": "Generación de documentos y extracción de datos",
-        "description": "Genere licencias y facturas en el formato oficial y extraiga datos operativos cuando los necesite. Exporte a PDF, Excel o formatos geoespaciales.",
+        "description": "Imprima licencias y facturas en el formato oficial y descargue datos operativos cuando los necesite. Exporte a PDF, Excel o formatos geoespaciales.",
         "image": "/images/SIRH_from_screen_to_print.webp",
         "imageAlt": "Generación de documentos e informes en SIRH"
       },
       {
         "icon": "billing",
         "title": "Facturación y seguimiento de pagos",
-        "description": "Automatice la generación de facturas, procese lotes por cuenca o ciclo y controle pagos y saldos pendientes desde un solo lugar.",
+        "description": "Desde un mismo lugar puede automatizar el contenido de sus facturas, procesar lotes por cuenca o ciclo y gestionar pagos y saldos pendientes.",
         "image": "/images/SIRH_screenshot_invoices.webp",
         "imageAlt": "Módulo de facturación y recaudación en SIRH"
       }
@@ -173,7 +173,7 @@
   "ecosystem": {
     "eyebrow": "Módulos avanzados y evolución de la plataforma web",
     "title": "Un ecosistema escalable:<br>el futuro de su transformación digital",
-    "description": "SIRH está diseñado para crecer junto a su institución.<br>Una vez consolidado el uso de la plataforma central, el sistema puede ampliarse con herramientas avanzadas para digitalizar el trabajo de campo y la transparencia.",
+    "description": "SIRH está diseñado para crecer junto a su institución.<br>Una vez consolidado el uso de la plataforma central, el sistema puede ampliarse con herramientas avanzadas para digitalizar el trabajo de campo y mejorar la transparencia.",
     "modules": [
       {
         "badge": "App de campo",
@@ -184,7 +184,7 @@
         "features": [
           {
             "label": "Trabajo de campo sin papel",
-            "text": "Elimine los formularios manuales y reduzca errores introduciendo los datos directamente en el sistema."
+            "text": "Los datos se introducen directamente en el sistema para eliminar formularios manuales y reducir errores."
           },
           {
             "label": "Sincronización inmediata",
@@ -229,7 +229,7 @@
       {
         "step": "01",
         "title": "Diseño conjunto y multidisciplinar",
-        "description": "Creamos grupos de trabajo multidepartamentales para diseñar el sistema junto a quienes lo usarán, adaptado específicamente a sus procesos y necesidades."
+        "description": "Creamos grupos de trabajo multidepartamentales para diseñar el sistema junto a quienes lo usarán, adaptándolo específicamente a sus procesos y necesidades."
       },
       {
         "step": "02",
@@ -244,20 +244,20 @@
       {
         "step": "04",
         "title": "Filosofía de código abierto",
-        "description": "El uso de tecnologías de <em>open source</em> permite que la institución sea propietaria del código y de sus datos, sin depender de proveedores ni pagos de costosas licencias de software.",
+        "description": "El uso de tecnologías <em>open source</em> permite que la institución sea propietaria del código y de sus datos, sin depender de proveedores ni pagos de costosas licencias de software.",
         "last": true
       }
     ]
   },
   "contact": {
     "eyebrow": "Su socio tecnológico",
-    "title": "¿Quiere modernizar la gestión del agua en su institución?",
+    "title": "¿Quiere profesionalizar la gestión del agua en su institución?",
     "description": "Contacte con nuestro equipo si tiene preguntas, le interesa pedir un presupuesto o quiere probar la plataforma en nuestro entorno de pruebas.",
     "ctaLabel": "Escríbanos",
     "email": "info@icarto.es"
   },
   "footer": {
-    "tagline": "Acompañamos a las instituciones de gestión del agua a superar sus limitaciones tecnológicas.",
+    "tagline": "Acompañamos a entidades gestoras de los recursos hídricos en la mejora de sus capacidades tecnológicas.",
     "officesLabel": "Oficinas",
     "office1Name": "A Coruña (España)",
     "office1AddressLine1": "C/ Rafael Alberti, 13 - 1ºD",
