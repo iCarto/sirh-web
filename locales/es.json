@@ -74,19 +74,19 @@
     "donorsTitle": "Con el apoyo de",
     "donors": [
       {
-        "logo": "/images/logo_world_bank.webp",
+        "logo": "/images/logo_world_bank_mzq.webp",
         "alt": "Banco Mundial",
-        "logoClass": "max-h-16 md:max-h-[4.5rem] w-auto max-w-full object-contain"
+        "logoClass": "max-h-12"
       },
       {
         "logo": "/images/logo_dutch_water_authorities.webp",
         "alt": "Dutch Water Authorities",
-        "logoClass": "max-h-16 md:max-h-16 w-auto max-w-full object-contain"
+        "logoClass": "max-h-9"
       },
       {
         "logo": "/images/logo_coop_galega.webp",
         "alt": "Cooperación Galega",
-        "logoClass": "max-h-10 md:max-h-12 w-auto max-w-full object-contain"
+        "logoClass": "max-h-11"
       }
     ],
     "resultsTitle": "Impacto demostrado en las instituciones",
