@@ -74,7 +74,7 @@
     "donorsTitle": "Supported by",
     "donors": [
       {
-        "logo": "/images/logo_world_bank_mzq.webp",
+        "logo": "/images/logo_world_bank.webp",
         "alt": "World Bank",
         "logoClass": "max-h-12"
       },
