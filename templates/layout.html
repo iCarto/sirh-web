@@ -9,7 +9,7 @@
     <meta property="og:description" content="{{meta.description}}" />
     <meta
       property="og:image"
-      content="{{basePath}}/images/SIRH_screenshot_map.webp"
+      content="{{seo.ogImageUrl}}"
     />
     <meta property="og:type" content="website" />
     <link
@@ -29,9 +29,12 @@
       sizes="180x180"
       href="{{basePath}}/images/apple-touch-icon.png"
     />
-    <link rel="alternate" hreflang="en" href="{{alternate.en}}" />
-    <link rel="alternate" hreflang="es" href="{{alternate.es}}" />
-    <link rel="alternate" hreflang="pt" href="{{alternate.pt}}" />
+    <meta property="og:url" content="{{seo.canonicalUrl}}" />
+    <link rel="canonical" href="{{seo.canonicalUrl}}" />
+    <link rel="alternate" hreflang="en" href="{{seo.alternateUrls.en}}" />
+    <link rel="alternate" hreflang="es" href="{{seo.alternateUrls.es}}" />
+    <link rel="alternate" hreflang="pt" href="{{seo.alternateUrls.pt}}" />
+    <link rel="alternate" hreflang="x-default" href="{{seo.xDefaultUrl}}" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link

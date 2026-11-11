@@ -11,6 +11,14 @@ import {
 } from "./lib/i18n-utils.mjs";
 import { loadBrandTheme } from "./lib/brand-tokens.mjs";
 import { createTemplateRenderer } from "./lib/template-engine.mjs";
+import {
+  buildPageSeoUrls,
+  createAbsoluteUrlBuilder,
+  localePath,
+  renderRobotsTxt,
+  renderSitemap,
+  resolveSiteOrigin,
+} from "./lib/seo.mjs";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = __dirname;
@@ -72,16 +80,27 @@ function copyPublic() {
 
 const DEFAULT_LOCALE = LOCALES[0];
 
-function writeRootLocaleRedirect(basePath) {
+function writeRootLocaleRedirect(toAbsoluteUrl) {
   const html = renderTemplate(readFile("templates/root-redirect.html"), {
     defaultLocale: DEFAULT_LOCALE,
-    canonicalHref: prefixRootPath(`/${DEFAULT_LOCALE}/`, basePath),
+    canonicalHref: toAbsoluteUrl(localePath(DEFAULT_LOCALE)),
   });
   fs.writeFileSync(path.join(ROOT, "dist", "index.html"), html);
 }
 
+function writeCrawlerFiles(toAbsoluteUrl) {
+  const distDir = path.join(ROOT, "dist");
+  fs.writeFileSync(
+    path.join(distDir, "sitemap.xml"),
+    renderSitemap(LOCALES, DEFAULT_LOCALE, toAbsoluteUrl),
+  );
+  fs.writeFileSync(path.join(distDir, "robots.txt"), renderRobotsTxt(toAbsoluteUrl));
+}
+
 export function build() {
   const basePath = normalizeBasePath(process.env.BASE_PATH);
+  const siteOrigin = resolveSiteOrigin(ROOT, process.env.SITE_URL);
+  const toAbsoluteUrl = createAbsoluteUrlBuilder(siteOrigin, basePath);
   const umamiWebsiteId = process.env.UMAMI_WEBSITE_ID?.trim() || "";
   const brandTheme = loadBrandTheme(ROOT);
   const enRaw = loadLocale(ROOT, "en");
@@ -99,6 +118,10 @@ export function build() {
       ...data,
       ...brandTheme,
       basePath,
+      seo: {
+        ...buildPageSeoUrls(code, LOCALES, DEFAULT_LOCALE, toAbsoluteUrl),
+        ogImageUrl: toAbsoluteUrl("/images/SIRH_screenshot_map.webp"),
+      },
       umamiWebsiteId,
     });
     const outDir = path.join(ROOT, "dist", code);
@@ -107,7 +130,8 @@ export function build() {
   }
 
   copyPublic();
-  writeRootLocaleRedirect(basePath);
+  writeRootLocaleRedirect(toAbsoluteUrl);
+  writeCrawlerFiles(toAbsoluteUrl);
 }
 
 function buildAll(isWatch = false) {
